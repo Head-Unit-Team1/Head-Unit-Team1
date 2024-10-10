@@ -1,6 +1,8 @@
 SUMMARY = "PiRacer Python Script"
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=<hash>"
+LICENSE = "CLOSED"
+
+#LICENSE = "MIT"
+#LIC_FILES_CHKSUM = "file://LICENSE;md5=<hash>"
 
 SRC_URI = "file://main.py"
 
@@ -16,3 +18,4 @@ do_install() {
 # Python이 시스템에서 사용할 수 있도록 이미지에 추가
 IMAGE_INSTALL += "python3 python3-pip"
 
+RDEPENDS_${PN} = "python3"
