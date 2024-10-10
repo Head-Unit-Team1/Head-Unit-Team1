@@ -1,10 +1,10 @@
 import time
-from piracer.vehicles import PiRacerPro
+from piracer.vehicles import PiRacerStandard
 
 if __name__ == '__main__':
 
-    piracer = PiRacerPro()
-    # piracer = PiRacerStandard()
+    # piracer = PiRacerPro()
+    piracer = PiRacerStandard()
 
     # Forward
     piracer.set_throttle_percent(0.2)
