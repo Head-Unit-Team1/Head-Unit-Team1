@@ -1,0 +1,10 @@
+[Unit]
+Description=Play Video on Boot
+
+[Service]
+ExecStart=/etc/init.d/playvideo.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
