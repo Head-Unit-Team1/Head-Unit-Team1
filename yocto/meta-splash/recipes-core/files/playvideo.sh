@@ -1,3 +1,3 @@
 #!/bin/sh
-omxplayer /home/root/videos/splashvideo.mp4
+cvlc --fullscreen /home/root/videos/splashvideo.mp4
 

@@ -1,2 +1,0 @@
-console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 rootwait logo.nologo
-
