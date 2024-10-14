@@ -67,9 +67,6 @@ RPI_KERNEL_DEVICETREE_OVERLAYS +=" \
     overlays/vc4-kms-dsi-waveshare-panel.dtbo \
     "
     
-    
-
-
 RPI_KERNEL_DEVICETREE_OVERLAYS:append:raspberrypi5 = " \
     overlays/vc4-kms-v3d-pi5.dtbo \
 "
