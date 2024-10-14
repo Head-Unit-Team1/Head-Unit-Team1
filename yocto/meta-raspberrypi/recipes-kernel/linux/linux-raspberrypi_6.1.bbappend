@@ -1,0 +1,3 @@
+LINUX_VERSION ?= "6.1.77"
+
+SRCREV_machine = "77fc1fbcb5c013329af9583307dd1ff3cd4752aa"

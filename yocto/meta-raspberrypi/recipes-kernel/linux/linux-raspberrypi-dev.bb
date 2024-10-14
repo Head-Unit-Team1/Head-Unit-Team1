@@ -5,9 +5,9 @@ python __anonymous() {
         raise bb.parse.SkipRecipe(msg)
 }
 
-LINUX_VERSION ?= "5.10.y"
-LINUX_RPI_BRANCH ?= "rpi-5.10.y"
-LINUX_RPI_KMETA_BRANCH ?= "yocto-5.10"
+LINUX_VERSION ?= "6.1.77"
+LINUX_RPI_BRANCH ?= "rpi-6.1.y"
+LINUX_RPI_KMETA_BRANCH ?= "yocto-6.1"
 
 # Set default SRCREVs. Both the machine and meta SRCREVs are statically set
 # to the as in 5.10 recipe, and hence prevent network access during parsing. If
