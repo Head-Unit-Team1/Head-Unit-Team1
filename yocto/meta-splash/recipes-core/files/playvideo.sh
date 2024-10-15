@@ -1,3 +1,3 @@
 #!/bin/sh
-cvlc --fullscreen /home/root/videos/splashvideo.mp4
+cvlc --no-osd --fullscreen --play-and-exit /home/root/videos/splashvideo_02.mp4
 

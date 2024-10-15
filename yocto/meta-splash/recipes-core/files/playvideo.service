@@ -1,7 +1,16 @@
 [Unit]
 Description=Play Splash Video
+DefaultDependencies=no
+RequiresMountsFor=/run
+ConditionFileIsExecutable=/usr/bin/playvideo.sh
 
 [Service]
-ExecStart=/etc/init.d/playvideo.sh
+User=root
+ExecStartPre=/bin/sleep 10
+Environment="DISPLAY=:0"
+ExecStart=/usr/bin/playvideo.sh
 RemainAfterExit=yes
+Type=simple
 
+[Install]
+WantedBy=sysinit.target

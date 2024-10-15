@@ -3,23 +3,29 @@ LICENSE = "CLOSED"
 
 SRC_URI = "file://playvideo.sh \
            file://playvideo.service \
-           file://splashvideo.mp4"
+#           file://splashvideo_01.mp4 \
+           file://splashvideo_02.mp4 \
+           "
 
 inherit systemd
-
+S = "${WORKDIR}"
 SYSTEMD_SERVICE:${PN} = "playvideo.service"
+SYSTEMD_AUTO_ENABLE:${PN} = "enable"
 
 do_install() {
     install -d ${D}/etc/init.d/
     install -m 0755 ${WORKDIR}/playvideo.sh ${D}/etc/init.d/
 
     install -d ${D}/home/root/videos/
-    install -m 0644 ${WORKDIR}/splashvideo.mp4 ${D}/home/root/videos/
+#    install -m 0644 ${WORKDIR}/splashvideo_01.mp4 ${D}/home/root/videos/
+    install -m 0644 ${WORKDIR}/splashvideo_02.mp4 ${D}/home/root/videos/
 
     install -d ${D}/etc/systemd/system/
     install -m 0644 ${WORKDIR}/playvideo.service ${D}/etc/systemd/system/
 }
 
-ROOTFS_POSTPROCESS_COMMAND += "systemctl enable playvideo.service; "
+FILES:${PN} += "/home/root/videos/ \
+                /etc/systemd/system/ \
+                /etc/init.d/ \
+               "
 
-FILES:${PN} += "/home/root/videos/"
