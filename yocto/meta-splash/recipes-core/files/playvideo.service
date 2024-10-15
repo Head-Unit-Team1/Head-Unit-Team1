@@ -1,7 +1,0 @@
-[Unit]
-Description=Play Splash Video
-
-[Service]
-ExecStart=/etc/init.d/playvideo.sh
-RemainAfterExit=yes
-

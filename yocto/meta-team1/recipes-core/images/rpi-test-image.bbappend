@@ -1,1 +1,1 @@
-IMAGE_INSTALL:append = " vlc playvideo"
+IMAGE_INSTALL:append = ""
