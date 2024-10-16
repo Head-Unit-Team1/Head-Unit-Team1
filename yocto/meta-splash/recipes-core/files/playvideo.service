@@ -7,11 +7,14 @@ Requires=dev-fb0.device
 ConditionPathExists=/etc/init.d/playvideo.sh
 
 [Service]
-User=root
-ExecStartPre=/bin/sleep 5
-ExecStart=/etc/init.d/playvideo.sh
-RemainAfterExit=yes
+ExecStartPre=/bin/sleep 10
+ExecStart=/usr/bin/playvideo.sh
+StandardOutput=tty
+StandardError=tty
+TTYPath=/dev/tty1
+RemainAfterExit=no
 Type=simple
+
 
 [Install]
 WantedBy=sysinit.target

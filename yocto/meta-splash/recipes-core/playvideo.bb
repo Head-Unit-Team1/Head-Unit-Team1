@@ -4,6 +4,7 @@ LICENSE = "CLOSED"
 SRC_URI = "file://playvideo.sh \
            file://playvideo.service \
            file://splashvideo_02.mp4 \
+           file://getty@tty1.service \
            "
 
 inherit systemd
@@ -20,6 +21,7 @@ do_install() {
 
     install -d ${D}/etc/systemd/system/
     install -m 0644 ${WORKDIR}/playvideo.service ${D}/etc/systemd/system/
+    install -m 0644 ${WORKDIR}/getty@tty1.service ${D}/etc/systemd/system/
 }
 
 FILES:${PN} += "/home/root/videos/ \
