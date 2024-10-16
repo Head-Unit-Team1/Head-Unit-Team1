@@ -3,7 +3,6 @@ LICENSE = "CLOSED"
 
 SRC_URI = "file://playvideo.sh \
            file://playvideo.service \
-#           file://splashvideo_01.mp4 \
            file://splashvideo_02.mp4 \
            "
 
@@ -17,7 +16,6 @@ do_install() {
     install -m 0755 ${WORKDIR}/playvideo.sh ${D}/etc/init.d/
 
     install -d ${D}/home/root/videos/
-#    install -m 0644 ${WORKDIR}/splashvideo_01.mp4 ${D}/home/root/videos/
     install -m 0644 ${WORKDIR}/splashvideo_02.mp4 ${D}/home/root/videos/
 
     install -d ${D}/etc/systemd/system/
@@ -28,4 +26,4 @@ FILES:${PN} += "/home/root/videos/ \
                 /etc/systemd/system/ \
                 /etc/init.d/ \
                "
-
+               

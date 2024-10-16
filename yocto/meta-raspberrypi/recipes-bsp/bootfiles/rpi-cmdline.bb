@@ -28,6 +28,8 @@ CMDLINE_LOGO ?= "logo.nologo"
 
 CMDLINE_QUIET ?= "quiet"
 
+CMDLINE_FBCON ?= "fbcon=map:0"
+
 # You can define CMDLINE_DEBUG as "debug" in your local.conf or distro.conf
 # to enable kernel debugging.
 CMDLINE_DEBUG ?= ""

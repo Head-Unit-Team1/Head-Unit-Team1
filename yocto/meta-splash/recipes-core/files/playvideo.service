@@ -1,14 +1,15 @@
 [Unit]
 Description=Play Splash Video
-DefaultDependencies=no
 RequiresMountsFor=/run
-ConditionFileIsExecutable=/usr/bin/playvideo.sh
+DefaultDependencies=no
+After=local-fs.target
+Requires=dev-fb0.device
+ConditionPathExists=/etc/init.d/playvideo.sh
 
 [Service]
 User=root
-ExecStartPre=/bin/sleep 10
-Environment="DISPLAY=:0"
-ExecStart=/usr/bin/playvideo.sh
+ExecStartPre=/bin/sleep 5
+ExecStart=/etc/init.d/playvideo.sh
 RemainAfterExit=yes
 Type=simple
 
