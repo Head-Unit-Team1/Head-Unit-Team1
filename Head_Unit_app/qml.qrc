@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>AppWidget.qml</file>
+        <file>MenuButton.qml</file>
+        <file>InfoWidget.qml</file>
+        <file>CarWidget.qml</file>
+        <file>GearWidget.qml</file>
+    </qresource>
+</RCC>
