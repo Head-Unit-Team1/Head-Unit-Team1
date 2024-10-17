@@ -4,10 +4,14 @@ import QtQuick.Controls 2.0
 import QtGraphicalEffects 1.0
 
 ApplicationWindow {
+    id: mainWindow
     width: 1024
     height: 600
     visible: true
     title: qsTr("Head Unit")
+
+    property bool showGearBox: false
+    property bool showMenu: false
 
     Image {
         anchors.centerIn: parent
@@ -43,16 +47,23 @@ ApplicationWindow {
                 anchors.verticalCenter: car_widget.verticalCenter
                 anchors.left: car_widget.right
                 anchors.leftMargin: 20
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        mainWindow.showGearBox = true;
+                        //stackView.push("qrc:/GearBoxWindow.qml")
+                    }
+                }
             }
 
-            AppWidget {
+            MapWidget {
                 id: map_widget
-                widthData: 460
-                heightData: 460
                 anchors.top: parent.top
                 anchors.topMargin: 20
                 anchors.right: parent.right
                 anchors.rightMargin: 20
+
             }
 
             Text {
@@ -95,6 +106,14 @@ ApplicationWindow {
                     anchors.horizontalCenterOffset: -25
                     anchors.verticalCenter: parent.verticalCenter
                     source: "./icon_menu.png"
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            mainWindow.showMenu = true;
+                            //stackView.push("qrc:/GearBoxWindow.qml")
+                        }
+                    }
                 }
 
                 Text{
@@ -117,7 +136,15 @@ ApplicationWindow {
             MenuButton {
                 menuName: "test"
                 anchors.centerIn: parent
-            }//*/
+            }//**/
         }
+    }
+
+    GearBoxWindow {
+        visible: showGearBox
+    }
+
+    MenuWindow {
+        visible: showMenu
     }
 }

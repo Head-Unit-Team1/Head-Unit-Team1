@@ -4,6 +4,8 @@
 
 #include "current_clock.h"
 #include "weather.h"
+#include "mapController.h"
+#include "gearController.h"
 
 int main(int argc, char *argv[])
 {
@@ -19,6 +21,12 @@ int main(int argc, char *argv[])
 
     Weather weather;
     engine.rootContext()->setContextProperty("weather", &weather);
+
+    MapController mapController;
+    engine.rootContext()->setContextProperty("mapController", &mapController);
+
+    GearController gearController;
+    engine.rootContext()->setContextProperty("gearController", &gearController);
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,

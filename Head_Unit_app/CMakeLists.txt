@@ -24,6 +24,9 @@ set(PROJECT_SOURCES
         current_clock.h
         weather.h
         weather.cpp
+        mapController.h
+        mapController.cpp
+        gearController.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

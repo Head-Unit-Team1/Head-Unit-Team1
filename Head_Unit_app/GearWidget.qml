@@ -8,11 +8,9 @@ Item {
     AppWidget {
         widthData: parent.width
         heightData: parent.height
-        anchors.verticalCenter: car_info_widget.verticalCenter
-        anchors.left: car_info_widget.right
-        anchors.leftMargin: 20
 
         Text {
+            id: gear_sub
             text: "Gear"
             font.pixelSize: 25
             color: "white"
@@ -20,6 +18,25 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: 30
+        }
+
+        Text {
+            id: gearLevel
+            font.pixelSize: 50
+            color: "white"
+
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: gear_sub.bottom
+            anchors.topMargin: 40
+
+            text: gearController.selectedButton
+        }
+
+        Connections {
+            target: gearController
+            onSelectedButtonChanged: {
+                gearLevel.text = gearController.selectedButton;
+            }
         }
     }
 

@@ -12,10 +12,6 @@ Item {
 
     Rectangle {
         id: widget_comp
-
-        property int widthData: 200
-        property int heightData: 120
-
         width: parent.width
         height: parent.height
         color: "#232121"

@@ -6,5 +6,10 @@
         <file>InfoWidget.qml</file>
         <file>CarWidget.qml</file>
         <file>GearWidget.qml</file>
+        <file>GearBox.qml</file>
+        <file>GearBoxWindow.qml</file>
+        <file>MapWidget.qml</file>
+        <file>MenuWindow.qml</file>
+        <file>GearText.qml</file>
     </qresource>
 </RCC>

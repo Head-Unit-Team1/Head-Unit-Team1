@@ -7,6 +7,7 @@ Item {
     property int widthData: 250
     property int heightData: 350
     property string menuName: "menu"
+    property string imgSource: "source"
 
     width: widthData
     height: heightData
@@ -19,7 +20,7 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
 
         Image {
-            source: ""
+            source: menuButton.imgSource
             anchors.fill: parent
             fillMode: Image.PreserveAspectCrop
         }
