@@ -1,5 +1,5 @@
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 
 inherit pkgconfig
 
@@ -16,4 +16,4 @@ PACKAGECONFIG[sdl2] = "-feature-sdl2,-no-feature-sdl2,libsdl2"
 
 EXTRA_QMAKEVARS_CONFIGURE += "${PACKAGECONFIG_CONFARGS}"
 
-SRCREV = "b691e877c2556286dcce1533860446c074d859b6"
+SRCREV = "674f21205720610eda7ad1ae1e4a8692fc959f69"

@@ -1,17 +1,17 @@
-From 9808a4034b0a6354ecbc2081a2b022614acb392f Mon Sep 17 00:00:00 2001
+From c151ad89ab323db1730c8b3d77bd72d415c80ca1 Mon Sep 17 00:00:00 2001
 From: Khem Raj <raj.khem@gmail.com>
 Date: Tue, 25 Sep 2018 12:59:05 -0700
-Subject: [PATCH] chromium: musl: elf_reader.cc: include <sys/reg.h> to
- get __WORDSIZE on musl libc
+Subject: [PATCH] chromium: musl: elf_reader.cc: include <sys/reg.h> to get
+ __WORDSIZE on musl libc
 
 Signed-off-by: Khem Raj <raj.khem@gmail.com>
 Signed-off-by: Martin Jansa <Martin.Jansa@gmail.com>
 Upstream-Status: Pending
 ---
- chromium/third_party/breakpad/breakpad/configure.ac           | 2 +-
- .../breakpad/breakpad/src/common/dwarf/elf_reader.cc          | 4 ++++
- .../breakpad/breakpad/src/common/linux/elf_core_dump.h        | 1 +
- 3 files changed, 6 insertions(+), 1 deletion(-)
+ chromium/third_party/breakpad/breakpad/configure.ac             | 2 +-
+ .../breakpad/breakpad/src/common/dwarf/elf_reader.cc            | 2 ++
+ .../breakpad/breakpad/src/common/linux/elf_core_dump.h          | 1 +
+ 3 files changed, 4 insertions(+), 1 deletion(-)
 
 diff --git a/chromium/third_party/breakpad/breakpad/configure.ac b/chromium/third_party/breakpad/breakpad/configure.ac
 index 08513687f34..13745540a5e 100644
@@ -27,10 +27,10 @@ index 08513687f34..13745540a5e 100644
  AM_CONDITIONAL([HAVE_GETCONTEXT], [test "x$ac_cv_func_getcontext" = xyes])
  
 diff --git a/chromium/third_party/breakpad/breakpad/src/common/dwarf/elf_reader.cc b/chromium/third_party/breakpad/breakpad/src/common/dwarf/elf_reader.cc
-index bbfdba68093..a98bb7e6fd7 100644
+index bbfdba68093..d7d5dcf0e92 100644
 --- a/chromium/third_party/breakpad/breakpad/src/common/dwarf/elf_reader.cc
 +++ b/chromium/third_party/breakpad/breakpad/src/common/dwarf/elf_reader.cc
-@@ -30,13 +30,17 @@
+@@ -30,6 +30,8 @@
  #define _GNU_SOURCE  // needed for pread()
  #endif
  
@@ -39,15 +39,6 @@ index bbfdba68093..a98bb7e6fd7 100644
  #include <fcntl.h>
  #include <limits.h>
  #include <string.h>
- #include <sys/mman.h>
- #include <sys/stat.h>
- #include <sys/types.h>
-+#include <config.h>
- #include <unistd.h>
-+#include <sys/reg.h>
- 
- #include <algorithm>
- #include <map>
 diff --git a/chromium/third_party/breakpad/breakpad/src/common/linux/elf_core_dump.h b/chromium/third_party/breakpad/breakpad/src/common/linux/elf_core_dump.h
 index 6e153745dba..5cd2c6fcb23 100644
 --- a/chromium/third_party/breakpad/breakpad/src/common/linux/elf_core_dump.h
