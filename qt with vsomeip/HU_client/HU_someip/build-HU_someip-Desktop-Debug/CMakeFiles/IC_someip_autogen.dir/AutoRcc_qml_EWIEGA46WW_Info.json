@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "/home/seame/Desktop/controller_someip/HU_someip/build-HU_someip-Desktop-Debug/IC_someip_autogen",
+	"CMAKE_BINARY_DIR" : "/home/seame/Desktop/controller_someip/HU_someip/build-HU_someip-Desktop-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/seame/Desktop/controller_someip/HU_someip/build-HU_someip-Desktop-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/seame/Desktop/controller_someip/HU_someip/HU_someip",
+	"CMAKE_SOURCE_DIR" : "/home/seame/Desktop/controller_someip/HU_someip/HU_someip",
+	"INCLUDE_DIR" : "/home/seame/Desktop/controller_someip/HU_someip/build-HU_someip-Desktop-Debug/IC_someip_autogen/include",
+	"INPUTS" : [ "/home/seame/Desktop/controller_someip/HU_someip/HU_someip/main.qml" ],
+	"LOCK_FILE" : "/home/seame/Desktop/controller_someip/HU_someip/build-HU_someip-Desktop-Debug/CMakeFiles/IC_someip_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/seame/Desktop/controller_someip/HU_someip/build-HU_someip-Desktop-Debug/CMakeFiles/IC_someip_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/seame/Desktop/controller_someip/HU_someip/HU_someip/qml.qrc",
+	"VERBOSITY" : 0
+}
