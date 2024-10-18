@@ -13,35 +13,84 @@ Rectangle {
         //color: "rgba(255, 255, 255, 0.5)"
     }//*/
 
-    MenuButton {
-        id: musicB
-        menuName: "Music"
-        imgSource: "./img_music.jpg"
+    Flickable {
+        id: menuSlide
+        width: 800
+        height: 400
+        contentWidth: contentItem.width
+        contentHeight: contentItem.height
+        clip: true
 
+        anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
-        anchors.verticalCenterOffset:  -25
-        anchors.left: parent.left
-        anchors.leftMargin: 100
-    }
+        anchors.verticalCenterOffset:  -15
 
-    MenuButton {
-        id: mapB
-        menuName: "Map"
-        imgSource: "./img_map.jpg"
+        Rectangle {
+            id:contentItem
+            width: menuButtons.width
+            height: parent.height
+            color: "transparent"
 
-        anchors.verticalCenter: musicB.verticalCenter
-        anchors.left: musicB.right
-        anchors.leftMargin: 30
-    }
+            Row {
+                id: menuButtons
+                spacing: 30
+                anchors.verticalCenter: parent.verticalCenter
 
-    MenuButton {
-        id: drivingB
-        menuName: "Driving Mode"
-        imgSource: "./img_driving_mode.jpg"
+                MenuButton {
+                    id: musicB
+                    menuName: "Music"
+                    imgSource: "./img_music.jpg"
+                }
 
-        anchors.verticalCenter: musicB.verticalCenter
-        anchors.left: mapB.right
-        anchors.leftMargin: 30
+                MenuButton {
+                    id: mapB
+                    menuName: "Map"
+                    imgSource: "./img_map.jpg"
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            stackView.push("qrc:/MapApplication.qml")
+                            mainWindow.showMenu = false
+                        }
+                    }
+                }
+
+                MenuButton {
+                    id: drivingB
+                    menuName: "Driving Mode"
+                    imgSource: "./img_driving_mode.jpg"
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            stackView.push("qrc:/DrivingModeApplication.qml")
+                            mainWindow.showMenu = false
+                        }
+                    }
+                }
+
+                MenuButton {
+                    id: weatherB
+                    menuName: "Weather"
+                    imgSource: "./img_weather.jpg"
+                }
+
+                MenuButton {
+                    id: videoB
+                    menuName: "Video"
+                    imgSource: "./img_video.jpg"
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            stackView.push("qrc:/VideoApplication.qml")
+                            mainWindow.showMenu = false
+                        }
+                    }
+                }
+            }
+        }
     }
 
     MouseArea {
@@ -51,5 +100,4 @@ Rectangle {
         }
         z: -1
     }
-
 }

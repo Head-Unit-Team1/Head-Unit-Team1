@@ -11,5 +11,8 @@
         <file>MapWidget.qml</file>
         <file>MenuWindow.qml</file>
         <file>GearText.qml</file>
+        <file>MapApplication.qml</file>
+        <file>VideoApplication.qml</file>
+        <file>DrivingModeApplication.qml</file>
     </qresource>
 </RCC>

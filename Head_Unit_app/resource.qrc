@@ -6,10 +6,17 @@
         <file>./porsche-91.png</file>
         <file>./Battery.png</file>
         <file>./left_origin.png</file>
+        <file>./left_green.png</file>
+        <file>./right_origin.png</file>
         <file>./right_green.png</file>
         <file>./img_driving_mode.jpg</file>
         <file>./img_map.jpg</file>
         <file>./img_music.jpg</file>
+        <file>./img_weather.jpg</file>
+        <file>./img_video.jpg</file>
+        <file>./normal_mode.jpg</file>
+        <file>./sports_mode.jpg</file>
+        <file>./simple_mode.jpg</file>
         <file>./weather_image/cloud.png</file>
         <file>./weather_image/cloud_meatball.png</file>
         <file>./weather_image/cloud_sun.png</file>

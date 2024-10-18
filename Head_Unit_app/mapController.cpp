@@ -46,7 +46,7 @@ QString MapController::getGoogleMapHtml() const {
                                 document.getElementById("map"),
                                 {zoom: 17, center: ll}
                                 );
-                        new google.maps.Marker(
+                        new google.maps.marker.AdvancedMarkerElement(
                             {position: ll, map: map, label: "current position"}
                         );
                     }

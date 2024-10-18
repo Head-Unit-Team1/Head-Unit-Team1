@@ -6,6 +6,8 @@
 #include "weather.h"
 #include "mapController.h"
 #include "gearController.h"
+#include "youtubeController.h"
+#include "carInfoController.h"
 
 int main(int argc, char *argv[])
 {
@@ -27,6 +29,15 @@ int main(int argc, char *argv[])
 
     GearController gearController;
     engine.rootContext()->setContextProperty("gearController", &gearController);
+
+    YoutubeController youtubeController;
+    engine.rootContext()->setContextProperty("youtubeController", &youtubeController);
+
+    CarInfoController carInfoController;
+    engine.rootContext()->setContextProperty("carInfoController", &carInfoController);
+    //carInfoController.setBatteryLevel(75);
+
+
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,

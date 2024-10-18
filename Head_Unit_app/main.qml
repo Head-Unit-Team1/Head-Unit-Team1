@@ -32,6 +32,13 @@ ApplicationWindow {
                 anchors.topMargin: 20
                 anchors.left: parent.left
                 anchors.leftMargin: 20
+/*
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        stackView.push("qrc:/VideoApplication.qml")
+                    }
+                }//*/
             }
 
             CarWidget {
@@ -64,13 +71,19 @@ ApplicationWindow {
                 anchors.right: parent.right
                 anchors.rightMargin: 20
 
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        stackView.push("qrc:/MapApplication.qml")
+                    }
+                }
             }
 
             Text {
                 id: seame
                 text: "S\nE\nA\n\nM\nE"
                 font.pixelSize: 40
-                color: "#A2F2D9"
+                color: carInfoController.modeColor
                 lineHeight: 1.5
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
@@ -92,7 +105,7 @@ ApplicationWindow {
 
                 layer.enabled: true
                 layer.effect: DropShadow {
-                    color: "#A2F2D9"
+                    color: carInfoController.modeColor
                     radius: 10
                     samples: 16
                     spread: 0.2

@@ -1,4 +1,6 @@
 import QtQuick 2.0
+import QtQuick.Controls 2.0
+import QtGraphicalEffects 1.0
 
 Item {
     id: carWidget
@@ -20,7 +22,7 @@ Item {
 
         Image {
             id: leftSign
-            source: "./left_origin.png"
+            source: carInfoController.blinkDirection === "left" ? "./left_green.png" : "./left_origin.png"
 
             anchors.top: carImage.bottom
             //anchors.topMargin: 5
@@ -30,7 +32,7 @@ Item {
 
         Image {
             id: rightSign
-            source: "./right_green.png"
+            source: carInfoController.blinkDirection === "right" ? "./right_green.png" : "./right_origin.png"
 
             anchors.verticalCenter: leftSign.verticalCenter
             anchors.left: leftSign.right
@@ -46,6 +48,24 @@ Item {
             anchors.leftMargin: 40
         }
 
+        Rectangle {
+            id: batteryGauge
+            width: (batteryBar.width - 16) * (carInfoController.batteryLevel / 100.0)
+            height: batteryBar.height - 10
+            color: "light green"
+            radius: 1
+
+            anchors.left: batteryBar.left
+            anchors.leftMargin: 4
+            anchors.verticalCenter: batteryBar.verticalCenter
+        }
+
+        Text {
+            id: batteryNum
+            text: carInfoController.batteryLevel + " %"
+            anchors.centerIn: batteryBar
+            color: "white"
+        }
     }
 
 }

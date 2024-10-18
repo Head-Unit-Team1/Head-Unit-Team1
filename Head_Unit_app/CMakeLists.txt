@@ -27,6 +27,9 @@ set(PROJECT_SOURCES
         mapController.h
         mapController.cpp
         gearController.h
+        youtubeController.h
+        youtubeController.cpp
+        carInfoController.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

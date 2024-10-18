@@ -51,7 +51,7 @@ Item {
 
     layer.enabled: true
     layer.effect: DropShadow {
-        color: "#A2F2D9"
+        color: carInfoController.modeColor
         radius: 10
         samples: 16
         spread: 0.2
