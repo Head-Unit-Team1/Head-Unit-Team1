@@ -2,10 +2,10 @@
 Description=Getty on %I
 Documentation=man:agetty(8) man:systemd-getty-generator(8)
 After=systemd-user-sessions.service plymouth-quit-wait.service
-After=rc-local.service
 After=network.target
 
 [Service]
+ExecStartPre=/bin/sleep 23.1
 ExecStart=-/sbin/agetty --noclear --autologin root %I $TERM
 Type=idle
 Restart=always

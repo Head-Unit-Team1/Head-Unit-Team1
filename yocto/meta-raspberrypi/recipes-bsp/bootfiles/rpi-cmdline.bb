@@ -28,7 +28,9 @@ CMDLINE_LOGO ?= "logo.nologo"
 
 CMDLINE_QUIET ?= "quiet"
 
-CMDLINE_FBCON ?= "fbcon=map:0"
+CMDLINE_LOGLEVEL ?= "loglevel=3"
+
+#CMDLINE_CURSOR ?= "vt.global_cursor_default=0"
 
 # You can define CMDLINE_DEBUG as "debug" in your local.conf or distro.conf
 # to enable kernel debugging.
@@ -65,6 +67,8 @@ CMDLINE = " \
     ${CMDLINE_DEBUG} \
     ${CMDLINE_RNDIS} \
     ${CMDLINE_QUIET} \
+    ${CMDLINE_LOGLEVEL} \
+    ${CMDLINE_CURSOR} \
     "
 
 do_compile() {
