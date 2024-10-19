@@ -3,16 +3,15 @@
 
 QT_MODULE ?= "${BPN}"
 QT_MODULE_BRANCH ?= "5.15"
-QT_MODULE_BRANCH_PARAM ?= "branch=${QT_MODULE_BRANCH};nobranch=1"
-QT_MODULE_REPO ?= "${QT_MODULE}.git"
+QT_MODULE_BRANCH_PARAM ?= "branch=${QT_MODULE_BRANCH}"
 
 # each module needs to define valid SRCREV
 SRC_URI = " \
-    ${QT_GIT}/${QT_MODULE_REPO};name=${QT_MODULE};${QT_MODULE_BRANCH_PARAM};protocol=${QT_GIT_PROTOCOL} \
+    ${QT_GIT}/${QT_MODULE}.git;name=${QT_MODULE};${QT_MODULE_BRANCH_PARAM};protocol=${QT_GIT_PROTOCOL} \
 "
 
-CVE_PRODUCT:append = " qt"
+CVE_PRODUCT = "qt"
 
 S = "${WORKDIR}/git"
 
-PV = "5.15.18+git${SRCPV}"
+PV = "5.15.7+git${SRCPV}"

@@ -1,5 +1,5 @@
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 
 LICENSE = "GPL-3.0-only & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial"
 LIC_FILES_CHKSUM = " \
@@ -98,4 +98,4 @@ FILES:${PN}-qthelp = " \
     ${OE_QMAKE_PATH_TRANSLATIONS}/qt_help_*.qm \
 "
 
-SRCREV = "df99acc374ebb3fcbf79e9c25d8cc0197f02d24e"
+SRCREV = "1ec28c4aa6b0f9772e99bd8d556bb4552aafcf72"

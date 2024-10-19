@@ -1,5 +1,5 @@
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 require qt5-ptest.inc
 
 HOMEPAGE = "http://www.qt.io"
@@ -25,6 +25,6 @@ do_configure:prepend() {
 
 EXTRA_QMAKEVARS_PRE += "${@bb.utils.contains('PACKAGECONFIG', 'qtdeclarative', 'CONFIG+=OE_QTDECLARATIVE_ENABLED', '', d)}"
 
-SRCREV = "7ec60ac56a509dfc46556f41c1680d7e0ab42b30"
+SRCREV = "97209f5679a72cc926d14ba689b801db3af4f96b"
 
 BBCLASSEXTEND =+ "native nativesdk"

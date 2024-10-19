@@ -5,8 +5,8 @@ LIC_FILES_CHKSUM = " \
 "
 
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 
 DEPENDS += "qtbase"
 
-SRCREV = "a5e9cf1be50bc6ecc9718612d25cc47fd2fcfe4f"
+SRCREV = "361be878e4a3d098a119dd7f648ae8fc29e14674"

@@ -1,5 +1,5 @@
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 
 HOMEPAGE = "http://www.qt.io"
 LICENSE = "GFDL-1.3 & BSD-3-Clause & ( GPL-3.0-only & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0-or-later | LGPL-3.0-only | The-Qt-Company-Commercial )"
@@ -24,10 +24,6 @@ SRC_URI:append:class-native = " ${@bb.utils.contains('PACKAGECONFIG', 'clang', '
 FILES:${PN}-tools += "${datadir}${QT_DIR_NAME}/phrasebooks"
 FILES:${PN}-examples = "${datadir}${QT_DIR_NAME}/examples"
 
-# Without "opengl" in DISTRO_FEATURES, the libQt5UiTools.a library isn't generated, but qttools-staticdev
-# is required by packagegroup-qt5-toolchain-target.
-ALLOW_EMPTY:${PN}-staticdev = "1"
-
 PACKAGECONFIG ??= ""
 PACKAGECONFIG:append:toolchain-clang = " clang"
 
@@ -43,7 +39,7 @@ EXTRA_QMAKEVARS_PRE += " \
     ${@bb.utils.contains('PACKAGECONFIG', 'qtwebkit', '', 'CONFIG+=noqtwebkit', d)} \
     ${@bb.utils.contains('PACKAGECONFIG', 'clang', 'CONFIG+=disable_external_rpath CONFIG+=assistant', 'CONFIG+=noqdoc', d)} \
 "
-SRCREV = "8b3b6c9c6bc65dd1f3bf434a257d9ccbcfcd8fb7"
+SRCREV = "7fda805bf006e10648606ddd8482cc9aae7476cb"
 
 BBCLASSEXTEND = "native nativesdk"
 
