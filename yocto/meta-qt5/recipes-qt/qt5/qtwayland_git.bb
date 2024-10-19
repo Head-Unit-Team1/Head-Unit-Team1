@@ -1,5 +1,5 @@
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 
 inherit pkgconfig
 
@@ -20,6 +20,7 @@ LIC_FILES_CHKSUM = " \
 SRC_URI += "file://0001-tst_seatv4-Include-array.patch \
             file://0001-linux-dmabuf-unstable-v1-Include-missing-array-heade.patch \
             file://0001-Fix-vulkan-buffer-formats-for-GLES2.patch \
+            file://0001-qwaylandinputcontext-Include-missing-header-locale.h.patch \
            "
 
 PACKAGECONFIG ?= " \
@@ -48,7 +49,7 @@ PACKAGECONFIG[wayland-vulkan-server-buffer] = "-feature-wayland-vulkan-server-bu
 
 EXTRA_QMAKEVARS_CONFIGURE += "${PACKAGECONFIG_CONFARGS}"
 
-SRCREV = "0bd7c2f0c05c7d8c3b44bc677915172d8c5667b4"
+SRCREV = "533fff12f7c4beb177b56b766c71b1c7384e6229"
 
 BBCLASSEXTEND =+ "native nativesdk"
 

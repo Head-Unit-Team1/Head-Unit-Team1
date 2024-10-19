@@ -1,5 +1,5 @@
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 
 LICENSE = "GPL-3.0-only | The-Qt-Company-Commercial"
 LIC_FILES_CHKSUM = " \
@@ -18,4 +18,4 @@ do_configure:prepend() {
 
 EXTRA_QMAKEVARS_PRE += "${@bb.utils.contains('PACKAGECONFIG', 'qtdeclarative', 'CONFIG+=OE_QTDECLARATIVE_ENABLED', '', d)}"
 
-SRCREV = "ff402ee0b28ff1f7081baa6ffe5057da46dd54f3"
+SRCREV = "e0a130b9a4d83f90e4b3965fd2644a6acc48cbc4"

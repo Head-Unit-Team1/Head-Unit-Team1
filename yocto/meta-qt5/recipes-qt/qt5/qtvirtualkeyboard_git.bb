@@ -1,5 +1,5 @@
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 
 LICENSE = "GPL-3.0-only | The-Qt-Company-Commercial"
 LIC_FILES_CHKSUM = " \
@@ -73,4 +73,4 @@ FILES:${PN} += "${OE_QMAKE_PATH_DATA}/qtvirtualkeyboard/lipi_toolkit"
 
 DEPENDS += "qtbase qtdeclarative qtmultimedia qtquickcontrols qtsvg qtxmlpatterns qtdeclarative-native"
 
-SRCREV = "e5017aac07fc3af2ef885323b081d9316cffe582"
+SRCREV = "d8b87cbb28561654121d44b5d7dedb361e6f773c"

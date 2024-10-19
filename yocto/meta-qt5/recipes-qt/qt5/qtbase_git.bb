@@ -1,5 +1,5 @@
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 require qt5-ptest.inc
 
 LICENSE = "GFDL-1.3 & BSD-3-Clause & ( GPL-3.0-only & The-Qt-Company-GPL-Exception-1.0 | The-Qt-Company-Commercial ) & ( GPL-2.0-or-later | LGPL-3.0-only | The-Qt-Company-Commercial )"
@@ -9,7 +9,7 @@ LIC_FILES_CHKSUM = " \
     file://LICENSE.GPL3;md5=d32239bcb673463ab874e80d47fae504 \
     file://LICENSE.GPL3-EXCEPT;md5=763d8c535a234d9a3fb682c7ecb6c073 \
     file://LICENSE.FDL;md5=6d9f2a9af4c8b8c3c769f6cc1b6aaf7e \
-    file://LICENSE.QT-LICENSE-AGREEMENT;md5=485e1d58b313def058a0d72598aa6efe \
+    file://LICENSE.QT-LICENSE-AGREEMENT;md5=c8b6dd132d52c6e5a545df07a4e3e283 \
 "
 
 # common for qtbase-native, qtbase-nativesdk and qtbase
@@ -23,6 +23,7 @@ SRC_URI += "\
     file://0005-Disable-all-unknown-features-instead-of-erroring-out.patch \
     file://0006-Pretend-Qt5-wasn-t-found-if-OE_QMAKE_PATH_EXTERNAL_H.patch \
     file://0007-Delete-qlonglong-and-qulonglong.patch \
+    file://0008-Replace-pthread_yield-with-sched_yield.patch \
     file://0009-Add-OE-specific-specs-for-clang-compiler.patch \
     file://0010-linux-clang-Invert-conditional-for-defining-QT_SOCKL.patch \
     file://0011-tst_qlocale-Enable-QT_USE_FENV-only-on-glibc.patch \
@@ -36,6 +37,8 @@ SRC_URI += "\
     file://0019-tst_QPluginLoader-Simplify-creating-a-fake-pointer-i.patch \
     file://0021-rcc-Just-dcument-file-name-without-full-path-to-redu.patch \
     file://0022-testlib-don-t-track-the-build-or-source-directories.patch \
+    file://0023-zlib-Do-not-undefine-_FILE_OFFSET_BITS.patch \
+    file://0026-QSslSocket-make-it-work-with-OpenSSL-v3.patch \
 "
 
 # Disable LTO for now, QT5 patches are being worked upstream, perhaps revisit with
@@ -308,4 +311,4 @@ sed -i \
     $D${OE_QMAKE_PATH_ARCHDATA}/mkspecs/qmodule.pri
 }
 
-SRCREV = "b770d1e05292fce41576810ae923df19d36975ad"
+SRCREV = "358aebba7280d6d2b59b1f740747a4a3d1b7a54a"

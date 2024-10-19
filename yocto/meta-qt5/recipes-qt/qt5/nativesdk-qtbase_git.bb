@@ -10,7 +10,7 @@ LIC_FILES_CHKSUM = " \
     file://LICENSE.GPL3;md5=d32239bcb673463ab874e80d47fae504 \
     file://LICENSE.GPL3-EXCEPT;md5=763d8c535a234d9a3fb682c7ecb6c073 \
     file://LICENSE.FDL;md5=6d9f2a9af4c8b8c3c769f6cc1b6aaf7e \
-    file://LICENSE.QT-LICENSE-AGREEMENT;md5=485e1d58b313def058a0d72598aa6efe \
+    file://LICENSE.QT-LICENSE-AGREEMENT;md5=c8b6dd132d52c6e5a545df07a4e3e283 \
 "
 
 QT_MODULE = "qtbase"
@@ -18,7 +18,7 @@ QT_MODULE = "qtbase"
 inherit pkgconfig
 
 require nativesdk-qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 
 # it's already included with newer oe-core, but include it here for dylan
 FILESEXTRAPATHS =. "${FILE_DIRNAME}/qtbase:"
@@ -34,6 +34,7 @@ SRC_URI += "\
     file://0005-Disable-all-unknown-features-instead-of-erroring-out.patch \
     file://0006-Pretend-Qt5-wasn-t-found-if-OE_QMAKE_PATH_EXTERNAL_H.patch \
     file://0007-Delete-qlonglong-and-qulonglong.patch \
+    file://0008-Replace-pthread_yield-with-sched_yield.patch \
     file://0009-Add-OE-specific-specs-for-clang-compiler.patch \
     file://0010-linux-clang-Invert-conditional-for-defining-QT_SOCKL.patch \
     file://0011-tst_qlocale-Enable-QT_USE_FENV-only-on-glibc.patch \
@@ -145,7 +146,6 @@ do_configure() {
         -silent \
         -nomake examples \
         -nomake tests \
-        -make tools \
         -no-compile-examples \
         -platform ${OE_QMAKE_PLATFORM_NATIVE} \
         -xplatform ${OE_QMAKE_PLATFORM} \
@@ -202,4 +202,4 @@ fakeroot do_generate_qt_environment_file() {
 do_generate_qt_environment_file[umask] = "022"
 addtask generate_qt_environment_file after do_install before do_package
 
-SRCREV = "b770d1e05292fce41576810ae923df19d36975ad"
+SRCREV = "358aebba7280d6d2b59b1f740747a4a3d1b7a54a"
