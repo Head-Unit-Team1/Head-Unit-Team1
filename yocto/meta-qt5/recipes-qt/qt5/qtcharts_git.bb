@@ -1,5 +1,5 @@
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 
 LICENSE = "GPL-3.0-only | The-Qt-Company-Commercial"
 LIC_FILES_CHKSUM = " \
@@ -8,7 +8,7 @@ LIC_FILES_CHKSUM = " \
 
 DEPENDS += "qtbase qtdeclarative qtmultimedia"
 
-SRCREV = "e474cad20b68b1d154316207d75b964cefe5d7e7"
+SRCREV = "df56d9b4e6373b5975b6cf636ffb5ccdebe9e9fc"
 
 # The same issue as in qtbase:
 # http://errors.yoctoproject.org/Errors/Details/152641/
