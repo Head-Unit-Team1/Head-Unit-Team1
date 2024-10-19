@@ -1,0 +1,10 @@
+[Unit]
+Description=Start custom application at boot
+
+[Service]
+ExecStart=/home/root/playvideo.sh
+StandardInput=tty-force
+TTYPath=/dev/tty2
+
+[Install]
+WantedBy=multi-user.target
