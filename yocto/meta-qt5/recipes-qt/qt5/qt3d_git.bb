@@ -1,5 +1,5 @@
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 
 LICENSE = "LGPL-3.0-only | GPL-2.0-only | The-Qt-Company-Commercial"
 LIC_FILES_CHKSUM = " \
@@ -16,12 +16,6 @@ DEPENDS:class-target += "qtdeclarative qt3d-native"
 SRC_URI += " \
     file://0001-Allow-a-tools-only-build.patch \
 "
-
-# For assimp submodule
-SRC_URI += " \
-    git://code.qt.io/qt/qtquick3d-assimp.git;name=assimp;branch=qt6_assimp;protocol=https;destsuffix=git/src/3rdparty/assimp/src \
-"
-
 SRC_URI:append:riscv64 = " file://0001-renderers-opengl-Link-in-libatomic-on-riscv.patch"
 SRC_URI:append:riscv32 = " file://0001-renderers-opengl-Link-in-libatomic-on-riscv.patch"
 
@@ -44,9 +38,6 @@ do_configure:prepend() {
          ${S}/src/quick3d/imports/input/importsinput.pro
 }
 
-SRCREV_qt3d = "a11b33203bb88ec99e71da8ff56b96f9334231af"
-SRCREV_assimp = "8f0c6b04b2257a520aaab38421b2e090204b69df"
-
-SRCREV_FORMAT = "qt3d_assimp"
+SRCREV = "bf79d391c0ca24b5787cdc82dc95df71c53c2d02"
 
 BBCLASSEXTEND += "native nativesdk"

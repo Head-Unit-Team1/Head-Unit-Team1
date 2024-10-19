@@ -1,5 +1,5 @@
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 require qt5-ptest.inc
 
 HOMEPAGE = "http://www.qt.io"
@@ -53,6 +53,6 @@ do_install:append:class-nativesdk() {
     rm -rf ${D}${OE_QMAKE_PATH_QML}
 }
 
-SRCREV = "17f78216145cb35ca7fbea5a814445adbbc4a957"
+SRCREV = "0d60f81bf61a69bc859a269ae562b2610d224e02"
 
 BBCLASSEXTEND =+ "native nativesdk"

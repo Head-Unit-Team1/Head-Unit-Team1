@@ -1,5 +1,5 @@
 require qt5.inc
-require qt5-lts.inc
+require qt5-git.inc
 
 DESCRIPTION = "Qt Quick Timeline"
 LICENSE = "GPL-2.0-or-later | The-Qt-Company-Commercial"
@@ -10,4 +10,4 @@ LIC_FILES_CHKSUM = " \
 
 DEPENDS = "qtbase qtdeclarative"
 
-SRCREV = "af00b477fda0a26935950d1e43d7facc2a42d0a6"
+SRCREV = "fca37ec8141012818a0518205da11f5f6b3d414c"
