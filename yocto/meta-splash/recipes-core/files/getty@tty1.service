@@ -1,0 +1,24 @@
+[Unit]
+Description=Getty on %I
+Documentation=man:agetty(8) man:systemd-getty-generator(8)
+After=systemd-user-sessions.service plymouth-quit-wait.service
+After=network.target
+
+[Service]
+ExecStartPre=/bin/sleep 23.1
+ExecStart=-/sbin/agetty --noclear --autologin root %I $TERM
+Type=idle
+Restart=always
+RestartSec=0
+UtmpIdentifier=%I
+TTYPath=/dev/%I
+TTYReset=yes
+TTYVHangup=yes
+KillMode=process
+IgnoreSIGPIPE=no
+SendSIGHUP=yes
+StopSignal=SIGTERM
+
+[Install]
+WantedBy=getty.target
+
