@@ -1,1 +1,1 @@
-IMAGE_INSTALL:append = ""
+IMAGE_INSTALL:append = " qt5-config"
