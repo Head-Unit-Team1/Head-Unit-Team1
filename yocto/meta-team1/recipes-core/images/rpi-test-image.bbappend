@@ -1,15 +1,11 @@
-IMAGE_INSTALL:append = " piracer-modified-10-14 \
+IMAGE_INSTALL:append = " pigpio \
+                         piracer-modified-10-17 \
                          packagegroup-core-buildessential \
 			  v4l-utils \
 			  i2c-tools \
-			  python3 \
-			  python3-pip \
+			  cmake \
 			  python3-dev \
+			  python3 \
 			"
-# python3-dev
-# python3-setuptools
-# python3-venv
-# opencv
-# dpkg
-# make
+
 #piracer-modified-10-14
