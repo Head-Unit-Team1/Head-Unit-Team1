@@ -1,3 +1,10 @@
+Piracer_package = "piracer-cpp \
+                   packagegroup-core-buildessential \
+                   v4l-utils \
+                   i2c-tools \
+                   cmake \
+                   "
+
 Splash_package = "vlc \
 		  playvideo \
 		  systemd \
@@ -28,5 +35,6 @@ IMAGE_INSTALL:append = " ${Splash_package} \
 			${Qt_package} \
 			${Gstreamer_package} \
 			${Wayland_package} \
+      ${Piracer_package} \
 			"
-			
+      
