@@ -1,1 +1,1 @@
-IMAGE_INSTALL:append = " qt5-config"
+IMAGE_INSTALL:append = " vlc playvideo systemd systemd-compat-units qt5-config"
