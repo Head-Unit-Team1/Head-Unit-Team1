@@ -1,6 +1,6 @@
 /yocto/build/*
 !/yocto/build/conf/
-/yocto/source-mirror
+/yocto/source-mirrors
 /yocto/sstate-cache
 __pycache__/
 pyshtables.py
