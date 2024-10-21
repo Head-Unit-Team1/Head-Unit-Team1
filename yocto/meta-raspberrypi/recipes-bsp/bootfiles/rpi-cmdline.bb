@@ -23,7 +23,14 @@ CMDLINE_PITFT ?= "${@bb.utils.contains("MACHINE_FEATURES", "pitft", "fbcon=map:1
 CMDLINE_KGDB ?= '${@oe.utils.conditional("ENABLE_KGDB", "1", "kgdboc=serial0,115200", "", d)}'
 
 # Disable rpi logo on boot
-CMDLINE_LOGO ?= '${@oe.utils.conditional("DISABLE_RPI_BOOT_LOGO", "1", "logo.nologo", "", d)}'
+#CMDLINE_LOGO ?= '${@oe.utils.conditional("DISABLE_RPI_BOOT_LOGO", "1", "logo.nologo", "", d)}'
+CMDLINE_LOGO ?= "logo.nologo"
+
+CMDLINE_QUIET ?= "quiet"
+
+CMDLINE_LOGLEVEL ?= "loglevel=3"
+
+#CMDLINE_CURSOR ?= "vt.global_cursor_default=0"
 
 # You can define CMDLINE_DEBUG as "debug" in your local.conf or distro.conf
 # to enable kernel debugging.
@@ -59,6 +66,9 @@ CMDLINE = " \
     ${CMDLINE_PITFT} \
     ${CMDLINE_DEBUG} \
     ${CMDLINE_RNDIS} \
+    ${CMDLINE_QUIET} \
+    ${CMDLINE_LOGLEVEL} \
+    ${CMDLINE_CURSOR} \
     "
 
 do_compile() {
