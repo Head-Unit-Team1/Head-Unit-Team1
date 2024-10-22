@@ -1,0 +1,6 @@
+[Unit]
+Description=piracer-cpp executer
+[Service]
+ExecStart=/opt/piracer-cpp/gamepad_control
+[Install]
+WantedBy=multi-user.target

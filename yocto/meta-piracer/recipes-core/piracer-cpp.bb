@@ -1,38 +1,36 @@
-SUMMARY = "Clone piracer-cpp repository"
+SUMMARY = "Clone piracer-cpp repository And Build"
 
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=33a2ac025994ad1ea98eb2e01c1c8df3"
 
-
-#SRCREV = "${AUTOREV}"
-
 SRC_URI = "file://piracer-cpp"
+
 S = "${WORKDIR}/piracer-cpp"
+
+B = "${WORKDIR}/build"
 
 DEPENDS += "cmake pigpio"
 
 inherit cmake
 
-B = "${WORKDIR}/build"
-
 do_configure() {
-    mkdir -p ${B}  # 빌드 디렉토리 생성
+    mkdir -p ${B}  # build deriectory
     cd ${B}
     cmake ${S} \
-        -DCMAKE_INSTALL_PREFIX=${D}/opt/piracer-cpp  # 설치 경로 설정
+        -DCMAKE_INSTALL_PREFIX=${D}/opt/piracer-cpp  # cmake and install dir
 }
 
 do_compile() {
     cd ${B}
-    oe_runmake  # 빌드 수행
+    oe_runmake  # build make
 }
 
 do_install() {
     cd ${B}
-    oe_runmake install  # 설치 수행
+    oe_runmake install  # install
 }
 
-
-RDEPENDS:${PN} = "cmake pigpio"
+RDEPENDS:${PN} = " pigpio"
 FILES:${PN} = "/opt/piracer-cpp/"
+
 

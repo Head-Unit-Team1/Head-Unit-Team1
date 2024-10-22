@@ -1,8 +1,8 @@
-Piracer_package = "piracer-cpp \
-                   packagegroup-core-buildessential \
+Piracer_package = "pigpio \
+		    piracer-cpp \
                    v4l-utils \
                    i2c-tools \
-                   cmake \
+                   piracer-cpp-autoexec \
                    "
 
 Splash_package = "vlc \
@@ -32,9 +32,9 @@ Wayland_package = "wayland \
 
 
 IMAGE_INSTALL:append = " ${Splash_package} \
-			${Qt_package} \
 			${Gstreamer_package} \
 			${Wayland_package} \
-      ${Piracer_package} \
+			${Qt_package} \
+			${Piracer_package} \
 			"
       
