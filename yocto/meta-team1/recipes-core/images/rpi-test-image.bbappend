@@ -19,6 +19,7 @@ Qt_package = "qtdeclarative \
 	      qtbase-tools \
 	      qtwayland \
 	      qtwayland-tools \
+	      net-tools \
 	      "
 	      
 Gstreamer_package = "gstreamer1.0 \
@@ -36,5 +37,6 @@ IMAGE_INSTALL:append = " ${Splash_package} \
 			${Wayland_package} \
 			${Qt_package} \
 			${Piracer_package} \
+			WiFi \
 			"
       
