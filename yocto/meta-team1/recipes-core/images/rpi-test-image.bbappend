@@ -1,3 +1,10 @@
+Piracer_package = "pigpio \
+		    piracer-cpp \
+                   v4l-utils \
+                   i2c-tools \
+                   piracer-cpp-autoexec \
+                   "
+
 Splash_package = "vlc \
 		  playvideo \
 		  systemd \
@@ -25,8 +32,9 @@ Wayland_package = "wayland \
 
 
 IMAGE_INSTALL:append = " ${Splash_package} \
-			${Qt_package} \
 			${Gstreamer_package} \
 			${Wayland_package} \
+			${Qt_package} \
+			${Piracer_package} \
 			"
-			
+      
