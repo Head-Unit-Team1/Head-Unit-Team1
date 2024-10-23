@@ -9,7 +9,7 @@ S = "${WORKDIR}/piracer-cpp"
 
 B = "${WORKDIR}/build"
 
-DEPENDS += "cmake pigpio"
+DEPENDS += "cmake pigpio packagegroup-core-buildessential"
 
 inherit cmake
 

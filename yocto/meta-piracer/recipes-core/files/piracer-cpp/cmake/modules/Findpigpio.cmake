@@ -3,20 +3,21 @@
 ################################################################################
 
 # Find the path to the pigpio includes.
+#/home/seame/Head-Unit-Team1/yocto/build/tmp/work/cortexa72-poky-linux/pigpio/1.0-r0/image/usr/include
 find_path(pigpio_INCLUDE_DIR 
 	NAMES pigpio.h pigpiod_if.h pigpiod_if2.h
-	HINTS /home/seame/Head-Unit-Team1/yocto/build/tmp/work/cortexa72-poky-linux/pigpio/1.0-r0/image/usr/include)
+	HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../pigpio/1.0-r0/sysroot-destdir/usr/include)
 	
 # Find the pigpio libraries.
 find_library(pigpio_LIBRARY 
 	NAMES libpigpio.so
-	HINTS /home/seame/Head-Unit-Team1/yocto/build/tmp/work/cortexa72-poky-linux/pigpio/1.0-r0/image/usr/lib)
+	HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../pigpio/1.0-r0/sysroot-destdir/usr/lib)
 find_library(pigpiod_if_LIBRARY 
 	NAMES libpigpiod_if.so
-	HINTS /home/seame/Head-Unit-Team1/yocto/build/tmp/work/cortexa72-poky-linux/pigpio/1.0-r0/image/usr/lib)
+	HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../pigpio/1.0-r0/sysroot-destdir/usr/lib)
 find_library(pigpiod_if2_LIBRARY 
 	NAMES libpigpiod_if2.so
-	HINTS /home/seame/Head-Unit-Team1/yocto/build/tmp/work/cortexa72-poky-linux/pigpio/1.0-r0/image/usr/lib)
+	HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../../../pigpio/1.0-r0/sysroot-destdir/usr/lib)
     
 # Set the pigpio variables to plural form to make them accessible for 
 # the paramount cmake modules.
