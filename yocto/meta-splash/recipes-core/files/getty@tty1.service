@@ -5,7 +5,7 @@ After=systemd-user-sessions.service plymouth-quit-wait.service
 After=network.target
 
 [Service]
-ExecStartPre=/bin/sleep 23.1
+ExecStartPre=/bin/sleep 18.1
 ExecStart=-/sbin/agetty --noclear --autologin root %I $TERM
 Type=idle
 Restart=always
