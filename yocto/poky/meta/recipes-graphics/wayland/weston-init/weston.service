@@ -30,15 +30,20 @@ Before=graphical.target
 # for now.
 ConditionPathExists=/dev/tty0
 
+# After splash video
+After=getty@tty1.service
+After=videoplay.service
+
 [Service]
 # Requires systemd-notify.so Weston plugin.
-Type=notify
+Type=idle
 EnvironmentFile=/etc/default/weston
-ExecStart=/usr/bin/weston --modules=systemd-notify.so
+ExecStartPre=/bin/sleep 16.1
+ExecStart=-/usr/bin/weston --continue-without-input --modules=systemd-notify.so
 
 # Optional watchdog setup
-#TimeoutStartSec=60
-#WatchdogSec=20
+# TimeoutStartSec=60
+# WatchdogSec=20
 
 # The user to run Weston as.
 User=weston
@@ -51,7 +56,7 @@ WorkingDirectory=/home/weston
 PAMName=weston-autologin
 
 # A virtual terminal is needed.
-TTYPath=/dev/tty7
+TTYPath=/dev/tty1
 TTYReset=yes
 TTYVHangup=yes
 TTYVTDisallocate=yes
@@ -62,7 +67,7 @@ StandardOutput=journal
 StandardError=journal
 
 # Log this user with utmp, letting it show up with commands 'w' and 'who'.
-UtmpIdentifier=tty7
+UtmpIdentifier=tty1
 UtmpMode=user
 
 [Install]
