@@ -6,6 +6,12 @@ Item {
     width: 1024
     height: 600
 
+    TopBar {
+        id: topBar
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+    }
+
     WebEngineView {
         id: mapObject
         width: 1024
@@ -31,17 +37,10 @@ Item {
         }
     }
 
-    Image {
-        source: "./icon_home.png"
-        anchors. horizontalCenter: parent.horizontalCenter
+    HomeWidget {
+        anchors.left: parent.left
+        anchors.leftMargin: 20
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 30
-
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                stackView.pop()
-            }
-        }
+        anchors.bottomMargin: 20
     }
 }

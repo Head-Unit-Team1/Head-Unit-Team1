@@ -15,5 +15,7 @@
         <file>VideoApplication.qml</file>
         <file>DrivingModeApplication.qml</file>
         <file>VideoObject.qml</file>
+        <file>TopBar.qml</file>
+        <file>HomeWidget.qml</file>
     </qresource>
 </RCC>
