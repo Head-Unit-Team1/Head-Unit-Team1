@@ -1,6 +1,0 @@
-/home/seame/Desktop/controller_someip/HU_someip/HU_someip/build/CMakeFiles/HU_someip.dir
-/home/seame/Desktop/controller_someip/HU_someip/HU_someip/build/CMakeFiles/HU_someip-someip.dir
-/home/seame/Desktop/controller_someip/HU_someip/HU_someip/build/CMakeFiles/edit_cache.dir
-/home/seame/Desktop/controller_someip/HU_someip/HU_someip/build/CMakeFiles/rebuild_cache.dir
-/home/seame/Desktop/controller_someip/HU_someip/HU_someip/build/CMakeFiles/HU_someip_autogen.dir
-/home/seame/Desktop/controller_someip/HU_someip/HU_someip/build/CMakeFiles/HU_someip-someip_autogen.dir
