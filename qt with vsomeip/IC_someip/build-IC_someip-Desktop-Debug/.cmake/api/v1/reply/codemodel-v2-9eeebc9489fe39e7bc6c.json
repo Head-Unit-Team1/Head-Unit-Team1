@@ -1,0 +1,86 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "IC_someip",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "IC_someip::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-IC_someip-Debug-82e2bdb6ce91814918b8.json",
+					"name" : "IC_someip",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "IC_someip-someip::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-IC_someip-someip-Debug-5d9456d2234aa0b56305.json",
+					"name" : "IC_someip-someip",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "IC_someip-someip_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-IC_someip-someip_autogen-Debug-6362eed8c2ce7a484f40.json",
+					"name" : "IC_someip-someip_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "IC_someip_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-IC_someip_autogen-Debug-b9af0b6b53b8277a61b4.json",
+					"name" : "IC_someip_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jwoon/Desktop/commonapi_vsomeip/IC_someip/build-IC_someip-Desktop-Debug",
+		"source" : "/home/jwoon/Desktop/commonapi_vsomeip/IC_someip/IC_someip"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}
