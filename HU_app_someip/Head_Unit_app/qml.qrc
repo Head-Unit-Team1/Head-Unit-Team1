@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>AppWidget.qml</file>
+        <file>MenuButton.qml</file>
+        <file>InfoWidget.qml</file>
+        <file>CarWidget.qml</file>
+        <file>GearWidget.qml</file>
+        <file>GearBox.qml</file>
+        <file>GearBoxWindow.qml</file>
+        <file>MapWidget.qml</file>
+        <file>MenuWindow.qml</file>
+        <file>GearText.qml</file>
+        <file>MapApplication.qml</file>
+        <file>VideoApplication.qml</file>
+        <file>DrivingModeApplication.qml</file>
+        <file>VideoObject.qml</file>
+        <file>TopBar.qml</file>
+        <file>HomeWidget.qml</file>
+        <file>WeatherApplication.qml</file>
+        <file>MusicApplication.qml</file>
+    </qresource>
+</RCC>
