@@ -1,0 +1,10 @@
+[Unit]
+Description=Auto-start WiFi setup
+Before=wifi-autostart.service
+
+[Service]
+ExecStartPre=/bin/sleep 5
+ExecStart=/bin/sh /home/root/rfkill.sh
+
+[Install]
+WantedBy=multi-user.target

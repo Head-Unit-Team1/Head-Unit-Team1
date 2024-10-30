@@ -3,5 +3,8 @@ ctrl_interface_group=0
 update_config=1
 
 network={
-        key_mgmt=NONE
+    ssid="TP-Link_972E_5G"
+    psk="45859212"
+    key_mgmt=WPA-PSK
 }
+

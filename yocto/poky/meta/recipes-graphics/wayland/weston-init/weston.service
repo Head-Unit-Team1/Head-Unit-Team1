@@ -46,8 +46,8 @@ ExecStart=-/usr/bin/weston --continue-without-input --modules=systemd-notify.so
 # WatchdogSec=20
 
 # The user to run Weston as.
-User=weston
-Group=weston
+User=root
+Group=root
 
 # Make sure the working directory is the users home directory
 WorkingDirectory=/home/weston

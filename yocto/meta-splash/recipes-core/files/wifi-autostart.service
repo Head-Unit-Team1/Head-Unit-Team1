@@ -1,0 +1,10 @@
+[Unit]
+Description=Auto-start WiFi setup
+After=weston.service
+
+[Service]
+ExecStartPre=/bin/sleep 5
+ExecStart=/bin/sh /home/root/wifi-autostart.sh
+
+[Install]
+WantedBy=multi-user.target
