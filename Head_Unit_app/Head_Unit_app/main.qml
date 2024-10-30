@@ -125,8 +125,8 @@ ApplicationWindow {
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
-                            mainWindow.showMenu = true;
-                            //stackView.push("qrc:/GearBoxWindow.qml")
+                            stackView.push("qrc:/MusicApplication.qml")
+                            //mainWindow.showMenu = false
                         }
                     }
                 }

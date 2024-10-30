@@ -40,6 +40,14 @@ Rectangle {
                     id: musicB
                     menuName: "Music"
                     imgSource: "./img_music.jpg"
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            stackView.push("qrc:/MusicApplication.qml")
+                            mainWindow.showMenu = false
+                        }
+                    }
                 }
 
                 MenuButton {
@@ -74,6 +82,14 @@ Rectangle {
                     id: weatherB
                     menuName: "Weather"
                     imgSource: "./img_weather.jpg"
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            stackView.push("qrc:/WeatherApplication.qml")
+                            mainWindow.showMenu = false
+                        }
+                    }
                 }
 
                 MenuButton {

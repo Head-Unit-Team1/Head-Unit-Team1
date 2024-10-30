@@ -3,8 +3,8 @@ import QtQuick.Controls 2.0
 import QtGraphicalEffects 1.0
 
 Item {
-    width: 80
-    height: 80
+    width: 60
+    height: 60
 
     Rectangle {
         anchors.fill: parent
@@ -24,18 +24,18 @@ Item {
 
         Image {
             source: "./icon_home.png"
-            width: 50
-            height: 50
+            width: 40
+            height: 40
             anchors. horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             anchors.verticalCenterOffset: -5
+        }
+    }
 
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    stackView.pop()
-                }
-            }
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {
+            stackView.pop()
         }
     }
 
