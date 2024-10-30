@@ -16,7 +16,7 @@ public:
 
 signals:
     void weatherDataReceived(const QString &cityName, double temperature, const QString &weatherDescription, const QString &iconCode);
-    void forecastDataReceived(const QString &cityName, const QList<QMap<QString, QVariant>> &forecastData);
+    void forecastDataReceived(const QString &cityName, const QVariantList &forecastData);
     void errorOccurred(const QString &errorString);
 
 private slots:

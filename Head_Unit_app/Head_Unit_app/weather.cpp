@@ -91,41 +91,49 @@ void Weather::onNetworkReply(QNetworkReply *reply) {
             QString cityName = jsonObj["city"].toObject()["name"].toString();
             QJsonArray forecastList = jsonObj["list"].toArray();
 
-            QList<QMap<QString, QVariant>> forecastData;
+            //QList<QMap<QString, QVariant>> forecastData;
+            QVariantList forecastVariantList;
 
             for (const QJsonValue &value : forecastList) {
                 QJsonObject forecastObj = value.toObject();
                 QString dateTime = forecastObj["dt_txt"].toString();
-                QJsonObject mainObject = forecastObj["main"].toObject();
-                double temperature = mainObject["temp"].toDouble();
 
-                QString weatherDescription = forecastObj["weather"].toArray()[0].toObject()["description"].toString();
-                QString iconCode = forecastObj["weather"].toArray()[0].toObject()["icon"].toString();
+                if (dateTime.endsWith("12:00:00")) {
+                    QString dateOnly = QDateTime::fromString(dateTime, "yyyy-MM-dd HH:mm:ss").toString("yyyy-MM-dd");
+                    QJsonObject mainObject = forecastObj["main"].toObject();
+                    double temperature = mainObject["temp"].toDouble();
 
-                QMap<QString, QString> weatherIconMap = {
-                    {"01", "./weather_image/sunny.png"},
-                    {"02", "./weather_image/cloud_sun.png"},
-                    {"03", "./weather_image/cloud.png"},
-                    {"04", "./weather_image/cloud_meatball.png"},
-                    {"09", "./weather_image/cloud_sun_rain.png"},
-                    {"10", "./weather_image/rain_heavy.png"},
-                    {"11", "./weather_image/storm.png"},
-                    {"13", "./weather_image/snow.png"},
-                    {"50", "./weather_image/smog.png"}
-                };
+                    QString weatherDescription = forecastObj["weather"].toArray()[0].toObject()["description"].toString();
+                    QString iconCode = forecastObj["weather"].toArray()[0].toObject()["icon"].toString();
 
-                QString iconPath = weatherIconMap.value(iconCode.left(2), "./weather_image/sunny.png");
+                    QMap<QString, QString> weatherIconMap = {
+                        {"01", "./weather_image/sunny.png"},
+                        {"02", "./weather_image/cloud_sun.png"},
+                        {"03", "./weather_image/cloud.png"},
+                        {"04", "./weather_image/cloud_meatball.png"},
+                        {"09", "./weather_image/cloud_sun_rain.png"},
+                        {"10", "./weather_image/rain_heavy.png"},
+                        {"11", "./weather_image/storm.png"},
+                        {"13", "./weather_image/snow.png"},
+                        {"50", "./weather_image/smog.png"}
+                    };
 
-                QMap<QString, QVariant> forecastItem;
-                forecastItem["dateTime"] = dateTime;
-                forecastItem["temperature"] = temperature;
-                forecastItem["description"] = weatherDescription;
-                forecastItem["iconPath"] = iconPath;
+                    QString iconPath = weatherIconMap.value(iconCode.left(2), "./weather_image/sunny.png");
 
-                forecastData.append(forecastItem);
+                    QMap<QString, QVariant> forecastItem;
+                    forecastItem["dateTime"] = dateOnly;
+                    forecastItem["temperature"] = temperature;
+                    forecastItem["description"] = weatherDescription;
+                    forecastItem["iconPath"] = iconPath;
+
+                    //forecastData.append(forecastItem);
+                    forecastVariantList.append(forecastItem);
+
+                }
+
             }
 
-            emit forecastDataReceived(cityName, forecastData);
+            emit forecastDataReceived(cityName, forecastVariantList);
         } else {
             emit errorOccurred(reply->errorString());
         }

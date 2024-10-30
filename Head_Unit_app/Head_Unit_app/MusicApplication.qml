@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.0
+import QtGraphicalEffects 1.0
 
 Item {
     id: musicApplication
@@ -56,8 +57,8 @@ Item {
     Column {
         anchors.top: appTitle.bottom
         anchors.topMargin: 30
-        width: 1024
-        height: 320
+        width: 1014
+        height: 360
 
         spacing: 20
 
@@ -70,21 +71,33 @@ Item {
             delegate: Rectangle {
                 width: musicList.width
                 height: musicList.height / 4
-                color: "#99D9D9D9"
+                color: "#99232121"
+                radius: 10
 
                 Row {
                     anchors.fill: parent
                     spacing: 10
                     Image {
                         id: musicImg
-                        width: 50
-                        height:50
+                        width: 60
+                        height:60
+                        anchors.left: parent.left
+                        anchors.leftMargin: 40
+                        anchors.verticalCenter: parent.verticalCenter
+
                         source: model.coverImagePath !== "" ? model.coverImagePath : "./icon_home.png"
                     }
 
                     Text {
                         text: model.fileName !== "" ? model.fileName : "Title"
                         color: "white"
+                        font.pixelSize: 25
+                        font.bold: true
+
+                        anchors.left: musicImg.right
+                        anchors.leftMargin: 20
+                        anchors.top: parent.top
+                        anchors.topMargin: 15
                     }
                 }
 
@@ -104,9 +117,20 @@ Item {
         height: 80
 
         anchors.bottom: parent.bottom
-        color: "#D9D9D9"
+        color: "#232121"
 
         property bool playClicked: false
+
+        layer.enabled: true
+        layer.effect: DropShadow {
+            color: carInfoController.modeColor//"#A2F2D9"
+            radius: 10
+            samples: 16
+            spread: 0.2
+            x: 0
+            y: 1
+            //transparentBorder: true
+        }
 
         Image {
             id: playButton
@@ -129,7 +153,7 @@ Item {
         anchors.left: parent.left
         anchors.leftMargin: 20
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 20
+        anchors.bottomMargin: 10
     }
 
 }

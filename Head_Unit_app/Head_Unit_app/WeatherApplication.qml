@@ -54,32 +54,42 @@ Item {
 
         Repeater {
             model: forecastData
-            Row {
+            onModelChanged: console.log("Forecast data:", forecastData)
+
+            Column {
                 spacing: 10
 
                 Text {
-                    text: model.dateTime // 날짜
+                    text: modelData.dateTime || "No dateTime" // 날짜
                     font.pixelSize: 20
                     color: "white"
+
+                    anchors.horizontalCenter: parent.horizontalCenter
                 }
 
                 Image {
-                    source: model.iconPath // 아이콘 경로
+                    source: modelData.iconPath || "" // 아이콘 경로
                     width: 50
                     height: 50
                     fillMode: Image.PreserveAspectFit
+
+                    anchors.horizontalCenter: parent.horizontalCenter
                 }
 
                 Text {
-                    text: model.temperature + " °C" // 온도
+                    text: modelData.temperature + " °C" || "No temp" // 온도
                     font.pixelSize: 20
                     color: "white"
+
+                    anchors.horizontalCenter: parent.horizontalCenter
                 }
 
                 Text {
-                    text: model.description // 날씨 설명
+                    text: modelData.description || "No description" // 날씨 설명
                     font.pixelSize: 20
                     color: "white"
+
+                    anchors.horizontalCenter: parent.horizontalCenter
                 }
             }
         }
@@ -87,6 +97,14 @@ Item {
         Connections {
                 target: weather
                 function onForecastDataReceived(cityName, receivedData) {
+                    console.log("Forecast data received:", receivedData)
+                    receivedData.forEach(function(item, index) {
+                                console.log("Item " + index + ":", item);
+                                console.log("DateTime:", item.dateTime);
+                                console.log("Temperature:", item.temperature);
+                                console.log("Description:", item.description);
+                                console.log("IconPath:", item.iconPath);
+                            });
                     forecastData = receivedData
                 }
             }

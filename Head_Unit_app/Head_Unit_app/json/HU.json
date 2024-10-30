@@ -1,0 +1,26 @@
+{
+    "unicast" : "192.168.86.115",
+    "logging" :
+    {
+        "level" : "debug",
+        "console" : "true",
+        "file" : { "enable" : "false", "path" : "/var/log/vsomeip.log" },
+        "dlt" : "false"
+    },
+    "applications" : 
+    [
+        {
+            "name" : "HU-client",
+            "id" : "0x1313"
+        } 
+    ],
+
+    "routing" : "HU-client",
+    "service-discovery" :
+    {
+        "enable" : "true",
+        "multicast" : "224.224.224.243",
+        "port" : "30499",
+        "protocol" : "udp"
+    }
+}
