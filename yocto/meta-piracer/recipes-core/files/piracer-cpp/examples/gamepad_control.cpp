@@ -21,7 +21,6 @@ int main()
 
 		float steering = input.analog_stick_left.x;
 		float throttle = input.analog_stick_right.y * 0.5; // limit throtle to 50%
-
 		std::cout << "Throttle: " << throttle
 				<< ", Steering: " << steering
 				<< std::endl;

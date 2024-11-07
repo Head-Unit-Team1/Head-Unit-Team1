@@ -1,0 +1,15 @@
+[Unit]
+Description=WPA Supplicant
+Requires=udhcpc-i-wlan0.service
+After=udhcpc-i-wlan0.service
+Wants=network.target
+
+[Service]
+User=root
+ExecStart=/opt/IC_someip/json/set_ip.sh
+Restart=on-failure
+
+
+[Install]
+WantedBy=multi-user.target
+

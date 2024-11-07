@@ -7,7 +7,7 @@ SRC_URI = "file://piracer-cpp"
 
 S = "${WORKDIR}/piracer-cpp"
 
-B = "${WORKDIR}/build"
+B = "${WORKDIR}/piracer-cpp/build"
 
 DEPENDS += "cmake pigpio packagegroup-core-buildessential"
 

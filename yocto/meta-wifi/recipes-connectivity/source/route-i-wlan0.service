@@ -1,0 +1,13 @@
+[Unit]
+Description=WPA Supplicant
+Requires=udhcpc-i-wlan0.service
+After=udhcpc-i-wlan0.service
+Wants=network.target
+[Service]
+ExecStart=/sbin/route add -n 224.224.224.243 dev wlan0
+Restart=on-failure
+
+
+[Install]
+WantedBy=multi-user.target
+

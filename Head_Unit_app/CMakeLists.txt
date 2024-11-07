@@ -11,6 +11,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+#set(CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../../sysroot-destdir/usr/lib/cmake/vsomeip3;/path/to/qt5/installation2")
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Quick WebEngine Network REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick WebEngine Network REQUIRED)
 
