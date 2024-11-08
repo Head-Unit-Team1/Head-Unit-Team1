@@ -1,25 +1,28 @@
-SUMMARY = "Headunit Qt application"
-DESCRIPTION = "A Qt-based Headunit application"
+SUMMARY = "Compile HeadUnit qt"
+
 LICENSE = "CLOSED"
 
 SRC_URI = "file://Head_Unit_app"
 
-inherit cmake_qt5
+S = "${WORKDIR}/Head_Unit_app"
 
-DEPENDS = "qtbase qtdeclarative qtwebengine qtnetworkauth"
+B = "${WORKDIR}/Head_Unit_app/build"
 
-CMAKE_INSTALL_PREFIX = "/usr/local"
+DEPENDS += "cmake packagegroup-core-buildessential qtbase qtdeclarative qtwebengine"
 
+inherit cmake_qt5 cmake
+
+# do_install에서 소스 및 빌드 폴더 복사
 do_install() {
-    # 빌드 후 CMake에서 지정한 경로로 설치가 이루어집니다.
-    # 필요에 따라 설치 디렉토리 구조를 조정할 수 있습니다.
-    install -d ${D}${bindir}
-    cmake_do_install
+    # 소스와 빌드 폴더를 최종 이미지에 포함
+    install -d ${D}/opt/Head_Unit_app/build
+    
+    install -m 0755 ${B}/Head_Unit_app ${D}/opt/Head_Unit_app/build/Head_Unit_app
+
 }
 
-FILES_${PN} = "${bindir}/Headunit"
+FILES:${PN} = "/opt/Head_Unit_app/"
 
-EXTRA_OECMAKE = " \
-    -DCMAKE_INSTALL_PREFIX=${prefix} \
-    -DQT_QPA_PLATFORM=wayland \
-"
+RDEPENDS:${PN} += ""
+
+
