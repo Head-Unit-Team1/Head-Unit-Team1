@@ -1,9 +1,13 @@
 [Unit]
-Description=Set QT_QPA_PLATFORM in /etc/environment
+Description=Set QT_QPA_PLATFORM and other environment variables in /etc/environment
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sh -c 'echo "QT_QPA_PLATFORM=wayland" >> /etc/environment'
+ExecStart=/bin/sh -c 'echo "QT_QPA_PLATFORM=wayland" >> /etc/environment && \
+                        echo "LD_LIBRARY_PATH=/usr/lib/:/opt/IC_someip/build/" >> /etc/environment && \
+                        echo "COMMONAPI_CONFIG=/opt/IC_someip/commonapi4someip.ini" >> /etc/environment && \
+                        echo "VSOMEIP_CONFIGURATION=/opt/IC_someip/json/IC.json" >> /etc/environment && \
+                        echo "VSOMEIP_APPLICATION_NAME=IC-service" >> /etc/environment'
 RemainAfterExit=yes
 
 [Install]
