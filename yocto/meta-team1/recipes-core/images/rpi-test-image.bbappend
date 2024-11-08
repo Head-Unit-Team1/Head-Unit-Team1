@@ -18,9 +18,9 @@ Qt_package = "qtdeclarative \
 	      qtbase-tools \
 	      qtbase-plugins \
 	      qtquickcontrols2 \
-	      qtquickcontrols2-dev \
 	      qtquickcontrols2-mkspecs \
 	      ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtgraphicaleffects-qmlplugins', '', d)} \
+	      qtwayland \
 	      "
 	            
 Gstreamer_package = "gstreamer1.0 \
@@ -35,11 +35,10 @@ Wayland_package = "wayland \
 Someip_package = "vsomeip \ 
 		  common-api-c++ \ 
 		  common-api-c++-someip \
-		  boost \
 		  "
 
 UI_package = "instrumentcluster \
-              instrumentcluster-autoexec \
+              headunit \
               "
 
 Wifi_package = "wpa-supplicant \

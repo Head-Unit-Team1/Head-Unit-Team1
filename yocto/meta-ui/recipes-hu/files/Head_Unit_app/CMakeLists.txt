@@ -11,8 +11,6 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-#set(CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../../../qtdeclarative/5.15.7+gitAUTOINC+0d60f81bf6-r0/package/usr/lib/cmake/Qt5Quick;${CMAKE_CURRENT_SOURCE_DIR}/../../../qtbase/5.15.7+gitAUTOINC+358aebba72-r0/package/usr/lib/cmake/Qt5Core;${CMAKE_CURRENT_SOURCE_DIR}/../../../qtbase/5.15.7+gitAUTOINC+358aebba72-r0/package/usr/lib/cmake/Qt5Network;${CMAKE_CURRENT_SOURCE_DIR}/../../../qtwebengine/5.15.10+gitAUTOINC+c7e716ef1f_ecc2bb74f1-r0/package/usr/lib/cmake/Qt5Webengine")
-
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Quick WebEngine Network REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick WebEngine Network REQUIRED)
 
