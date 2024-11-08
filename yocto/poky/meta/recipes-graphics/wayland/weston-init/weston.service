@@ -39,7 +39,7 @@ After=videoplay.service
 Type=idle
 EnvironmentFile=/etc/default/weston
 ExecStartPre=/bin/sleep 16.1
-ExecStart=-/usr/bin/weston --continue-without-input --modules=systemd-notify.so
+ExecStart=-/usr/bin/weston --continue-without-input --modules=systemd-notify.so --shell=kiosk-shell.so
 
 # Optional watchdog setup
 # TimeoutStartSec=60
