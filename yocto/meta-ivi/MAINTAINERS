@@ -1,0 +1,49 @@
+This file contains a list of maintainers for the meta-ivi layer.
+
+Please submit any patches against meta-ivi to the maintainers
+(cc:ing the meta-ivi mailing list (genivi-meta-ivi@lists.genivi.org))
+with '[meta-ivi]' in subject
+
+You may also contact the maintainers directly in case you have any questions
+on a particular meta-ivi topic, but please try to do the following first:
+
+  - look in the GENIVI baseline JIRA
+    (https://at.projects.genivi.org/jira/projects/BASE/ ) to see if
+    a problem has already been reported
+
+  - look through recent entries of the meta-ivi mailing list archives
+    (http://lists.genivi.org/mailman/listinfo/genivi-meta-ivi ) to see if other
+    people have run into similar problems or had similar questions
+    answered.
+
+When creating patches, please use something like:
+    git format-patch -s --subject-prefix='meta-ivi][PATCH' origin
+
+When sending patches, please use something like:
+    git send-email --to=yong-il.joh@windriver.com \
+                   --cc=genivi-meta-ivi@lists.genivi.org <generated patch>
+
+Please refer to:
+https://at.projects.genivi.org/wiki/display/PROJ/How+to+contribute+to+GENIVI
+for some useful guidelines to be followed when submitting patches.
+
+
+Descriptions of section entries:
+
+	M: Mail patches to: FullName <address@domain>
+	F: Files and directories with wildcard patterns.
+	   A trailing slash includes all files and subdirectory files.
+	   F:	meta-ivi/	all files in and below meta-ivi
+	   F:	meta-ivi/*	all files in meta-ivi, but not below
+	   One pattern per line.  Multiple F: lines acceptable.
+
+Please keep this list in alphabetical order.
+
+Maintainers List (try to look for most precise areas first)
+
+COMMON
+M:	Yong-iL Joh <yong-il.joh@windriver.com>
+F:	./meta-ivi/
+F:	./meta-ivi-bsp/
+F:	./meta-ivi-test/
+F:	./*
