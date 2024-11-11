@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.0
 import QtGraphicalEffects 1.0
+import QtMultimedia 5.12
 
 Item {
     id: musicApplication
@@ -22,13 +23,6 @@ Item {
         anchors.leftMargin: 20
         anchors.top: topBar.bottom
         anchors.topMargin: 20
-    }
-
-    ListModel {
-        id: musicObj
-        ListElement { fileName: "Title1"; coverImagePath: "./icon_music.png"}
-        ListElement { fileName: "Title2"; coverImagePath: "./icon_youtube.png"}
-        ListElement { fileName: "Title3"; coverImagePath: "./icon_mode.png"}
     }
 
     Rectangle {
@@ -57,7 +51,7 @@ Item {
     Column {
         anchors.top: appTitle.bottom
         anchors.topMargin: 30
-        width: 1014
+        width: 1024
         height: 360
 
         spacing: 20
@@ -66,7 +60,7 @@ Item {
             id: musicList
             width: parent.width
             height: parent.height
-            model: musicObj
+            model: ListModel {}
 
             delegate: Rectangle {
                 width: musicList.width
@@ -89,7 +83,7 @@ Item {
                     }
 
                     Text {
-                        text: model.fileName !== "" ? model.fileName : "Title"
+                        text: model.filePath.split("/").pop()
                         color: "white"
                         font.pixelSize: 25
                         font.bold: true
@@ -105,7 +99,52 @@ Item {
                     anchors.fill: parent
                     onClicked: {
                         coverImg.source = musicImg.source
+
+                        if (model.filePath && model.filePath !== "undefined") {
+                            mp3Player.loadMP3File(model.filePath)
+                            audioPlayer.source = "file://" + model.filePath;
+                            musicPlayBar.playClicked = true;
+                            audioPlayer.play()
+                        } else {
+                            console.log("Error: MP3 file path is undefined.");
+                        }
                     }
+                }
+            }
+        }
+    }
+
+    Audio {
+        id: audioPlayer
+        autoPlay: false
+        source: ""
+
+        onStatusChanged: {
+            if(status === Audio.EndOfMedia) {
+                audioPlayer.stop();
+            }
+        }
+    }
+
+    Connections {
+        target: audioPlayer
+        onSourceChanged: {
+            console.log("Audio source changed to: " + audioPlayer.source)
+        }
+    }
+
+    Connections {
+        target: usbScanner
+        onMp3FilesFound: {
+            musicList.model.clear()
+            console.log("MP3 files: " + files);
+            for (var i = 0; i < files.length; i++) {
+                var file = files[i].split("|");
+                if (file[0] !== "" && file[1] !== "") {
+                    musicList.model.append({"filePath": file[0], "coverImagePath": file[1]});
+                    console.log("Music List: " + musicList.model);
+                } else {
+                    console.log("Invalid MP3 or Cover path: " + file[0] + "|" + file[1]);
                 }
             }
         }
@@ -143,6 +182,7 @@ Item {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
+                    musicPlayBar.playClicked === false ? audioPlayer.play() : audioPlayer.pause()
                     musicPlayBar.playClicked === false ? musicPlayBar.playClicked = true : musicPlayBar.playClicked = false
                 }
             }

@@ -11,8 +11,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Quick WebEngine Network REQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick WebEngine Network REQUIRED)
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Quick WebEngine Network Multimedia REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick WebEngine Network Multimedia REQUIRED)
 find_package(CommonAPI-SomeIP 3.2.0 REQUIRED)
 find_package(vsomeip3 3.1.0 REQUIRED)
 
@@ -50,6 +50,11 @@ set(PROJECT_SOURCES
         carInfoController.cpp
         battery.cpp
         battery.h
+        mp3player.cpp
+        mp3player.h
+        usbscanner.cpp
+        usbscanner.h
+        extract_cover.py
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -105,6 +110,7 @@ target_link_libraries(Head_Unit_app
   Qt${QT_VERSION_MAJOR}::Quick
   Qt${QT_VERSION_MAJOR}::WebEngine
   Qt${QT_VERSION_MAJOR}::Network
+  Qt${QT_VERSION_MAJOR}::Multimedia
   ${COMMONAPI_LIB}
   ${COMMONAPI_SOMEIP_LIB}
   ${VSOMEIP_LIB}
