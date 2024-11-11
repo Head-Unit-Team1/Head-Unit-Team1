@@ -1,4 +1,4 @@
-#include <QGuiApplication>
+﻿#include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <string>
@@ -22,34 +22,46 @@
 #include "battery_gauge.h"
 #include "get_battery.h"
 #include "receiver.h"
-
+#include "mode.h"
+#include "lrsign.h"
+#include "ic_interstubimpl.h"
 int i2c_fd;
 int main(int argc, char *argv[])
 {
+    qRegisterMetaType<int32_t>("int32_t");
+
     CommonAPI::Runtime::setProperty("LogContext", "E01C");
     CommonAPI::Runtime::setProperty("LogApplication", "E01C");
     CommonAPI::Runtime::setProperty("LibraryBase", "IC_someip");
 
     std::shared_ptr<Gear> gearPtr = std::make_shared<Gear>();
     std::shared_ptr<Battery> batteryPtr = std::make_shared<Battery>();
+    std::shared_ptr<Mode> modePtr = std::make_shared<Mode>();
+    std::shared_ptr<LRSign> lrsignPtr = std::make_shared<LRSign>();
 
     std::shared_ptr<ICStubImpl> Service =
             std::make_shared<ICStubImpl>(gearPtr.get(),batteryPtr.get());
+
+    std::shared_ptr<IC_interStubImpl> Service_inter =
+            std::make_shared<IC_interStubImpl>(gearPtr.get(), lrsignPtr.get());
     qRegisterMetaType<std::string>("std::string");
 
     batteryPtr->setICStubImpl(Service.get());
-
+    gearPtr->setICStubImpl(Service.get());
 
     std::shared_ptr<CommonAPI::Runtime> runtimePtr = CommonAPI::Runtime::get();
-
     std::string domain = "local";
     std::string instance = "commonapi.IC_service";
+    std::string instance_inter = "commonapi.IC_service_inter";
 
     bool successfullyRegistered = runtimePtr->registerService(domain, instance, Service);
-    while (!successfullyRegistered) {
+    bool successfullyRegistered_inter = runtimePtr->registerService(domain, instance_inter, Service_inter);
+
+    while (!successfullyRegistered || !successfullyRegistered_inter) {
         std::cout << "Register Service failed, trying again in 100 milliseconds..." << std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
         successfullyRegistered = runtimePtr->registerService(domain, instance, Service);
+        successfullyRegistered_inter = runtimePtr->registerService(domain, instance_inter, Service_inter);
     }
     std::cout << "Successfully Registered Service!" << std::endl;
 
@@ -64,9 +76,16 @@ int main(int argc, char *argv[])
 
     engine.rootContext()->setContextProperty("gearObject", gearPtr.get());
     engine.rootContext()->setContextProperty("batteryObject", batteryPtr.get());
+    engine.rootContext()->setContextProperty("modeObject", modePtr.get());
+    engine.rootContext()->setContextProperty("signObject", lrsignPtr.get());
 
     QObject::connect(Service.get(), &ICStubImpl::signalGear, gearPtr.get(), &Gear::receiveGear);
+    QObject::connect(Service.get(), &ICStubImpl::signalMode, modePtr.get(), &Mode::receiveMode);
+    QObject::connect(lrsignPtr.get(), &LRSign::broadcastDirection, Service.get(), &ICStubImpl::notifyLRSignStatusChanged);
 
+    QObject::connect(Service_inter.get(), &IC_interStubImpl::signalGear_inter,gearPtr.get(), &Gear::receiveGear);
+    QObject::connect(Service_inter.get(), &IC_interStubImpl::signalLrsign_inter,lrsignPtr.get(),&LRSign::sendLrsignRandom);
+    QObject::connect(Service_inter.get(), &IC_interStubImpl::signalGear_inter,Service.get(), &ICStubImpl::notifyGearStatusChanged);
     //engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
 
@@ -150,6 +169,15 @@ int main(int argc, char *argv[])
     QPropertyAnimation animation(speedometerObj, "battery");
     animation.setDuration(1000);
     animation.setEasingCurve(QEasingCurve::OutCubic);
+
+//    i2c_fd = open(I2C_BUS, O_RDWR);
+//    if (i2c_fd , 0) {
+//        return -1;
+//    }
+//    if (ioctl(i2c_fd, I2C_SLAVE, INA219_ADDRESS) < 0){
+//        close(i2c_fd);
+//        return -1;
+//    }
 
     QObject::connect(timer_test_rpm, &QTimer::timeout, [&](){
         battery = static_cast<qreal>(std::rand() % 101);

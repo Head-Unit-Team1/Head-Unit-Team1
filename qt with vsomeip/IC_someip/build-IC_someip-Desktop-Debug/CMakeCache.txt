@@ -14,6 +14,18 @@
 # EXTERNAL cache entries
 ########################
 
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/usr/include
+
+Boost_LOG_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_log.so.1.71.0
+
+Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+
+Boost_THREAD_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -205,6 +217,12 @@ COMMONAPI_LIB:FILEPATH=/home/jwoon/Desktop/commonapi_vsomeip/install_folder/lib/
 //Path to a library.
 COMMONAPI_SOMEIP_LIB:FILEPATH=/home/jwoon/Desktop/commonapi_vsomeip/install_folder/lib/libCommonAPI-SomeIP.so
 
+//The directory containing a CMake configuration file for CommonAPI-SomeIP.
+CommonAPI-SomeIP_DIR:PATH=/home/jwoon/Desktop/commonapi_vsomeip/capicxx-someip-runtime/build
+
+//The directory containing a CMake configuration file for CommonAPI.
+CommonAPI_DIR:PATH=/home/jwoon/Desktop/commonapi_vsomeip/capicxx-core-runtime/build
+
 //Dependencies for the target
 IC_someip-someip_LIB_DEPENDS:STATIC=general;CommonAPI-SomeIP;
 
@@ -247,11 +265,58 @@ Qt5_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5
 //Path to a library.
 VSOMEIP_LIB:FILEPATH=/home/jwoon/Desktop/commonapi_vsomeip/install_folder/lib/libvsomeip3.so
 
+//The directory containing a CMake configuration file for boost_atomic.
+boost_atomic_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.71.0
+
+//The directory containing a CMake configuration file for boost_chrono.
+boost_chrono_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_chrono-1.71.0
+
+//The directory containing a CMake configuration file for boost_date_time.
+boost_date_time_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_date_time-1.71.0
+
+//The directory containing a CMake configuration file for boost_filesystem.
+boost_filesystem_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.71.0
+
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0
+
+//The directory containing a CMake configuration file for boost_log.
+boost_log_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_log-1.71.0
+
+//The directory containing a CMake configuration file for boost_regex.
+boost_regex_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_regex-1.71.0
+
+//The directory containing a CMake configuration file for boost_system.
+boost_system_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0
+
+//The directory containing a CMake configuration file for boost_thread.
+boost_thread_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.71.0
+
+//The directory containing a CMake configuration file for pigpio.
+pigpio_DIR:PATH=pigpio_DIR-NOTFOUND
+
+//Path to a file.
+pigpio_INCLUDE_DIR:PATH=/usr/local/include
+
+//Path to a library.
+pigpio_LIBRARY:FILEPATH=/usr/local/lib/libpigpio.so
+
+//Path to a library.
+pigpiod_if2_LIBRARY:FILEPATH=/usr/local/lib/libpigpiod_if2.so
+
+//Path to a library.
+pigpiod_if_LIBRARY:FILEPATH=/usr/local/lib/libpigpiod_if.so
+
+//The directory containing a CMake configuration file for vsomeip3.
+vsomeip3_DIR:PATH=/home/jwoon/Desktop/commonapi_vsomeip/vsomeip/build
+
 
 ########################
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -318,6 +383,14 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
+//Have library pthreads
+CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
+//Have library pthread
+CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/jwoon/Desktop/commonapi_vsomeip/IC_someip/IC_someip
@@ -383,8 +456,30 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Boost
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][cfound components: system thread log ][v1.71.0(1.66)]
+//Details about finding pigpio
+FIND_PACKAGE_MESSAGE_DETAILS_pigpio:INTERNAL=[/usr/local/include][/usr/local/lib/libpigpio.so][/usr/local/lib/libpigpiod_if.so][/usr/local/lib/libpigpiod_if2.so][v()]
 //ADVANCED property for variable: ProcessorCount_cmd_nproc
 ProcessorCount_cmd_nproc-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_atomic_DIR
+boost_atomic_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_chrono_DIR
+boost_chrono_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_date_time_DIR
+boost_date_time_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_filesystem_DIR
+boost_filesystem_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_headers_DIR
+boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_log_DIR
+boost_log_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_regex_DIR
+boost_regex_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_system_DIR
+boost_system_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_thread_DIR
+boost_thread_DIR-ADVANCED:INTERNAL=1
 

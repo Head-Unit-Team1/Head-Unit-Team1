@@ -2,6 +2,70 @@
 	"entries" : 
 	[
 		{
+			"name" : "Boost_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Boost."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0"
+		},
+		{
+			"name" : "Boost_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "Boost_LOG_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "STRING",
+			"value" : "/usr/lib/x86_64-linux-gnu/libboost_log.so.1.71.0"
+		},
+		{
+			"name" : "Boost_SYSTEM_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "STRING",
+			"value" : "/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0"
+		},
+		{
+			"name" : "Boost_THREAD_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "STRING",
+			"value" : "/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -528,6 +592,54 @@
 			],
 			"type" : "INTERNAL",
 			"value" : ""
+		},
+		{
+			"name" : "CMAKE_HAVE_LIBC_PTHREAD",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Test CMAKE_HAVE_LIBC_PTHREAD"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_HAVE_PTHREADS_CREATE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Have library pthreads"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_HAVE_PTHREAD_CREATE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Have library pthread"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "CMAKE_HAVE_PTHREAD_H",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Have include pthread.h"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_HOME_DIRECTORY",
@@ -1102,6 +1214,54 @@
 			"value" : "/home/jwoon/Desktop/commonapi_vsomeip/install_folder/lib/libCommonAPI-SomeIP.so"
 		},
 		{
+			"name" : "CommonAPI-SomeIP_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for CommonAPI-SomeIP."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/jwoon/Desktop/commonapi_vsomeip/capicxx-someip-runtime/build"
+		},
+		{
+			"name" : "CommonAPI_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for CommonAPI."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/jwoon/Desktop/commonapi_vsomeip/capicxx-core-runtime/build"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Boost",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding Boost"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][cfound components: system thread log ][v1.71.0(1.66)]"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_pigpio",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding pigpio"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/local/include][/usr/local/lib/libpigpio.so][/usr/local/lib/libpigpiod_if.so][/usr/local/lib/libpigpiod_if2.so][v()]"
+		},
+		{
 			"name" : "IC_someip-someip_LIB_DEPENDS",
 			"properties" : 
 			[
@@ -1276,6 +1436,222 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/home/jwoon/Desktop/commonapi_vsomeip/install_folder/lib/libvsomeip3.so"
+		},
+		{
+			"name" : "boost_atomic_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_atomic."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.71.0"
+		},
+		{
+			"name" : "boost_chrono_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_chrono."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_chrono-1.71.0"
+		},
+		{
+			"name" : "boost_date_time_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_date_time."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_date_time-1.71.0"
+		},
+		{
+			"name" : "boost_filesystem_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_filesystem."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.71.0"
+		},
+		{
+			"name" : "boost_headers_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_headers."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0"
+		},
+		{
+			"name" : "boost_log_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_log."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_log-1.71.0"
+		},
+		{
+			"name" : "boost_regex_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_regex."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_regex-1.71.0"
+		},
+		{
+			"name" : "boost_system_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_system."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0"
+		},
+		{
+			"name" : "boost_thread_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_thread."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.71.0"
+		},
+		{
+			"name" : "pigpio_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for pigpio."
+				}
+			],
+			"type" : "PATH",
+			"value" : "pigpio_DIR-NOTFOUND"
+		},
+		{
+			"name" : "pigpio_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/local/include"
+		},
+		{
+			"name" : "pigpio_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/lib/libpigpio.so"
+		},
+		{
+			"name" : "pigpiod_if2_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/lib/libpigpiod_if2.so"
+		},
+		{
+			"name" : "pigpiod_if_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/lib/libpigpiod_if.so"
+		},
+		{
+			"name" : "vsomeip3_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for vsomeip3."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/jwoon/Desktop/commonapi_vsomeip/vsomeip/build"
 		}
 	],
 	"kind" : "cache",

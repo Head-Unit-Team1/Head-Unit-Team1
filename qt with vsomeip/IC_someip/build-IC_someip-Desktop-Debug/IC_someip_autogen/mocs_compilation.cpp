@@ -5,5 +5,8 @@
 #include "EWIEGA46WW/moc_battery_gauge.cpp"
 #include "EWIEGA46WW/moc_batteryupdate.cpp"
 #include "EWIEGA46WW/moc_gear.cpp"
+#include "EWIEGA46WW/moc_ic_interstubimpl.cpp"
+#include "EWIEGA46WW/moc_lrsign.cpp"
+#include "EWIEGA46WW/moc_mode.cpp"
 #include "EWIEGA46WW/moc_receiver.cpp"
 #include "EWIEGA46WW/moc_speed.cpp"
