@@ -1,0 +1,1 @@
+LD_LIBRARY_PATH=../install_folder/lib:$PWD/build-gamePaddddd-Desktop-Debug COMMONAPI_CONFIG=commonapi4someip.ini VSOMEIP_CONFIGURATION=./json/IC.json VSOMEIP_APPLICATION_NAME=IC-service-inter ./build-gamePaddddd-Desktop-Debug/gamePaddddd

@@ -1,0 +1,23 @@
+package commonapi
+
+interface IC_inter{
+    version { major 0 minor 1}
+    
+    method setGear_inter{
+        in{
+            String gear
+        }
+        out{
+            Int32 result
+        }
+    }
+
+    method setLrsign_inter{
+        in{
+            Int32 lrsign
+        }
+        out{
+            Int32 result
+        }
+    }
+}

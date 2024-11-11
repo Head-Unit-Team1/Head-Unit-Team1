@@ -1,0 +1,228 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "libgamepaddddd-someip.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"link_directories",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 55,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fPIC  "
+				},
+				{
+					"fragment" : "-std=gnu++11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "gamepaddddd_someip_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/build-gamePaddddd-Desktop-Debug"
+				},
+				{
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/gamePaddddd"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/build-gamePaddddd-Desktop-Debug/gamepaddddd-someip_autogen/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/gamePaddddd/../src-gen-inter"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/gamePaddddd/../../install_folder/include/CommonAPI-3.2"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/gamePaddddd/../../install_folder/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/gamePaddddd/../../install_folder/lib"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/gamePaddddd/../src-gen-inter/core"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/gamePaddddd/../src-gen-inter/someip"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/capicxx-someip-runtime/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/capicxx-core-runtime/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/vsomeip/interface"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/vsomeip/build"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "gamepaddddd-someip_autogen::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "gamepaddddd-someip::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/gamePaddddd/../../install_folder/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/jwoon/Desktop/commonapi_vsomeip/capicxx-someip-runtime/build:/home/jwoon/Desktop/commonapi_vsomeip/capicxx-core-runtime/build:/home/jwoon/Desktop/commonapi_vsomeip/vsomeip/build:/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/gamePaddddd/../../install_folder/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/jwoon/Desktop/commonapi_vsomeip/capicxx-someip-runtime/build/libCommonAPI-SomeIP.so.3.2.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/jwoon/Desktop/commonapi_vsomeip/capicxx-core-runtime/build/libCommonAPI.so.3.2.3",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/jwoon/Desktop/commonapi_vsomeip/vsomeip/build/libvsomeip3.so.3.5.1",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "gamepaddddd-someip",
+	"nameOnDisk" : "libgamepaddddd-someip.so",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/build-gamePaddddd-Desktop-Debug/gamepaddddd-someip_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/src-gen-inter/someip/v0/commonapi/IC_interSomeIPDeployment.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/src-gen-inter/someip/v0/commonapi/IC_interSomeIPProxy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/src-gen-inter/someip/v0/commonapi/IC_interSomeIPStubAdapter.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}
