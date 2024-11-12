@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QString>
 #include <string.h>
+class ICStubImpl;
 
 class Gear : public QObject
 {
@@ -13,6 +14,8 @@ class Gear : public QObject
 public:
     explicit Gear(QObject *parent = nullptr);
     QString gearValue() const { return qt_gear; }
+    void setICStubImpl(ICStubImpl* icStubImpl);
+    Q_INVOKABLE void sendGearRandom(QString changedGear);
 
 signals:
     void gearValueChanged();
@@ -22,6 +25,7 @@ public slots:
 
 private:
     QString qt_gear = "P";
+    ICStubImpl* icStubImpl_;
 };
 
 #endif // BUTTONSRECEIVER_H

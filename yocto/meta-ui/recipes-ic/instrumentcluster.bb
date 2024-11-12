@@ -30,5 +30,5 @@ do_install() {
 
 FILES:${PN} = "/opt/IC_someip/"
 
-RDEPENDS:${PN} += "qtsvg python3-netifaces"
+RDEPENDS:${PN} += "qtsvg python3-netifaces can-utils canutils"
 

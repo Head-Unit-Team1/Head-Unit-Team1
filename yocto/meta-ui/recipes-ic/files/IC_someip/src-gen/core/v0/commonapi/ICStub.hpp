@@ -52,6 +52,16 @@ class ICStubAdapter
     * Instead, the "fire<broadcastName>Event" methods of the stub should be used.
     */
     virtual void fireBatteryStatusChangedEvent(const int32_t &_batValue) = 0;
+    /**
+    * Sends a broadcast event for gearStatusChanged. Should not be called directly.
+    * Instead, the "fire<broadcastName>Event" methods of the stub should be used.
+    */
+    virtual void fireGearStatusChangedEvent(const std::string &_gearValue) = 0;
+    /**
+    * Sends a broadcast event for lrSignStatusChanged. Should not be called directly.
+    * Instead, the "fire<broadcastName>Event" methods of the stub should be used.
+    */
+    virtual void fireLrSignStatusChangedEvent(const int32_t &_signValue) = 0;
 
 
     virtual void deactivateManagedInstances() = 0;
@@ -96,11 +106,12 @@ class ICStub
 public:
     typedef std::function<void (int32_t _result)> setGearReply_t;
     typedef std::function<void (int32_t _battery, int32_t _result)> getBatteryReply_t;
+    typedef std::function<void (int32_t _result)> setModeReply_t;
 
     virtual ~ICStub() {}
     void lockInterfaceVersionAttribute(bool _lockAccess) { static_cast<void>(_lockAccess); }
     bool hasElement(const uint32_t _id) const {
-        return (_id < 3);
+        return (_id < 6);
     }
     virtual const CommonAPI::Version& getInterfaceVersion(std::shared_ptr<CommonAPI::ClientId> _client) = 0;
 
@@ -108,11 +119,25 @@ public:
     virtual void setGear(const std::shared_ptr<CommonAPI::ClientId> _client, std::string _gear, setGearReply_t _reply) = 0;
     /// This is the method that will be called on remote calls on the method getBattery.
     virtual void getBattery(const std::shared_ptr<CommonAPI::ClientId> _client, getBatteryReply_t _reply) = 0;
+    /// This is the method that will be called on remote calls on the method setMode.
+    virtual void setMode(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _mode, setModeReply_t _reply) = 0;
     /// Sends a broadcast event for batteryStatusChanged.
     virtual void fireBatteryStatusChangedEvent(const int32_t &_batValue) {
         auto stubAdapter = CommonAPI::Stub<ICStubAdapter, ICStubRemoteEvent>::stubAdapter_.lock();
         if (stubAdapter)
             stubAdapter->fireBatteryStatusChangedEvent(_batValue);
+    }
+    /// Sends a broadcast event for gearStatusChanged.
+    virtual void fireGearStatusChangedEvent(const std::string &_gearValue) {
+        auto stubAdapter = CommonAPI::Stub<ICStubAdapter, ICStubRemoteEvent>::stubAdapter_.lock();
+        if (stubAdapter)
+            stubAdapter->fireGearStatusChangedEvent(_gearValue);
+    }
+    /// Sends a broadcast event for lrSignStatusChanged.
+    virtual void fireLrSignStatusChangedEvent(const int32_t &_signValue) {
+        auto stubAdapter = CommonAPI::Stub<ICStubAdapter, ICStubRemoteEvent>::stubAdapter_.lock();
+        if (stubAdapter)
+            stubAdapter->fireLrSignStatusChangedEvent(_signValue);
     }
 
 

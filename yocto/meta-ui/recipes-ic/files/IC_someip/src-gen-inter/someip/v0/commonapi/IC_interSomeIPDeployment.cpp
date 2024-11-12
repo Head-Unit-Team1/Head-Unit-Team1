@@ -7,10 +7,11 @@
  * If a copy of the MPL was not distributed with this file, You can obtain one at
  * http://mozilla.org/MPL/2.0/.
  */
-#include <v0/commonapi/ICSomeIPDeployment.hpp>
+#include <v0/commonapi/IC_interSomeIPDeployment.hpp>
+
 namespace v0 {
 namespace commonapi {
-namespace IC_ {
+namespace IC_inter_ {
 
 // Type-specific deployments
 
@@ -20,6 +21,6 @@ namespace IC_ {
 
 // Broadcast-specific deployments
 
-} // namespace IC_
+} // namespace IC_inter_
 } // namespace commonapi
 } // namespace v0

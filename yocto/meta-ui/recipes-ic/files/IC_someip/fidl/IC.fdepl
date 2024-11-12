@@ -11,8 +11,19 @@ define org.genivi.commonapi.someip.deployment for interface commonapi.IC{
     method getBattery{
         SomeIpMethodID = 30001
     }
+    method setMode{
+        SomeIpMethodID = 30002
+    }
     broadcast batteryStatusChanged{
         SomeIpEventID = 40000
+        SomeIpEventGroups = { 33011 }
+    }
+    broadcast gearStatusChanged{
+        SomeIpEventID = 40001
+        SomeIpEventGroups = { 33011 }
+    }
+    broadcast lrSignStatusChanged{
+        SomeIpEventID = 40002
         SomeIpEventGroups = { 33011 }
     }
 

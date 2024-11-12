@@ -69,6 +69,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS:append:raspberrypi5 = " \
 
 RPI_KERNEL_DEVICETREE_OVERLAYS +=" \
     overlays/vc4-kms-dsi-waveshare-panel.dtbo \
+    overlays/mcp251xfd-overlay.dtbo \
     "
 
 RPI_KERNEL_DEVICETREE ?= " \

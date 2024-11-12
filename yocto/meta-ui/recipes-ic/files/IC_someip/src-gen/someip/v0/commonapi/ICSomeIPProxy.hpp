@@ -56,6 +56,10 @@ public:
 
     virtual BatteryStatusChangedEvent& getBatteryStatusChangedEvent();
 
+    virtual GearStatusChangedEvent& getGearStatusChangedEvent();
+
+    virtual LrSignStatusChangedEvent& getLrSignStatusChangedEvent();
+
     virtual void setGear(std::string _gear, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info);
 
     virtual std::future<CommonAPI::CallStatus> setGearAsync(const std::string &_gear, SetGearAsyncCallback _callback, const CommonAPI::CallInfo *_info);
@@ -64,12 +68,18 @@ public:
 
     virtual std::future<CommonAPI::CallStatus> getBatteryAsync(GetBatteryAsyncCallback _callback, const CommonAPI::CallInfo *_info);
 
+    virtual void setMode(int32_t _mode, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info);
+
+    virtual std::future<CommonAPI::CallStatus> setModeAsync(const int32_t &_mode, SetModeAsyncCallback _callback, const CommonAPI::CallInfo *_info);
+
     virtual void getOwnVersion(uint16_t &_major, uint16_t &_minor) const;
 
     virtual std::future<void> getCompletionFuture();
 
 private:
     CommonAPI::SomeIP::Event<BatteryStatusChangedEvent, CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t> >> batteryStatusChanged_;
+    CommonAPI::SomeIP::Event<GearStatusChangedEvent, CommonAPI::Deployable< std::string, CommonAPI::SomeIP::StringDeployment >> gearStatusChanged_;
+    CommonAPI::SomeIP::Event<LrSignStatusChangedEvent, CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t> >> lrSignStatusChanged_;
 
 };
 

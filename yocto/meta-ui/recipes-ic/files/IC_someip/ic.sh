@@ -1,1 +1,1 @@
-LD_LIBRARY_PATH=/usr/lib/:$PWD/build/ COMMONAPI_CONFIG=commonapi4someip.ini VSOMEIP_CONFIGURATION=./json/IC.json VSOMEIP_APPLICATION_NAME=IC-service ./build/IC_someip
+LD_LIBRARY_PATH=/usr/lib:/opt/IC_someip/build COMMONAPI_CONFIG=/opt/IC_someip/commonapi4someip.ini VSOMEIP_CONFIGURATION=/opt/IC_someip/json/IC.json VSOMEIP_APPLICATION_NAME=IC-service /opt/IC_someip/build/IC_someip
