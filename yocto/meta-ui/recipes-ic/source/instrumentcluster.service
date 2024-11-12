@@ -1,0 +1,11 @@
+[Unit]
+Description=instrument executer
+Requires=route-i-wlan0.service
+After=route-i-wlan0.service
+[Service]
+User=weston
+ExecStart=/opt/IC_someip/ic.sh
+Restart=on-failure
+Type=forking
+[Install]
+WantedBy=multi-user.target

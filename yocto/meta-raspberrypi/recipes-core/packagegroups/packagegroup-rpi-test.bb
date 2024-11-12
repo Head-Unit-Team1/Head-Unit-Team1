@@ -21,8 +21,6 @@ RDEPENDS:${PN} = "\
     python3-adafruit-platformdetect \
     python3-adafruit-pureio \
     python3-rtimu \
-    connman \
-    connman-client \
     wireless-regdb-static \
     bluez5 \
 "

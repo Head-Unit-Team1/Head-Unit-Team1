@@ -1,0 +1,54 @@
+cc_defaults {
+    name: "libcommonapi_defaults",
+
+    rtti: true,
+
+    cppflags: [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Wformat",
+        "-Wformat-security",
+        "-Wconversion",
+        "-Wno-attributes",
+        "-fexceptions",
+        "-fstrict-aliasing",
+        "-fstack-protector",
+        "-fasynchronous-unwind-tables",
+        "-fno-omit-frame-pointer",
+        "-fvisibility=hidden",
+        "-Wno-ignored-attributes",
+        "-Wno-unused-private-field",
+        "-D_CRT_SECURE_NO_WARNINGS",
+        "-DCOMMONAPI_INTERNAL_COMPILATION",
+        "-DCOMMONAPI_LOGLEVEL=COMMONAPI_LOGLEVEL_VERBOSE",
+	"-DUSE_DLT",
+    ],
+
+    proprietary: true,
+}
+
+cc_library_shared {
+    name: "libcommonapi",
+    defaults: ["libcommonapi_defaults"],
+    local_include_dirs: [
+        "include",
+    ],
+
+    shared_libs: [
+        "liblog",
+        "libutils",
+        "libboost_log",
+        "libboost_system",
+        "libboost_thread",
+    ],
+
+	export_include_dirs: [
+        "include",
+    ],
+    srcs: [
+        "src/CommonAPI/**/*.cpp"
+    ],
+}
+
+

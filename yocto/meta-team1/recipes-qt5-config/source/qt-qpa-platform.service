@@ -1,5 +1,5 @@
 [Unit]
-Description=Set QT_QPA_PLATFORM in /etc/environment
+Description=Set QT_QPA_PLATFORM and other environment variables in /etc/environment
 
 [Service]
 Type=oneshot

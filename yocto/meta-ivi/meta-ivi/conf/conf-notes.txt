@@ -1,0 +1,4 @@
+Common targets are:
+    orion-image
+    ivi-image
+

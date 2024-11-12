@@ -1,7 +1,16 @@
-ctrl_interface=/var/run/wpa_supplicant
 ctrl_interface_group=0
+ctrl_interface=/var/run/wpa_supplicant
 update_config=1
 
 network={
-        key_mgmt=NONE
+    ssid="Euiseok'S24"
+    psk="tlsdmltjr1!"
+    key_mgmt=WPA-PSK
 }
+
+network={
+    ssid="SEA:ME WiFi Access"
+    psk="1fy0u534m3"
+    key_mgmt=WPA-PSK
+}
+

@@ -1,0 +1,14 @@
+[Unit]
+Description=WPA Supplicant
+Wants=network.target
+
+[Service]
+User=root
+ExecStart=/usr/sbin/wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+Restart=on-failure
+Type=forking
+
+
+[Install]
+WantedBy=multi-user.target
+
