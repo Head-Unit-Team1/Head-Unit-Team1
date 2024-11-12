@@ -1,4 +1,0 @@
-/home/seame/Head-Unit-Team1/Head_Unit_app/build/CMakeFiles/Head_Unit_app.dir
-/home/seame/Head-Unit-Team1/Head_Unit_app/build/CMakeFiles/edit_cache.dir
-/home/seame/Head-Unit-Team1/Head_Unit_app/build/CMakeFiles/rebuild_cache.dir
-/home/seame/Head-Unit-Team1/Head_Unit_app/build/CMakeFiles/Head_Unit_app_autogen.dir

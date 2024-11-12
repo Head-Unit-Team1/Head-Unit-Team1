@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Weather Example"</title>
+    </head>
+
+    <script>
+            function parseWeather()
+            {
+                loadJSON(function(response)
+                {
+                    var jsonData = JSON.parse(response);
+                    document.getElementById("todaysWeather").innerHTML = jsonData["list"][0]["weather"][0]["main"];
+                });
+            }
+
+            function loadJSON(callback)
+            {
+                var url = "
