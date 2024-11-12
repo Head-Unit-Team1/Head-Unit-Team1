@@ -7,13 +7,13 @@
 * If a copy of the MPL was not distributed with this file, You can obtain one at
 * http://mozilla.org/MPL/2.0/.
 */
-#ifndef V0_COMMONAPI_IC_STUB_DEFAULT_HPP_
-#define V0_COMMONAPI_IC_STUB_DEFAULT_HPP_
+#ifndef V0_COMMONAPI_IC_inter_STUB_DEFAULT_HPP_
+#define V0_COMMONAPI_IC_inter_STUB_DEFAULT_HPP_
 
 
 #include <CommonAPI/Export.hpp>
 
-#include <v0/commonapi/ICStub.hpp>
+#include <v0/commonapi/IC_interStub.hpp>
 #include <cassert>
 #include <sstream>
 
@@ -33,8 +33,8 @@ namespace v0 {
 namespace commonapi {
 
 /**
- * Provides a default implementation for ICStubRemoteEvent and
- * ICStub. Method callbacks have an empty implementation,
+ * Provides a default implementation for IC_interStubRemoteEvent and
+ * IC_interStub. Method callbacks have an empty implementation,
  * remote set calls on attributes will always change the value of the attribute
  * to the one received.
  *
@@ -42,12 +42,12 @@ namespace commonapi {
  * that would be defined for this service, and/or if you do not need any non-default
  * behaviour.
  */
-class COMMONAPI_EXPORT_CLASS_EXPLICIT ICStubDefault
-    : public virtual ICStub {
+class COMMONAPI_EXPORT_CLASS_EXPLICIT IC_interStubDefault
+    : public virtual IC_interStub {
 public:
-    COMMONAPI_EXPORT ICStubDefault()
+    COMMONAPI_EXPORT IC_interStubDefault()
         : remoteEventHandler_(this),
-          interfaceVersion_(IC::getInterfaceVersion()) {
+          interfaceVersion_(IC_inter::getInterfaceVersion()) {
     }
 
     COMMONAPI_EXPORT const CommonAPI::Version& getInterfaceVersion(std::shared_ptr<CommonAPI::ClientId> _client) {
@@ -55,54 +55,39 @@ public:
         return interfaceVersion_;
     }
 
-    COMMONAPI_EXPORT ICStubRemoteEvent* initStubAdapter(const std::shared_ptr< ICStubAdapter> &_adapter) {
-        CommonAPI::Stub<ICStubAdapter, ICStubRemoteEvent>::stubAdapter_ = _adapter;
+    COMMONAPI_EXPORT IC_interStubRemoteEvent* initStubAdapter(const std::shared_ptr< IC_interStubAdapter> &_adapter) {
+        CommonAPI::Stub<IC_interStubAdapter, IC_interStubRemoteEvent>::stubAdapter_ = _adapter;
         return &remoteEventHandler_;
     }
 
-    COMMONAPI_EXPORT virtual void setGear(const std::shared_ptr<CommonAPI::ClientId> _client, std::string _gear, setGearReply_t _reply) {
+    COMMONAPI_EXPORT virtual void setGear_inter(const std::shared_ptr<CommonAPI::ClientId> _client, std::string _gear, setGear_interReply_t _reply) {
         (void)_client;
         (void)_gear;
         int32_t result = 0;
         _reply(result);
     }
-    COMMONAPI_EXPORT virtual void getBattery(const std::shared_ptr<CommonAPI::ClientId> _client, getBatteryReply_t _reply) {
+    COMMONAPI_EXPORT virtual void setLrsign_inter(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _lrsign, setLrsign_interReply_t _reply) {
         (void)_client;
-        int32_t battery = 0;
-        int32_t result = 0;
-        _reply(battery, result);
-    }
-    COMMONAPI_EXPORT virtual void setMode(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _mode, setModeReply_t _reply) {
-        (void)_client;
-        (void)_mode;
+        (void)_lrsign;
         int32_t result = 0;
         _reply(result);
-    }
-    COMMONAPI_EXPORT virtual void fireBatteryStatusChangedEvent(const int32_t &_batValue) {
-        ICStub::fireBatteryStatusChangedEvent(_batValue);
-    }
-    COMMONAPI_EXPORT virtual void fireGearStatusChangedEvent(const std::string &_gearValue) {
-        ICStub::fireGearStatusChangedEvent(_gearValue);
-    }
-    COMMONAPI_EXPORT virtual void fireLrSignStatusChangedEvent(const int32_t &_signValue) {
-        ICStub::fireLrSignStatusChangedEvent(_signValue);
     }
 
 
 protected:
-    class COMMONAPI_EXPORT_CLASS_EXPLICIT RemoteEventHandler: public virtual ICStubRemoteEvent {
+    class COMMONAPI_EXPORT_CLASS_EXPLICIT RemoteEventHandler: public virtual IC_interStubRemoteEvent {
     public:
-        COMMONAPI_EXPORT RemoteEventHandler(ICStubDefault *_defaultStub)
+        COMMONAPI_EXPORT RemoteEventHandler(IC_interStubDefault *_defaultStub)
             : 
               defaultStub_(_defaultStub) {
         }
 
 
     private:
-        ICStubDefault *defaultStub_;
+        IC_interStubDefault *defaultStub_;
     };
 protected:
-    ICStubDefault::RemoteEventHandler remoteEventHandler_;
+    IC_interStubDefault::RemoteEventHandler remoteEventHandler_;
 
 private:
 
@@ -117,4 +102,4 @@ private:
 // Compatibility
 namespace v0_1 = v0;
 
-#endif // V0_COMMONAPI_IC_STUB_DEFAULT
+#endif // V0_COMMONAPI_IC_inter_STUB_DEFAULT

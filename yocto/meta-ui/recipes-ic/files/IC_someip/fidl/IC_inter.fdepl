@@ -1,0 +1,24 @@
+import "platform:/plugin/org.genivi.commonapi.someip/deployment/CommonAPI-4-SOMEIP_deployment_spec.fdepl"
+
+import "IC_inter.fidl"
+
+define org.genivi.commonapi.someip.deployment for interface commonapi.IC_inter{
+    SomeIpServiceID = 4661
+
+    method setGear_inter{
+        SomeIpMethodID = 31000
+    }
+    method setLrsign_inter{
+        SomeIpMethodID = 31001
+    }
+
+
+}
+
+define org.genivi.commonapi.someip.deployment for provider as Service_inter{
+    instance commonapi.IC_inter{
+        InstanceId = "commonapi.IC_service_inter"
+        SomeIpInstanceID = 22137
+        SomeIpUnicastAddress = "127.0.0.1" 
+    }
+}

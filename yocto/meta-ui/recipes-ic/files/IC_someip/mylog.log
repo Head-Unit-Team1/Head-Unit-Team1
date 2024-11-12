@@ -11076,3 +11076,1624 @@
 [CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
 [CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
 [CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" failed (libIC_someip-someip.so: cannot open shared object file: No such file or directory)
+[CAPI][DEBUG] Loading interface library failed, using default factory now.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" failed (/home/jwoon/Desktop/commonapi_vsomeip/IC_someip/build-IC_someip-Desktop-Debug/libIC_someip-someip.so: file too short)
+[CAPI][DEBUG] Loading interface library failed, using default factory now.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][ERROR] Failed to create connection 
+[CAPI][ERROR] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service" failed!
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
+[CAPI][INFO] Loading configuration file 'commonapi4someip.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Loading library for local:commonapi.IC:v0_1:commonapi.IC_service stub.
+[CAPI][INFO] Loading configuration file /etc//commonapi-someip.ini
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter <--> [1235.5679(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC_inter:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC_inter:v0_1" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:commonapi.IC:v0_1:commonapi.IC_service <--> [1234.5678(0.1)]
+[CAPI][VERBOSE] Registering function for creating "commonapi.IC:v0_1" proxy.
+[CAPI][INFO] Registering function for creating "commonapi.IC:v0_1" stub adapter.
+[CAPI][DEBUG] Loading interface library "libIC_someip-someip.so" succeeded.
+[CAPI][INFO] Registering stub for "local:commonapi.IC:v0_1:commonapi.IC_service"
+[CAPI][DEBUG] Loading library for local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter stub.
+[CAPI][INFO] Registering stub for "local:commonapi.IC_inter:v0_1:commonapi.IC_service_inter"
