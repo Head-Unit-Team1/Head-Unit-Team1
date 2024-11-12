@@ -4,7 +4,7 @@ import QtWebEngine 1.0
 Item {
     id: mapWidget
     width: 460
-    height: 460
+    height: 560
 
     AppWidget {
         id: map_widget
@@ -18,7 +18,7 @@ Item {
             anchors.centerIn: parent
 
             url: "data:text/html;charset=utf-8," + encodeURIComponent(mapController.getGoogleMapHtml())
-            //url: Qt.resolvedUrl("data:text/html," + mapController.getGoogleMapHtml())
+            //url: Qt.resolvedUrl("data:text/html," + mapController.getGoogleMapHtml_app())
 
             onLoadingChanged: {
                         if (loadRequest.status === WebEngineLoadRequest.LoadFailedStatus) {

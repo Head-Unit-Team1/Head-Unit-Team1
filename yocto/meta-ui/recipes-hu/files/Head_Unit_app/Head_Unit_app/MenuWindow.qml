@@ -4,7 +4,7 @@ import QtQuick.Controls 2.0
 Rectangle {
     id: menuWindow
     visible: showMenu
-    color: "transparent"
+    color: "#CC000000"//"transparent"
     anchors.fill: parent
 /*
     Rectangle {
@@ -15,7 +15,7 @@ Rectangle {
 
     Flickable {
         id: menuSlide
-        width: 800
+        width: 820
         height: 400
         contentWidth: contentItem.width
         contentHeight: contentItem.height
@@ -23,7 +23,7 @@ Rectangle {
 
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
-        anchors.verticalCenterOffset:  -15
+        anchors.horizontalCenterOffset:  30
 
         Rectangle {
             id:contentItem
@@ -40,6 +40,14 @@ Rectangle {
                     id: musicB
                     menuName: "Music"
                     imgSource: "./img_music.jpg"
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            stackView.push("qrc:/MusicApplication.qml")
+                            mainWindow.showMenu = false
+                        }
+                    }
                 }
 
                 MenuButton {
@@ -74,6 +82,14 @@ Rectangle {
                     id: weatherB
                     menuName: "Weather"
                     imgSource: "./img_weather.jpg"
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            stackView.push("qrc:/WeatherApplication.qml")
+                            mainWindow.showMenu = false
+                        }
+                    }
                 }
 
                 MenuButton {

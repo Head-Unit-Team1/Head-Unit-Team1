@@ -1,6 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <CommonAPI/CommonAPI.hpp>
+#include <v0/commonapi/ICProxy.hpp>
 
 #include "current_clock.h"
 #include "weather.h"
@@ -8,12 +10,18 @@
 #include "gearController.h"
 #include "youtubeController.h"
 #include "carInfoController.h"
+#include "mp3player.h"
+#include "usbscanner.h"
 
 int main(int argc, char *argv[])
 {
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
+    CommonAPI::Runtime::setProperty("LogContext", "E01C");
+    CommonAPI::Runtime::setProperty("LogApplication", "E01C");
+    CommonAPI::Runtime::setProperty("LibraryBase", "IC_someip");
+
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
@@ -35,7 +43,14 @@ int main(int argc, char *argv[])
 
     CarInfoController carInfoController;
     engine.rootContext()->setContextProperty("carInfoController", &carInfoController);
-    //carInfoController.setBatteryLevel(75);
+
+    MP3Player mp3Player;
+    engine.rootContext()->setContextProperty("mp3Player", &mp3Player);
+
+    USBScanner usbScanner;
+    engine.rootContext()->setContextProperty("usbScanner", &usbScanner);
+
+    usbScanner.startAutoScan();
 
 
 

@@ -14,5 +14,10 @@
         <file>MapApplication.qml</file>
         <file>VideoApplication.qml</file>
         <file>DrivingModeApplication.qml</file>
+        <file>VideoObject.qml</file>
+        <file>TopBar.qml</file>
+        <file>HomeWidget.qml</file>
+        <file>WeatherApplication.qml</file>
+        <file>MusicApplication.qml</file>
     </qresource>
 </RCC>

@@ -90,6 +90,17 @@ Item {
                 anchors.bottom: parent.bottom
             }
 
+            Timer {
+                id: updateTimer
+                interval: 10000
+                running: true
+                repeat: true
+
+                onTriggered: {
+                    weather.fetchWeatherData(region.text)
+                }
+            }
+
             Connections {
                 target: weather
 
@@ -105,6 +116,10 @@ Item {
                     weatherImage.visible = true
                     tempInfo.text = temperature
                 }//*/
+            }
+
+            Component.onCompleted:  {
+                updateTimer.start();
             }
         }
     }

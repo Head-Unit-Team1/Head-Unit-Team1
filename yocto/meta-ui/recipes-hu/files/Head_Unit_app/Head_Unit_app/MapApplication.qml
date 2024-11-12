@@ -6,15 +6,21 @@ Item {
     width: 1024
     height: 600
 
+    TopBar {
+        id: topBar
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+    }
+
     WebEngineView {
         id: mapObject
-        width: 460
-        height: 460
+        width: 1024
+        height: 600
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
         anchors.topMargin: 40
 
-        url: "data:text/html;charset=utf-8," + encodeURIComponent(mapController.getGoogleMapHtml())
+        url: "data:text/html;charset=utf-8," + encodeURIComponent(mapController.getGoogleMapHtml_app())
 
         onLoadingChanged: {
                     if (loadRequest.status === WebEngineLoadRequest.LoadFailedStatus) {
@@ -31,17 +37,10 @@ Item {
         }
     }
 
-    Image {
-        source: "./icon_menu.png"
-        anchors. horizontalCenter: parent.horizontalCenter
+    HomeWidget {
+        anchors.left: parent.left
+        anchors.leftMargin: 20
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 30
-
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                stackView.pop()
-            }
-        }
+        anchors.bottomMargin: 20
     }
 }

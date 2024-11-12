@@ -11,8 +11,20 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Quick WebEngine Network REQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick WebEngine Network REQUIRED)
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Quick WebEngine Network Multimedia REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick WebEngine Network Multimedia REQUIRED)
+
+# RPATH 설정
+set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
+set(PRJ_NAME Head_Unit_app)
+
+set(PRJ_SRC_GEN_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../src-gen)
+set(PRJ_SRC_GEN_COMMONAPI_PATH ${PRJ_SR_GEN_PATH}/core/v0/commonapi)
+set(PRJ_SRC_GEN_COMMONAPI_SOMEIP_PATH ${PRJ_SRC_GEN_PATH}/someip/v0/commonapi)
+
+FILE(GLOB PRJ_SOMEIP_LIB_SRCS ${PRJ_SRC_GEN_COMMONAPI_SOMEIP_PATH}/*cpp)
 
 set(RESOURCE_FILES
     resource.qrc
@@ -30,6 +42,14 @@ set(PROJECT_SOURCES
         youtubeController.h
         youtubeController.cpp
         carInfoController.h
+        carInfoController.cpp
+        battery.cpp
+        battery.h
+        mp3player.cpp
+        mp3player.h
+        usbscanner.cpp
+        usbscanner.h
+        extract_cover.py
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -54,14 +74,48 @@ else()
         add_executable(Head_Unit_app
           ${PROJECT_SOURCES}
           ${RESOURCE_FILES}
+          ${CMAKE_CURRENT_SOURCE_DIR}/../src-gen/someip/v0/commonapi/ICSomeIPDeployment.cpp
+          ${CMAKE_CURRENT_SOURCE_DIR}/../src-gen/someip/v0/commonapi/ICSomeIPProxy.cpp
+          ${CMAKE_CURRENT_SOURCE_DIR}/../src-gen/someip/v0/commonapi/ICSomeIPStubAdapter.cpp
         )
     endif()
 endif()
 
+include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}/../src-gen/
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../common-api-c++/3.1.12-r0/sysroot-destdir/usr/include/CommonAPI-3.2
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../common-api-c++-someip/3.1.12-r0/sysroot-destdir/usr/include/CommonAPI-3.2/
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../common-api-c++/3.1.12-r0/sysroot-destdir/usr/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../common-api-c++-someip/3.1.12-r0/sysroot-destdir/usr/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../vsomeip/2.7.0-r0/sysroot-destdir/usr/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../common-api-c++/3.1.12-r0/sysroot-destdir/usr/lib
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../common-api-c++-someip/3.1.12-r0/sysroot-destdir/usr/lib
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../vsomeip/2.7.0-r0/sysroot-destdir/usr/lib
+    ${CMAKE_CURRENT_SOURCE_DIR}/../src-gen/core
+    ${CMAKE_CURRENT_SOURCE_DIR}/../src-gen/someip
+)
+
 target_compile_definitions(Head_Unit_app
   PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
+
+# CommonAPI 라이브러리 찾기
+find_library(COMMONAPI_LIB CommonAPI PATHS ${CMAKE_CURRENT_SOURCE_DIR}/../../../../common-api-c++/3.1.12-r0/sysroot-destdir/usr/lib)
+find_library(COMMONAPI_SOMEIP_LIB CommonAPI-SomeIP PATHS ${CMAKE_CURRENT_SOURCE_DIR}/../../../../common-api-c++-someip/3.1.12-r0/sysroot-destdir/usr/lib)
+find_library(VSOMEIP_LIB vsomeip3 PATHS ${CMAKE_CURRENT_SOURCE_DIR}/../../../../vsomeip/2.7.0-r0/sysroot-destdir/usr/lib)
+
 target_link_libraries(Head_Unit_app
-  PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick Qt${QT_VERSION_MAJOR}::WebEngine Qt${QT_VERSION_MAJOR}::Network)
+  PRIVATE Qt${QT_VERSION_MAJOR}::Core
+  Qt${QT_VERSION_MAJOR}::Quick
+  Qt${QT_VERSION_MAJOR}::WebEngine
+  Qt${QT_VERSION_MAJOR}::Network
+  Qt${QT_VERSION_MAJOR}::Multimedia
+  ${COMMONAPI_LIB}
+  ${COMMONAPI_SOMEIP_LIB}
+  ${VSOMEIP_LIB}
+  )
+
+add_library(${PRJ_NAME}-someip SHARED ${PRJ_SOMEIP_LIB_SRCS})
+target_link_libraries(${PRJ_NAME}-someip CommonAPI-SomeIP)
 
 set_target_properties(Head_Unit_app PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com

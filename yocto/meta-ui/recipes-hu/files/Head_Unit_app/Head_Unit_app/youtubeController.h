@@ -9,6 +9,7 @@ public:
     explicit YoutubeController(QObject *parent = nullptr);
 
     Q_INVOKABLE QString getYoutubeHtml() const;
+    Q_INVOKABLE QString getYoutubeHtmlForRank(int rank) const;
 
 private:
     QString apiKey;

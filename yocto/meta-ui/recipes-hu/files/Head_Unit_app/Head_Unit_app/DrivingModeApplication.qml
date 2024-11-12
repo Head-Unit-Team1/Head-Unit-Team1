@@ -5,6 +5,12 @@ Item {
     width: 1024
     height: 600
 
+    TopBar {
+        id: topBar
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+    }
+
     Row {
         spacing: 30
         anchors.centerIn: parent
@@ -91,18 +97,10 @@ Item {
         }
     }
 
-    Image {
-        source: "./icon_menu.png"
-        anchors. horizontalCenter: parent.horizontalCenter
+    HomeWidget {
+        anchors.left: parent.left
+        anchors.leftMargin: 20
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 30
-
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                stackView.pop()
-            }
-        }
+        anchors.bottomMargin: 20
     }
-
 }

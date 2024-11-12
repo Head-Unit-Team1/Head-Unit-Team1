@@ -30,7 +30,7 @@ ApplicationWindow {
                 id: info_widget
                 anchors.top: parent.top
                 anchors.topMargin: 20
-                anchors.left: parent.left
+                anchors.left: map_widget.right
                 anchors.leftMargin: 20
 /*
                 MouseArea {
@@ -43,9 +43,9 @@ ApplicationWindow {
 
             CarWidget {
                 id: car_widget
-                anchors.top: info_widget.bottom
-                anchors.topMargin: 20
-                anchors.left: parent.left
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 20
+                anchors.left: map_widget.right
                 anchors.leftMargin: 20
             }
 
@@ -66,10 +66,9 @@ ApplicationWindow {
 
             MapWidget {
                 id: map_widget
-                anchors.top: parent.top
-                anchors.topMargin: 20
-                anchors.right: parent.right
-                anchors.rightMargin: 20
+                anchors.left: side_bar.right
+                anchors.leftMargin: 20
+                anchors.verticalCenter: parent.verticalCenter
 
                 MouseArea {
                     anchors.fill: parent
@@ -81,27 +80,27 @@ ApplicationWindow {
 
             Text {
                 id: seame
-                text: "S\nE\nA\n\nM\nE"
-                font.pixelSize: 40
+                text: "S     E     A     M     E"
+                font.pixelSize: 30
                 color: carInfoController.modeColor
-                lineHeight: 1.5
+                //lineHeight: 1.5
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                anchors.right: map_widget.left
-                anchors.rightMargin: 40
-                anchors.verticalCenter: map_widget.verticalCenter
+                anchors.top: info_widget.bottom
+                anchors.topMargin: 40
+                anchors.horizontalCenter: info_widget.horizontalCenter
             }
 
             Rectangle {
-                id: bottom_bar
-                width: 984
-                height: 80
+                id: side_bar
+                width: 80
+                height: 560
                 radius: 5
                 color: "black"
 
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.bottom: parent.bottom
-                anchors.bottomMargin: 20
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
+                anchors.leftMargin: 20
 
                 layer.enabled: true
                 layer.effect: DropShadow {
@@ -115,9 +114,67 @@ ApplicationWindow {
                 }
 
                 Image {
+                    id: icon_music
+                    //width: parent.width * 0.5
+                    //height: width
                     anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.horizontalCenterOffset: -25
-                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.top: parent.top
+                    anchors.topMargin: 40
+                    source: "./icon_music.png"
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            stackView.push("qrc:/MusicApplication.qml")
+                            //mainWindow.showMenu = false
+                        }
+                    }
+                }
+
+                Image {
+                    id: icon_youtube
+                    //width: parent.width * 0.5
+                    //height: width
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.top: icon_music.bottom
+                    anchors.topMargin: 40
+                    source: "./icon_youtube.png"
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            stackView.push("qrc:/VideoApplication.qml")
+                            //mainWindow.showMenu = false
+                        }
+                    }
+                }
+
+                Image {
+                    id: icon_mode
+                    //width: parent.width * 0.5
+                    //height: width
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.top: icon_youtube.bottom
+                    anchors.topMargin: 40
+                    source: "./icon_mode.png"
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            stackView.push("qrc:/DrivingModeApplication.qml")
+                            //mainWindow.showMenu = false
+                        }
+                    }
+                }
+
+                Image {
+                    width: parent.width * 0.5
+                    height: width
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    //anchors.horizontalCenterOffset: -25
+                    //anchors.verticalCenter: parent.verticalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: 20
                     source: "./icon_menu.png"
 
                     MouseArea {
@@ -128,7 +185,7 @@ ApplicationWindow {
                         }
                     }
                 }
-
+/*
                 Text{
                     id: timeDisplay
                     text: Clock.currentTime
@@ -142,7 +199,7 @@ ApplicationWindow {
                 Connections{
                     target: Clock
                     onTimeChanged: timeDisplay.text = Clock.currentTime
-                }
+                }//*/
             }
 
 /*

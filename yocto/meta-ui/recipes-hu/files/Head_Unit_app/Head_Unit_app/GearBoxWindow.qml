@@ -8,9 +8,9 @@ Rectangle {
         anchors.fill: parent
 
         GearBox {
-            anchors.top: parent.top
-            anchors.topMargin: 20
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.right: parent.right
+            anchors.rightMargin: 25
+            anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenterOffset: -25
         }
 

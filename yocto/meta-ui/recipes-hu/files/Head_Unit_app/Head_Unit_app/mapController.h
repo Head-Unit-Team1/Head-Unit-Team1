@@ -9,6 +9,7 @@ public:
     explicit MapController(QObject *parent = nullptr);
 
     Q_INVOKABLE QString getGoogleMapHtml() const;
+    Q_INVOKABLE QString getGoogleMapHtml_app() const;
 
 private:
     QString apiKey;

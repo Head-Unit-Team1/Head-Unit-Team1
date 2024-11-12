@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1698164233914" transient="false">
+	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="org.genivi.commonapi.dbus.cli.feature" version="3.2.14.v202310241612" url="features/org.genivi.commonapi.dbus.cli.feature_3.2.14.v202310241612/">
+		</feature>
+		<feature id="org.genivi.commonapi.console.franca.feature" version="3.2.14.v202310241605" url="features/org.genivi.commonapi.console.franca.feature_3.2.14.v202310241605/">
+		</feature>
+		<feature id="org.genivi.commonapi.console.feature" version="3.2.14.v202310241605" url="features/org.genivi.commonapi.console.feature_3.2.14.v202310241605/">
+		</feature>
+	</site>
+</config>

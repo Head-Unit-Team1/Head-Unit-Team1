@@ -3,6 +3,9 @@
         <file>./dark-blue-product-background.jpg</file>
         <file>./icon_home.png</file>
         <file>./icon_menu.png</file>
+        <file>./icon_mode.png</file>
+        <file>./icon_music.png</file>
+        <file>./icon_youtube.png</file>
         <file>./porsche-91.png</file>
         <file>./Battery.png</file>
         <file>./left_origin.png</file>
@@ -17,6 +20,8 @@
         <file>./normal_mode.jpg</file>
         <file>./sports_mode.jpg</file>
         <file>./simple_mode.jpg</file>
+        <file>./Play.png</file>
+        <file>./Pause.png</file>
         <file>./weather_image/cloud.png</file>
         <file>./weather_image/cloud_meatball.png</file>
         <file>./weather_image/cloud_sun.png</file>

@@ -4,47 +4,47 @@ import QtGraphicalEffects 1.15
 
 Item {
     id: gearBox
-    width: 65
-    height: 460
+    width: 400
+    height: 80
 
     AppWidget {
-        widthData: 65
-        heightData: 460
+        widthData: 400
+        heightData: 80
 
         GearText{
             id:pButton
-            buttonSize: gearBox.width * 0.9
+            buttonSize: gearBox.height * 0.9
             gearLevel: "P"
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: parent.top
-            anchors.topMargin: 30
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.left: parent.left
+            anchors.leftMargin: 20
         }
 
         GearText{
             id:rButton
-            buttonSize: gearBox.width * 0.9
+            buttonSize: gearBox.height * 0.9
             gearLevel: "R"
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: pButton.bottom
-            anchors.topMargin: 50
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.left: pButton.right
+            anchors.leftMargin: 25
         }
 
         GearText{
             id:nButton
-            buttonSize: gearBox.width * 0.9
+            buttonSize: gearBox.height * 0.9
             gearLevel: "N"
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: rButton.bottom
-            anchors.topMargin: 50
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.left: rButton.right
+            anchors.leftMargin: 25
         }
 
         GearText{
             id:dButton
-            buttonSize: gearBox.width * 0.9
+            buttonSize: gearBox.height * 0.9
             gearLevel: "D"
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: nButton.bottom
-            anchors.topMargin: 50
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.left: nButton.right
+            anchors.leftMargin: 25
         }
     }
 }
