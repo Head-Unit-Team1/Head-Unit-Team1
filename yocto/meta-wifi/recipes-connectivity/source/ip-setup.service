@@ -6,7 +6,8 @@ Wants=network.target
 
 [Service]
 User=root
-ExecStart=/opt/IC_someip/json/set_ip.sh
+ExecStartPre=/usr/bin/sh -c "while ! ip addr show wlan0 | grep -q 'inet '; do sleep 1; done"
+ExecStart=/usr/bin/python3 /opt/IC_someip/json/change_ip.py
 Restart=on-failure
 
 

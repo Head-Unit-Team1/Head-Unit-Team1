@@ -38,7 +38,9 @@ Someip_package = "vsomeip \
 		  "
 
 UI_package = "instrumentcluster \
-              headunit \
+              can-utils \
+              canutils \
+              gamepadtoyproject \
               "
 
 Wifi_package = "wpa-supplicant \

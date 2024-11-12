@@ -13,7 +13,9 @@ ApplicationWindow  {
     width: 1280
     height: 400
     //color: "#28282c"
-    color: Qt.rgba(rSlider.value / 255, gSlider.value / 255, bSlider.value / 255, 1)
+    //color: "#461414"
+    color : modeObject.modeValue
+    //color: Qt.rgba(rSlider.value / 255, gSlider.value / 255, bSlider.value / 255, 1)
     title: qsTr("Instrument Cluster")
     //flags: Qt.FramelessWindowHint
     //visibility: Window.FullScreen
@@ -21,41 +23,6 @@ ApplicationWindow  {
     property int dial_Size: height * 0.9
     property int needleLength: height * 0.3
     property int speedValue: 0
-
-
-    Slider {
-        id: rSlider
-        x: 550
-        y: 10
-        from: 0
-        to: 100
-        value: 40
-
-    }
-
-
-    Slider {
-        id: gSlider
-        x: 550
-        y: 40
-        from: 0
-        to: 100
-        value: 40
-
-    }
-
-    Slider{
-        id:bSlider
-        x:550
-        y: 70
-        from: 0
-        to: 100
-        value: 44
-
-    }
-
-
-
 
 
     Dial{
@@ -132,8 +99,8 @@ ApplicationWindow  {
         height: 400
         anchors.right: parent.right
         anchors.rightMargin: 32
-        color: Qt.rgba(rSlider.value / 255, gSlider.value / 255, bSlider.value / 255, 1)
-
+        color: modeObject.modeValue
+        //color: Qt.rgba(rSlider.value / 255, gSlider.value / 255, bSlider.value / 255, 1)
         Speedometer {
             id: battery_speedometer
             objectName: "Battery_Gauge"

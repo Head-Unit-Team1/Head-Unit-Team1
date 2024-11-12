@@ -48,6 +48,10 @@ public:
 
     void fireBatteryStatusChangedEvent(const int32_t &_batValue);
 
+    void fireGearStatusChangedEvent(const std::string &_gearValue);
+
+    void fireLrSignStatusChangedEvent(const int32_t &_signValue);
+
     void deactivateManagedInstances() {}
     
     CommonAPI::SomeIP::GetAttributeStubDispatcher<
@@ -70,6 +74,14 @@ public:
         std::tuple< >,
         std::tuple< CommonAPI::SomeIP::IntegerDeployment<int32_t>, CommonAPI::SomeIP::IntegerDeployment<int32_t>>
     > getBatteryStubDispatcher;
+    
+    CommonAPI::SomeIP::MethodWithReplyStubDispatcher<
+        ::v0::commonapi::ICStub,
+        std::tuple< int32_t>,
+        std::tuple< int32_t>,
+        std::tuple< CommonAPI::SomeIP::IntegerDeployment<int32_t>>,
+        std::tuple< CommonAPI::SomeIP::IntegerDeployment<int32_t>>
+    > setModeStubDispatcher;
     
     ICSomeIPStubAdapterInternal(
         const CommonAPI::SomeIP::Address &_address,
@@ -96,14 +108,33 @@ public:
             std::make_tuple(),
             std::make_tuple(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr), static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr)))
         
+        ,
+        setModeStubDispatcher(
+            &ICStub::setMode,
+            false,
+            _stub->hasElement(2),
+            std::make_tuple(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr)),
+            std::make_tuple(static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr)))
+        
     {
         ICSomeIPStubAdapterHelper::addStubDispatcher( { CommonAPI::SomeIP::method_id_t(0x7530) }, &setGearStubDispatcher );
         ICSomeIPStubAdapterHelper::addStubDispatcher( { CommonAPI::SomeIP::method_id_t(0x7531) }, &getBatteryStubDispatcher );
+        ICSomeIPStubAdapterHelper::addStubDispatcher( { CommonAPI::SomeIP::method_id_t(0x7532) }, &setModeStubDispatcher );
         // Provided events/fields
         {
             std::set<CommonAPI::SomeIP::eventgroup_id_t> itsEventGroups;
             itsEventGroups.insert(CommonAPI::SomeIP::eventgroup_id_t(0x80f3));
             CommonAPI::SomeIP::StubAdapter::registerEvent(CommonAPI::SomeIP::event_id_t(0x9c40), itsEventGroups, CommonAPI::SomeIP::event_type_e::ET_EVENT, CommonAPI::SomeIP::reliability_type_e::RT_UNRELIABLE);
+        }
+        {
+            std::set<CommonAPI::SomeIP::eventgroup_id_t> itsEventGroups;
+            itsEventGroups.insert(CommonAPI::SomeIP::eventgroup_id_t(0x80f3));
+            CommonAPI::SomeIP::StubAdapter::registerEvent(CommonAPI::SomeIP::event_id_t(0x9c41), itsEventGroups, CommonAPI::SomeIP::event_type_e::ET_EVENT, CommonAPI::SomeIP::reliability_type_e::RT_UNRELIABLE);
+        }
+        {
+            std::set<CommonAPI::SomeIP::eventgroup_id_t> itsEventGroups;
+            itsEventGroups.insert(CommonAPI::SomeIP::eventgroup_id_t(0x80f3));
+            CommonAPI::SomeIP::StubAdapter::registerEvent(CommonAPI::SomeIP::event_id_t(0x9c42), itsEventGroups, CommonAPI::SomeIP::event_type_e::ET_EVENT, CommonAPI::SomeIP::reliability_type_e::RT_UNRELIABLE);
         }
     }
 
@@ -123,6 +154,32 @@ void ICSomeIPStubAdapterInternal<_Stub, _Stubs...>::fireBatteryStatusChangedEven
             CommonAPI::SomeIP::event_id_t(0x9c40),
             false,
              deployed_batValue 
+    );
+}
+
+template <typename _Stub, typename... _Stubs>
+void ICSomeIPStubAdapterInternal<_Stub, _Stubs...>::fireGearStatusChangedEvent(const std::string &_gearValue) {
+    CommonAPI::Deployable< std::string, CommonAPI::SomeIP::StringDeployment> deployed_gearValue(_gearValue, static_cast< CommonAPI::SomeIP::StringDeployment* >(nullptr));
+    CommonAPI::SomeIP::StubEventHelper<CommonAPI::SomeIP::SerializableArguments<  CommonAPI::Deployable< std::string, CommonAPI::SomeIP::StringDeployment > 
+    >>
+        ::sendEvent(
+            *this,
+            CommonAPI::SomeIP::event_id_t(0x9c41),
+            false,
+             deployed_gearValue 
+    );
+}
+
+template <typename _Stub, typename... _Stubs>
+void ICSomeIPStubAdapterInternal<_Stub, _Stubs...>::fireLrSignStatusChangedEvent(const int32_t &_signValue) {
+    CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t>> deployed_signValue(_signValue, static_cast< CommonAPI::SomeIP::IntegerDeployment<int32_t>* >(nullptr));
+    CommonAPI::SomeIP::StubEventHelper<CommonAPI::SomeIP::SerializableArguments<  CommonAPI::Deployable< int32_t, CommonAPI::SomeIP::IntegerDeployment<int32_t> > 
+    >>
+        ::sendEvent(
+            *this,
+            CommonAPI::SomeIP::event_id_t(0x9c42),
+            false,
+             deployed_signValue 
     );
 }
 

@@ -19,8 +19,8 @@
 #define REG_CURRENT 0x04
 #define REG_POWER 0x03
 
-#define MAX_VOLTAGE 12.6
-#define MIN_VOLTAGE 9.0
+#define MAX_VOLTAGE 13.5
+#define MIN_VOLTAGE 5.0
 
 int readRegister(int fd, uint8_t reg);
 double readVoltage(int fd);

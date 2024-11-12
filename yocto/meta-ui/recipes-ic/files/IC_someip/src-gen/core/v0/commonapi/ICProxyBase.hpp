@@ -40,15 +40,26 @@ public:
     typedef CommonAPI::Event<
         int32_t
     > BatteryStatusChangedEvent;
+    typedef CommonAPI::Event<
+        std::string
+    > GearStatusChangedEvent;
+    typedef CommonAPI::Event<
+        int32_t
+    > LrSignStatusChangedEvent;
 
     typedef std::function<void(const CommonAPI::CallStatus&, const int32_t&)> SetGearAsyncCallback;
     typedef std::function<void(const CommonAPI::CallStatus&, const int32_t&, const int32_t&)> GetBatteryAsyncCallback;
+    typedef std::function<void(const CommonAPI::CallStatus&, const int32_t&)> SetModeAsyncCallback;
 
     virtual void setGear(std::string _gear, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info = nullptr) = 0;
     virtual std::future<CommonAPI::CallStatus> setGearAsync(const std::string &_gear, SetGearAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
     virtual void getBattery(CommonAPI::CallStatus &_internalCallStatus, int32_t &_battery, int32_t &_result, const CommonAPI::CallInfo *_info = nullptr) = 0;
     virtual std::future<CommonAPI::CallStatus> getBatteryAsync(GetBatteryAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual void setMode(int32_t _mode, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual std::future<CommonAPI::CallStatus> setModeAsync(const int32_t &_mode, SetModeAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
     virtual BatteryStatusChangedEvent& getBatteryStatusChangedEvent() = 0;
+    virtual GearStatusChangedEvent& getGearStatusChangedEvent() = 0;
+    virtual LrSignStatusChangedEvent& getLrSignStatusChangedEvent() = 0;
 
     virtual std::future<void> getCompletionFuture() = 0;
 };
