@@ -26,7 +26,7 @@ do_install() {
 
 
 FILES:${PN} = "/opt/IC_someip/ \
-               ${bindir}/ic \
+               ${bindir}/ \
                "
                
 RDEPENDS:${PN} += "qtsvg python3-netifaces can-utils canutils"
