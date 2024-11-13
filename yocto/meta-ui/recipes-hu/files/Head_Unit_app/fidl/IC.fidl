@@ -1,0 +1,43 @@
+package commonapi
+
+interface IC{
+    version { major 0 minor 1}
+    
+    method setGear{
+        in{
+            String gear
+        }
+        out{
+            Int32 result
+        }
+    }
+    method getBattery{
+        out{
+            Int32 battery
+            Int32 result
+        }
+    }
+    method setMode{
+        in{
+            Int32 mode
+        }
+        out{
+            Int32 result
+        }
+    }
+    broadcast batteryStatusChanged{
+    	out{
+    		Int32 batValue
+    	}
+    }
+    broadcast gearStatusChanged{
+    	out{
+    		String gearValue
+    	}
+    }
+    broadcast lrSignStatusChanged{
+        out{
+            Int32 signValue
+        }
+    }
+}
