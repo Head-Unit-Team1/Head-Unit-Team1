@@ -21,6 +21,7 @@ Qt_package = "qtdeclarative \
 	      qtquickcontrols2-mkspecs \
 	      ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtgraphicaleffects-qmlplugins', '', d)} \
 	      qtwayland \
+		  udisks2 \
 	      "
 	            
 Gstreamer_package = "gstreamer1.0 \
@@ -44,8 +45,6 @@ UI_package = "headunit \
 Wifi_package = "wpa-supplicant \
                wifi-connect-autoexec \
                "
-               
-# ${Qt_package}
 
 IMAGE_INSTALL:append = " ${Splash_package} \
 			${Gstreamer_package} \
