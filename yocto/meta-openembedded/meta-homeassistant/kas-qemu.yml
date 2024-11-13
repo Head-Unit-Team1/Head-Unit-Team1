@@ -1,0 +1,9 @@
+header:
+  version: 10
+
+  includes:
+    - kas-hass.yml
+
+machine: qemuarm64
+distro: homeassistant
+target: core-image-homeassistant
