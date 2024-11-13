@@ -26,4 +26,4 @@ FILES:${PN} = "/opt/Head_Unit_app/ \
                ${bindir}/hu \
                "
 
-RDEPENDS:${PN} += "qtwebengine python3-mutagen"
+RDEPENDS:${PN} += "qtwebengine qtmultimedia python3-mutagen"
