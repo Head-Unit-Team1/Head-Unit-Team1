@@ -46,6 +46,8 @@ public:
         IC_interSomeIPStubAdapterHelper::deinit();
     }
 
+    void fireGearStatusChangedEvent(const std::string &_gear);
+
     void deactivateManagedInstances() {}
     
     CommonAPI::SomeIP::GetAttributeStubDispatcher<
@@ -98,6 +100,11 @@ public:
         IC_interSomeIPStubAdapterHelper::addStubDispatcher( { CommonAPI::SomeIP::method_id_t(0x7918) }, &setGear_interStubDispatcher );
         IC_interSomeIPStubAdapterHelper::addStubDispatcher( { CommonAPI::SomeIP::method_id_t(0x7919) }, &setLrsign_interStubDispatcher );
         // Provided events/fields
+        {
+            std::set<CommonAPI::SomeIP::eventgroup_id_t> itsEventGroups;
+            itsEventGroups.insert(CommonAPI::SomeIP::eventgroup_id_t(0x80f3));
+            CommonAPI::SomeIP::StubAdapter::registerEvent(CommonAPI::SomeIP::event_id_t(0x9c4b), itsEventGroups, CommonAPI::SomeIP::event_type_e::ET_EVENT, CommonAPI::SomeIP::reliability_type_e::RT_UNRELIABLE);
+        }
     }
 
     // Register/Unregister event handlers for selective broadcasts
@@ -105,6 +112,19 @@ public:
     void unregisterSelectiveEventHandlers();
 
 };
+
+template <typename _Stub, typename... _Stubs>
+void IC_interSomeIPStubAdapterInternal<_Stub, _Stubs...>::fireGearStatusChangedEvent(const std::string &_gear) {
+    CommonAPI::Deployable< std::string, CommonAPI::SomeIP::StringDeployment> deployed_gear(_gear, static_cast< CommonAPI::SomeIP::StringDeployment* >(nullptr));
+    CommonAPI::SomeIP::StubEventHelper<CommonAPI::SomeIP::SerializableArguments<  CommonAPI::Deployable< std::string, CommonAPI::SomeIP::StringDeployment > 
+    >>
+        ::sendEvent(
+            *this,
+            CommonAPI::SomeIP::event_id_t(0x9c4b),
+            false,
+             deployed_gear 
+    );
+}
 
 
 template <typename _Stub, typename... _Stubs>

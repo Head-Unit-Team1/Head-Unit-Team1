@@ -21,6 +21,7 @@
 
 #include <vector>
 
+#include <CommonAPI/Event.hpp>
 #include <CommonAPI/Proxy.hpp>
 #include <functional>
 #include <future>
@@ -36,6 +37,9 @@ namespace commonapi {
 class IC_interProxyBase
     : virtual public CommonAPI::Proxy {
 public:
+    typedef CommonAPI::Event<
+        std::string
+    > GearStatusChangedEvent;
 
     typedef std::function<void(const CommonAPI::CallStatus&, const int32_t&)> SetGear_interAsyncCallback;
     typedef std::function<void(const CommonAPI::CallStatus&, const int32_t&)> SetLrsign_interAsyncCallback;
@@ -44,6 +48,7 @@ public:
     virtual std::future<CommonAPI::CallStatus> setGear_interAsync(const std::string &_gear, SetGear_interAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
     virtual void setLrsign_inter(int32_t _lrsign, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info = nullptr) = 0;
     virtual std::future<CommonAPI::CallStatus> setLrsign_interAsync(const int32_t &_lrsign, SetLrsign_interAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr) = 0;
+    virtual GearStatusChangedEvent& getGearStatusChangedEvent() = 0;
 
     virtual std::future<void> getCompletionFuture() = 0;
 };

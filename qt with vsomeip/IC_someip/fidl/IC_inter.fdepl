@@ -11,7 +11,10 @@ define org.genivi.commonapi.someip.deployment for interface commonapi.IC_inter{
     method setLrsign_inter{
         SomeIpMethodID = 31001
     }
-
+    broadcast gearStatusChanged{
+	SomeIpEventID = 40011
+	SomeIpEventGroups = { 33011 }
+    }
 
 }
 

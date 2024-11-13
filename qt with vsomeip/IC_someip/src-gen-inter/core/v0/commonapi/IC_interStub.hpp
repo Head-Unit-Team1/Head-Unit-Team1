@@ -23,6 +23,7 @@
 #define HAS_DEFINED_COMMONAPI_INTERNAL_COMPILATION_HERE
 #endif
 
+#include <unordered_set>
 #include <vector>
 
 
@@ -46,6 +47,11 @@ class IC_interStubAdapter
     : public virtual CommonAPI::StubAdapter,
       public virtual IC_inter {
  public:
+    /**
+    * Sends a broadcast event for gearStatusChanged. Should not be called directly.
+    * Instead, the "fire<broadcastName>Event" methods of the stub should be used.
+    */
+    virtual void fireGearStatusChangedEvent(const std::string &_gear) = 0;
 
 
     virtual void deactivateManagedInstances() = 0;
@@ -94,7 +100,7 @@ public:
     virtual ~IC_interStub() {}
     void lockInterfaceVersionAttribute(bool _lockAccess) { static_cast<void>(_lockAccess); }
     bool hasElement(const uint32_t _id) const {
-        return (_id < 2);
+        return (_id < 3);
     }
     virtual const CommonAPI::Version& getInterfaceVersion(std::shared_ptr<CommonAPI::ClientId> _client) = 0;
 
@@ -102,6 +108,12 @@ public:
     virtual void setGear_inter(const std::shared_ptr<CommonAPI::ClientId> _client, std::string _gear, setGear_interReply_t _reply) = 0;
     /// This is the method that will be called on remote calls on the method setLrsign_inter.
     virtual void setLrsign_inter(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _lrsign, setLrsign_interReply_t _reply) = 0;
+    /// Sends a broadcast event for gearStatusChanged.
+    virtual void fireGearStatusChangedEvent(const std::string &_gear) {
+        auto stubAdapter = CommonAPI::Stub<IC_interStubAdapter, IC_interStubRemoteEvent>::stubAdapter_.lock();
+        if (stubAdapter)
+            stubAdapter->fireGearStatusChangedEvent(_gear);
+    }
 
 
     using CommonAPI::Stub<IC_interStubAdapter, IC_interStubRemoteEvent>::initStubAdapter;

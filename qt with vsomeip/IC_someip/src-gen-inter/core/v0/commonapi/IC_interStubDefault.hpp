@@ -72,6 +72,9 @@ public:
         int32_t result = 0;
         _reply(result);
     }
+    COMMONAPI_EXPORT virtual void fireGearStatusChangedEvent(const std::string &_gear) {
+        IC_interStub::fireGearStatusChangedEvent(_gear);
+    }
 
 
 protected:

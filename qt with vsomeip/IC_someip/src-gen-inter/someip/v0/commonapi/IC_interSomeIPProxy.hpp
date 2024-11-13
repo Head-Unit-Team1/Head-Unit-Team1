@@ -20,6 +20,7 @@
 #include <CommonAPI/SomeIP/Factory.hpp>
 #include <CommonAPI/SomeIP/Proxy.hpp>
 #include <CommonAPI/SomeIP/Types.hpp>
+#include <CommonAPI/SomeIP/Event.hpp>
 
 #if defined (HAS_DEFINED_COMMONAPI_INTERNAL_COMPILATION_HERE)
 #undef COMMONAPI_INTERNAL_COMPILATION
@@ -53,6 +54,8 @@ public:
 
     virtual ~IC_interSomeIPProxy();
 
+    virtual GearStatusChangedEvent& getGearStatusChangedEvent();
+
     virtual void setGear_inter(std::string _gear, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info);
 
     virtual std::future<CommonAPI::CallStatus> setGear_interAsync(const std::string &_gear, SetGear_interAsyncCallback _callback, const CommonAPI::CallInfo *_info);
@@ -66,6 +69,7 @@ public:
     virtual std::future<void> getCompletionFuture();
 
 private:
+    CommonAPI::SomeIP::Event<GearStatusChangedEvent, CommonAPI::Deployable< std::string, CommonAPI::SomeIP::StringDeployment >> gearStatusChanged_;
 
 };
 

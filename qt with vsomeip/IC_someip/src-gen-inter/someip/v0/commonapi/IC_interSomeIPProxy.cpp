@@ -46,7 +46,8 @@ INITIALIZER(registerIC_interSomeIPProxy) {
 IC_interSomeIPProxy::IC_interSomeIPProxy(
     const CommonAPI::SomeIP::Address &_address,
     const std::shared_ptr<CommonAPI::SomeIP::ProxyConnection> &_connection)
-        : CommonAPI::SomeIP::Proxy(_address, _connection)
+        : CommonAPI::SomeIP::Proxy(_address, _connection),
+          gearStatusChanged_(*this, 0x80f3, CommonAPI::SomeIP::event_id_t(0x9c4b), CommonAPI::SomeIP::event_type_e::ET_EVENT , CommonAPI::SomeIP::reliability_type_e::RT_UNRELIABLE, false, std::make_tuple(static_cast< CommonAPI::SomeIP::StringDeployment* >(nullptr)))
 {
 }
 
@@ -54,6 +55,9 @@ IC_interSomeIPProxy::~IC_interSomeIPProxy() {
 }
 
 
+IC_interSomeIPProxy::GearStatusChangedEvent& IC_interSomeIPProxy::getGearStatusChangedEvent() {
+    return gearStatusChanged_;
+}
 
 void IC_interSomeIPProxy::setGear_inter(std::string _gear, CommonAPI::CallStatus &_internalCallStatus, int32_t &_result, const CommonAPI::CallInfo *_info) {
     CommonAPI::Deployable< std::string, CommonAPI::SomeIP::StringDeployment> deploy_gear(_gear, static_cast< CommonAPI::SomeIP::StringDeployment* >(nullptr));

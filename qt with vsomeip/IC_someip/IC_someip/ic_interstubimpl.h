@@ -16,6 +16,8 @@ public:
     virtual ~IC_interStubImpl();
     virtual void setGear_inter(const std::shared_ptr<CommonAPI::ClientId> _client, std::string _gear, setGear_interReply_t _reply);
     virtual void setLrsign_inter(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _lrsign, setLrsign_interReply_t _relay);
+    virtual void notifyGearStatusChanged(std::string gearValue);
+
 signals:
     void signalGear_inter(std::string);
     void signalLrsign_inter(int32_t);

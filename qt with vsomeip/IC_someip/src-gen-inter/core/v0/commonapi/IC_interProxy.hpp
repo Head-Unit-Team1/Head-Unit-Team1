@@ -110,6 +110,12 @@ public:
      * It will provide the same value for CallStatus as will be handed to the callback.
      */
     virtual std::future<CommonAPI::CallStatus> setLrsign_interAsync(const int32_t &_lrsign, SetLrsign_interAsyncCallback _callback = nullptr, const CommonAPI::CallInfo *_info = nullptr);
+    /**
+     * Returns the wrapper class that provides access to the broadcast gearStatusChanged.
+     */
+    virtual GearStatusChangedEvent& getGearStatusChangedEvent() {
+        return delegate_->getGearStatusChangedEvent();
+    }
 
 
 
