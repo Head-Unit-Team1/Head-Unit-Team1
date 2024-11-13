@@ -91,11 +91,11 @@ ApplicationWindow  {
         anchors.bottom: dial.bottom
         anchors.bottomMargin: dial.height / 2
         length: needleLength
-        angle: (Receiver.speedKmh * 2.5 + 210)
+        angle: (Receiver.speedKmh * 1.7 + 210)
 
         Connections{
             target: Receiver
-            onSpeedChanged: needle.angle = (Receiver.speedKmh * 2.5 + 210)
+            onSpeedChanged: needle.angle = (Receiver.speedKmh * 1.7 + 210)
         }
     }
 

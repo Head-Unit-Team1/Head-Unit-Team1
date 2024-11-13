@@ -171,19 +171,19 @@ int main(int argc, char *argv[])
     animation.setDuration(1000);
     animation.setEasingCurve(QEasingCurve::OutCubic);
 
-//    i2c_fd = open(I2C_BUS, O_RDWR);
-//    if (i2c_fd , 0) {
-//        return -1;
-//    }
-//    if (ioctl(i2c_fd, I2C_SLAVE, INA219_ADDRESS) < 0){
-//        close(i2c_fd);
-//        return -1;
-//    }
+   i2c_fd = open(I2C_BUS, O_RDWR);
+   if (i2c_fd , 0) {
+       return -1;
+   }
+   if (ioctl(i2c_fd, I2C_SLAVE, INA219_ADDRESS) < 0){
+       close(i2c_fd);
+       return -1;
+   }
 
     QObject::connect(timer_test_rpm, &QTimer::timeout, [&](){
-        battery = static_cast<qreal>(std::rand() % 3) +9;
+        //battery = static_cast<qreal>(std::rand() % 3) +9;
 
-        //battery = readVoltage(i2c_fd);
+        battery = readVoltage(i2c_fd);
 
         batteryValues.push_back(battery);
 
