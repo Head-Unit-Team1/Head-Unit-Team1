@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 
     while (!successfullyRegistered || !successfullyRegistered_inter) {
         std::cout << "Register Service failed, trying again in 100 milliseconds..." << std::endl;
-        // std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        //std::this_thread::sleep_for(std::chrono::milliseconds(100));
         successfullyRegistered = runtimePtr->registerService(domain, instance, Service);
         successfullyRegistered_inter = runtimePtr->registerService(domain, instance_inter, Service_inter);
     }
@@ -80,6 +80,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("signObject", lrsignPtr.get());
 
     QObject::connect(Service.get(), &ICStubImpl::signalGear, gearPtr.get(), &Gear::receiveGear);
+    QObject::connect(Service.get(), &ICStubImpl::signalGear, Service_inter.get(), &IC_interStubImpl::notifyGearStatusChanged);
     QObject::connect(Service.get(), &ICStubImpl::signalMode, modePtr.get(), &Mode::receiveMode);
     QObject::connect(lrsignPtr.get(), &LRSign::broadcastDirection, Service.get(), &ICStubImpl::notifyLRSignStatusChanged);
 
@@ -159,7 +160,7 @@ int main(int argc, char *argv[])
     qreal battery = 0.0;
     qreal previousBattery = 0.0;
     const qreal b_threshold = 2.0; // 1.0
-
+    qreal batterySum = 100;
     std::deque<qreal> batteryValues;
     const int smoothWindowSize = 10; //5
 
@@ -170,17 +171,19 @@ int main(int argc, char *argv[])
     animation.setDuration(1000);
     animation.setEasingCurve(QEasingCurve::OutCubic);
 
-   i2c_fd = open(I2C_BUS, O_RDWR);
-   if (i2c_fd , 0) {
-       return -1;
-   }
-   if (ioctl(i2c_fd, I2C_SLAVE, INA219_ADDRESS) < 0){
-       close(i2c_fd);
-       return -1;
-   }
+//    i2c_fd = open(I2C_BUS, O_RDWR);
+//    if (i2c_fd , 0) {
+//        return -1;
+//    }
+//    if (ioctl(i2c_fd, I2C_SLAVE, INA219_ADDRESS) < 0){
+//        close(i2c_fd);
+//        return -1;
+//    }
 
     QObject::connect(timer_test_rpm, &QTimer::timeout, [&](){
-        battery = readVoltage(i2c_fd);
+        battery = static_cast<qreal>(std::rand() % 3) +9;
+
+        //battery = readVoltage(i2c_fd);
 
         batteryValues.push_back(battery);
 
@@ -188,16 +191,19 @@ int main(int argc, char *argv[])
             batteryValues.pop_front();
         }
 
-        qreal batterySum = std::accumulate(batteryValues.begin(), batteryValues.end(), 0.0) / batteryValues.size();
+        batterySum = std::accumulate(batteryValues.begin(), batteryValues.end(), 0.0) / batteryValues.size();
+        qDebug() << "batterySum : " << batterySum;
+
         int batteryPercentage = calculateBatteryPercentage(batterySum); // final battery value?
-        std::cout << "batteryPercentage: " << batteryPercentage << std::endl;
 
         qDebug() << "battery gap : " << batteryPercentage - previousBattery;
-        if (std::fabs(batteryPercentage - previousBattery) >= b_threshold){
+        qDebug() << "batteryPercentage : " << batteryPercentage;
+        qDebug() << "previousBattery : " << previousBattery;
 
+        if (std::fabs(batteryPercentage - previousBattery) >= b_threshold){
             animation.setStartValue(speedometerObj->property("battery"));
             animation.setEndValue(batteryPercentage); // battery
-//            animation.setDuration(1500);
+            animation.setDuration(1500);
             animation.start();
             previousBattery = batteryPercentage;
 

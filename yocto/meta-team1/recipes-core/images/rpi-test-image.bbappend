@@ -1,9 +1,9 @@
 Piracer_package = "pigpio \
-		   piracer-cpp \
 		   v4l-utils \
 		   i2c-tools \
-		   piracer-cpp-autoexec \
-                   "
+		   piracer-vsomeip \
+		   can0up-autoexec \
+                  "
 
 Splash_package = "vlc \
 		  playvideo \
@@ -38,9 +38,6 @@ Someip_package = "vsomeip \
 		  "
 
 UI_package = "instrumentcluster \
-              can-utils \
-              canutils \
-              gamepadtoyproject \
               "
 
 Wifi_package = "wpa-supplicant \

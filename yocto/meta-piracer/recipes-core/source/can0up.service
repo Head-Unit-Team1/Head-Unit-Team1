@@ -1,0 +1,9 @@
+[Unit]
+Description=can0up
+Requires=udhcpc-i-wlan0.service
+After=udhcpc-i-wlan0.service
+[Service]
+ExecStart=/sbin/ip link set can0 up type can bitrate 500000
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target

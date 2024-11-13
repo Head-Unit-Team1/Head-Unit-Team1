@@ -18,5 +18,9 @@
         <file>Dial.qml</file>
         <file>Needle.qml</file>
         <file>SpeedText.qml</file>
+        <file>images/left_green.png</file>
+        <file>images/left_origin.png</file>
+        <file>images/right_green.png</file>
+        <file>images/right_origin.png</file>
     </qresource>
 </RCC>
