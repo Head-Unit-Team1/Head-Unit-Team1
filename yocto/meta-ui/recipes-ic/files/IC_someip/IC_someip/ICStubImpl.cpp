@@ -11,8 +11,8 @@ ICStubImpl::~ICStubImpl(){
 
 void ICStubImpl::setGear(const std::shared_ptr<CommonAPI::ClientId> _client, std::string _gear, setGearReply_t _reply){
     std::cout << "gear :" << _gear << "\n";
-    emit signalGear(_gear);
-    if(_gear == "P" || _gear == "D" || _gear == "N"){
+    if(_gear == "P" || _gear == "D" || _gear == "N" || _gear == "R"){
+        emit signalGear(_gear);
         _reply(0);
     }else{
         _reply(-1);

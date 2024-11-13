@@ -19,11 +19,26 @@ ApplicationWindow  {
     title: qsTr("Instrument Cluster")
     //flags: Qt.FramelessWindowHint
     //visibility: Window.FullScreen
-
+    property bool blinking : true
     property int dial_Size: height * 0.9
     property int needleLength: height * 0.3
     property int speedValue: 0
-
+//    Button{
+//        text: "<-"
+//        onClicked: signObject.sendLrsignRandom(2)
+//    }
+//    Button{
+//        x: 111
+//        y: 0
+//        text: "x"
+//        onClicked: signObject.sendLrsignRandom(1)
+//    }
+//    Button{
+//        x: 215
+//        y: 0
+//        text: "->"
+//        onClicked: signObject.sendLrsignRandom(3)
+//    }
 
     Dial{
         id: dial
@@ -76,11 +91,11 @@ ApplicationWindow  {
         anchors.bottom: dial.bottom
         anchors.bottomMargin: dial.height / 2
         length: needleLength
-        angle: (Receiver.speedKmh * 2.5 + 210)
+        angle: (Receiver.speedKmh * 1.7 + 210)
 
         Connections{
             target: Receiver
-            onSpeedChanged: needle.angle = (Receiver.speedKmh * 2.5 + 210)
+            onSpeedChanged: needle.angle = (Receiver.speedKmh * 1.7 + 210)
         }
     }
 
@@ -90,6 +105,66 @@ ApplicationWindow  {
         anchors.verticalCenter: dial.verticalCenter
     }
 
+
+    ///////////////////////////////////////////
+    Image {
+        id: leftSignOrigin
+        x: 501
+        y: 157
+        source:"images/left_origin.png"
+
+        //anchors.top: carImage.bottom
+        //anchors.topMargin: 5
+        //anchors.left: parent.left
+        //anchors.leftMargin: 40
+    }
+
+    Image {
+        id: rightSignOrigin
+        x: 744
+        y: 157
+        source: "images/right_origin.png"
+
+        //anchors.verticalCenter: leftSign.verticalCenter
+        //anchors.left: leftSign.right
+        //anchors.leftMargin: 10
+    }
+    Image {
+        id: leftSign
+        x: 501
+        y: 157
+        source: "images/left_green.png"
+        //visible:  (carInfoController.blinkDirection === "left" || carInfoController.blinkDirection === "emergency") && blinking
+        visible: (signObject.directionValue === 2 || signObject.directionValue ===1) && blinking
+        //anchors.top: carImage.bottom
+        //anchors.left: parent.left
+        //anchors.leftMargin: 40
+    }
+
+    Image {
+        id: rightSign
+        x: 744
+        y: 157
+        //anchors.verticalCenterOffset: 346
+        source: "images/right_green.png"
+        //visible:  (carInfoController.blinkDirection === "right" || carInfoController.blinkDirection === "emergency" ) && blinking
+        visible: (signObject.directionValue === 3 || signObject.directionValue ===1) && blinking
+        //anchors.verticalCenter: leftSign.verticalCenter
+        //anchors.left: leftSign.right
+        //anchors.leftMargin: 732
+    }
+    Timer{
+        id: blinkTimer
+        interval : 500
+        repeat: true
+        running: true
+        onTriggered: {
+            blinking = !blinking
+        }
+    }
+
+
+    /////
     /*///////////////////////////////////////////////////////// battery_component */
     Rectangle {
         id: batterygauge
@@ -338,3 +413,4 @@ Designer {
     D{i:18;anchors_x:92;anchors_y:54}
 }
 ##^##*/
+
