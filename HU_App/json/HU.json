@@ -19,7 +19,7 @@
     "service-discovery" :
     {
         "enable" : "true",
-        "multicast" : "224.224.224.243",
+        "multicast" : "224.224.224.242",
         "port" : "30499",
         "protocol" : "udp",
         "initial_delay_min" : "100",

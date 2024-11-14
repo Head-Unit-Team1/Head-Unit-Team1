@@ -73,7 +73,7 @@ Item {
                 width: 100
                 height: 100
                 visible: false
-                fillMode: Image.PreserveAspectFit
+                //fillMode: Image.PreserveAspectFit
 
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: region.bottom

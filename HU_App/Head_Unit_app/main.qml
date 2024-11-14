@@ -217,4 +217,44 @@ ApplicationWindow {
     MenuWindow {
         visible: showMenu
     }
+
+    Rectangle {
+        id: logo_image
+        anchors.fill: parent
+        color: "white"
+
+        visible: !gearController.serverOKValue
+
+
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                gearController.setSelectedButton("Start")
+                //logo_image.visible = false
+            }
+        }
+    }
+//    Connections{
+//        target: gearController
+//        onServerConnected: logo_image.visible = false
+////        onServerConnected:{
+////            logo_image.visible= false
+////        }
+//    }
+//    Connections{
+//        target: gearController
+//        onServerNotConnected: {
+//            logo_image.color = "black" // 색상을 검은색으로 변경
+//            resetColorTimer.start() // 일정 시간 후 색상을 원래대로 돌리기 위한 타이머 시작
+//        }
+//    }
+//    Timer {
+//        id: resetColorTimer
+//        interval: 500 // 500ms 후 원래 색으로 복구
+//        repeat: false // 한 번만 실행
+//        onTriggered: {
+//            logo_image.color = "white" // 원래 색으로 복구
+//        }
+//    }
 }
