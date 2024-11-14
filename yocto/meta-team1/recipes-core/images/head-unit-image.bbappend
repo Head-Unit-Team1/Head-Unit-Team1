@@ -22,6 +22,8 @@ Qt_package = "qtdeclarative \
 	      ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtgraphicaleffects-qmlplugins', '', d)} \
 	      qtwayland \
 		  udisks2 \
+		  ntpdate \
+		  tzdata \
 	      "
 	            
 Gstreamer_package = "gstreamer1.0 \
