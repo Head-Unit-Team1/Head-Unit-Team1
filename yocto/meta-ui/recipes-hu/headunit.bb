@@ -20,10 +20,12 @@ do_install() {
     install -m 0755 ${S}/../commonapi4someip.ini ${D}/opt/Head_Unit_app/commonapi4someip.ini
     install -m 0755 ${S}/../hu.sh ${D}${bindir}/hu
     install -m 0755 ${S}/../json/HU.json ${D}/opt/Head_Unit_app/json/HU.json
+    install -m 0755 ${S}/../json/change_ip.py ${D}/opt/Head_Unit_app/json/change_ip.py
+    install -m 0755 ${S}/../json/set_ip.sh ${D}${bindir}/set_ip
 }
 
 FILES:${PN} = "/opt/Head_Unit_app/ \
                ${bindir}/ \
                "
 
-RDEPENDS:${PN} += "qtwebengine qtmultimedia python3-mutagen"
+RDEPENDS:${PN} += "qtwebengine python3-netifaces qtmultimedia python3-mutagen"
