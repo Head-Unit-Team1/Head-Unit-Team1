@@ -1,11 +1,14 @@
 [Unit]
 Description=Network Time Service (one-shot ntpdate mode)
-Before=ntpd.service
+After=wpa-supplicant-wlan0.service
+Wants=wpa-supplicant-wlan0.service
 
 [Service]
 Type=oneshot
+ExecStartPre=/bin/sh -c 'while ! ping -c 1 pool.ntp.org; do sleep 1; done'
 ExecStart=/usr/bin/ntpdate-sync silent
+ExecStart=/usr/bin/timedatectl set-timezone Europe/Berlin
 RemainAfterExit=yes
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=graphical.target
