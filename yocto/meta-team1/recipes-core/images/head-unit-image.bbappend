@@ -1,8 +1,8 @@
 Piracer_package = "pigpio \
-		   piracer-cpp \
 		   v4l-utils \
 		   i2c-tools \
-		   piracer-cpp-autoexec \
+		   piracer-vsomeip \
+		   can0up-autoexec \
                    "
 
 Splash_package = "vlc \
