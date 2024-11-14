@@ -22,6 +22,7 @@ public:
 signals:
     void signalGear(std::string);
     void signalMode(int32_t);
+    void signalStart();
     //void signalBattery(int32_t);
 private:
     Gear * gear_;

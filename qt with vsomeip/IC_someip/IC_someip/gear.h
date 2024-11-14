@@ -16,9 +16,11 @@ public:
     QString gearValue() const { return qt_gear; }
     void setICStubImpl(ICStubImpl* icStubImpl);
     Q_INVOKABLE void sendGearRandom(QString changedGear);
+    void clientConnectedSignal();
 
 signals:
     void gearValueChanged();
+    void clientConnected();
 
 public slots:
     void receiveGear(std::string signal);

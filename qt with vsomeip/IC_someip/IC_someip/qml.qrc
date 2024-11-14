@@ -22,5 +22,7 @@
         <file>images/left_origin.png</file>
         <file>images/right_green.png</file>
         <file>images/right_origin.png</file>
+        <file>images/lam_logo.jpg</file>
+        <file>DialSet.qml</file>
     </qresource>
 </RCC>

@@ -3,7 +3,9 @@
 
 #include <QObject>
 #include <QQuickPaintedItem>
-
+#include "mode.h"
+#include "QString"
+#include "string"
 class battery_gauge : public QQuickPaintedItem
 {
     Q_OBJECT
@@ -50,6 +52,10 @@ public:
     void setTextColor(QColor textColor);
     void setBackgroundColor(QColor backgroundColor);
 
+    void setModeClass(Mode* mode);
+    void resetColor(int);
+
+
     // signal that occur when modify(change) property
 signals:
     void speedometerSizeChanged();
@@ -77,6 +83,7 @@ private:
     QColor  m_InnerColor;
     QColor  m_TextColor;
     QColor  m_BackgroundColor;
+    Mode* myMode;
 
 };
 

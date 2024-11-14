@@ -80,6 +80,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("signObject", lrsignPtr.get());
 
     QObject::connect(Service.get(), &ICStubImpl::signalGear, gearPtr.get(), &Gear::receiveGear);
+    QObject::connect(Service.get(), &ICStubImpl::signalStart, gearPtr.get(), &Gear::clientConnectedSignal);
     QObject::connect(Service.get(), &ICStubImpl::signalGear, Service_inter.get(), &IC_interStubImpl::notifyGearStatusChanged);
     QObject::connect(Service.get(), &ICStubImpl::signalMode, modePtr.get(), &Mode::receiveMode);
     QObject::connect(lrsignPtr.get(), &LRSign::broadcastDirection, Service.get(), &ICStubImpl::notifyLRSignStatusChanged);
@@ -154,6 +155,7 @@ int main(int argc, char *argv[])
         qCritical() << "Failed to cast Speedometer object!";
         return -1;
     }
+    ptrSpeedometer->setModeClass(modePtr.get());
 
 
     /*///////////////////////////////////////////////////////// test Battery gauge with random value */
@@ -217,6 +219,7 @@ int main(int argc, char *argv[])
     timer_test_rpm->start(1000);
 
 
+    QObject::connect(Service.get(), &ICStubImpl::signalMode, ptrSpeedometer, &battery_gauge::resetColor);
 
 
 /*/////////////////////////////////////////////////team7 code end*/

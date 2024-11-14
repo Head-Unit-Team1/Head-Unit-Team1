@@ -10,7 +10,7 @@
     "applications" : 
     [
         {
-            "name" : "IC-service",
+            "name" : "IC-service2",
             "id" : "0x1212"
         },
         {
@@ -32,11 +32,11 @@
         }
 
     ],
-    "routing" : ["IC-service", "IC-service-internal"],
+    "routing" : ["IC-service2", "IC-service-internal"],
     "service-discovery" :
     {
         "enable" : "true",
-        "multicast" : "224.224.224.243",
+        "multicast" : "224.224.224.242",
         "port" : "30499",
         "protocol" : "udp",
         "initial_delay_min" : "100",
