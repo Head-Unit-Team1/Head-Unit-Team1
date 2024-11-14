@@ -23,7 +23,7 @@ do_install() {
 }
 
 FILES:${PN} = "/opt/Head_Unit_app/ \
-               ${bindir}/hu \
+               ${bindir}/ \
                "
 
 RDEPENDS:${PN} += "qtwebengine qtmultimedia python3-mutagen"
