@@ -24,7 +24,6 @@ ShanWanGamepad::ShanWanGamepad(const std::string& dev_fn = "/dev/input/js0", boo
 ShanWanGamepadInput ShanWanGamepad::read_data()
 {
 	auto [button_name, button_number, button_state, axis_name, axis_number, axis_val] = Joystick::poll();
-
 	// Joysticks
 	if (axis_number == 0) {
 		gamepad_input.analog_stick_left.x = -axis_val;
@@ -49,28 +48,56 @@ ShanWanGamepadInput ShanWanGamepad::read_data()
 	}
 	// Buttons
 	else if (button_number == 0) {
-		gamepad_input.button_a = button_state;
+        if (gamepad_input.button_a == 1){
+            gamepad_input.button_a = 0;
+        }else{
+            gamepad_input.button_a = 1;
+        }
 	} else if (button_number == 1) {
-		gamepad_input.button_b = button_state;
+		if (gamepad_input.button_b == 1){
+            gamepad_input.button_b = 0;
+        }else{
+            gamepad_input.button_b = 1;
+        }
 	} else if (button_number == 2) {
 		// Do nothing (pass)
 	} else if (button_number == 3) {
-		gamepad_input.button_x = button_state;
+		if (gamepad_input.button_x == 1){
+            gamepad_input.button_x = 0;
+        }else{
+            gamepad_input.button_x = 1;
+        }
 	} else if (button_number == 4) {
-		gamepad_input.button_y = button_state;
+		if (gamepad_input.button_y == 1){
+            gamepad_input.button_y = 0;
+        }else{
+            gamepad_input.button_y = 1;
+        }
 	} else if (button_number == 5) {
 		// Do nothing (pass)
 	} else if (button_number == 6) {
-		gamepad_input.button_l1 = button_state;
+		if (gamepad_input.button_l1 == 1){
+            gamepad_input.button_l1 = 0;
+        }else{
+            gamepad_input.button_l1 = 1;
+        }
 	} else if (button_number == 7) {
-		gamepad_input.button_r1 = button_state;
+		if (gamepad_input.button_r1 == 1){
+            gamepad_input.button_r1 = 0;
+        }else{
+            gamepad_input.button_r1 = 1;
+        }
 	} /*else if (button_number == 8) {
 		gamepad_input.button_l2 = button_state;
 	} else if (button_number == 9) {
 		gamepad_input.button_r2 = button_state;
 	}*/
 	else if (button_number == 10) {
-		gamepad_input.button_select = button_state;
+		if (gamepad_input.button_select == 1){
+            gamepad_input.button_select = 0;
+        }else{
+            gamepad_input.button_select = 1;
+        }
 	} else if (button_number == 11) {
 		gamepad_input.button_start = button_state;
 	} else if (button_number == 12) {

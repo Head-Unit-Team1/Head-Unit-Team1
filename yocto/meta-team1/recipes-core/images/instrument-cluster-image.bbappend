@@ -3,7 +3,7 @@ Piracer_package = "pigpio \
 		   i2c-tools \
 		   piracer-vsomeip \
 		   can0up-autoexec \
-                  "
+                   "
 
 Splash_package = "vlc \
 		  playvideo \
@@ -38,6 +38,7 @@ Someip_package = "vsomeip \
 		  "
 
 UI_package = "instrumentcluster \
+              select \
               "
 
 Wifi_package = "wpa-supplicant \
