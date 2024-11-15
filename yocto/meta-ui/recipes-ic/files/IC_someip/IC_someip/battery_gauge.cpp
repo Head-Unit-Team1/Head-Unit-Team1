@@ -1,5 +1,4 @@
 #include "battery_gauge.h"
-
 #include <QPainter>
 
 battery_gauge::battery_gauge(QQuickItem *parent)
@@ -17,6 +16,7 @@ battery_gauge::battery_gauge(QQuickItem *parent)
       m_TextColor(QColor("#ffffff")), // QColor(255,255,255)
       m_BackgroundColor(Qt::transparent)
 {
+
 
 }
 
@@ -111,11 +111,14 @@ int battery_gauge::getArcWidth()
 QColor battery_gauge::getOuterColor()
 {
     return m_OuterColor;
+    QColor colr = QColor(myMode->modeValue());
 }
 
 QColor battery_gauge::getInnerColor()
 {
     return m_InnerColor;
+    return QColor(myMode->modeValue());
+
 }
 
 QColor battery_gauge::getTextColor()
@@ -237,4 +240,15 @@ void battery_gauge::setBackgroundColor(QColor backgroundColor)
     m_BackgroundColor = backgroundColor;
 
     emit backgroundColorChanged();
+}
+
+void battery_gauge::setModeClass(Mode *mode){
+    myMode = mode;
+    qDebug()<<"mode : "<< myMode->modeValue();
+}
+
+void battery_gauge::resetColor(int mode){
+    emit outerColorChanged();
+    emit innerColorChanged();
+    emit textColorChanged();
 }

@@ -5,9 +5,12 @@ Item {
     id: bg_dial
 
     property int dialSize: 350
+    property string modeColor: modeObject.modeValue
 
     width: dialSize
     height: dialSize
+
+
 /*
     Rectangle{
         width: bg_dial.dialSize / 4
@@ -18,9 +21,10 @@ Item {
         radius: parent.dialSize / 4
         color: "#a2f2d9"
     }//*/
-
     Canvas {
+        id: canvasObj
         anchors.fill: parent
+        property string canvasColor: bg_dial.modeColor
         onPaint: {
             var ctx = getContext("2d");
             ctx.clearRect(0, 0, bg_dial.width, bg_dial.height);
@@ -29,14 +33,14 @@ Item {
             ctx.beginPath();
             ctx.arc(bg_dial.dialSize / 2, bg_dial.dialSize / 2, bg_dial.dialSize / 2 - 10, 0, Math.PI * 2);
             ctx.lineWidth = 5;
-            ctx.strokeStyle = "#00b890";
+            ctx.strokeStyle = canvasObj.canvasColor //modeObject.modeValue; //"#00b890";
             ctx.stroke();
 
             //Inner Circle
             ctx.beginPath();
             ctx.arc(bg_dial.dialSize / 2, bg_dial.dialSize / 2, bg_dial.dialSize / 4, 0, Math.PI * 2);
             ctx.lineWidth = 5;
-            ctx.strokeStyle = "#a2f2d9";
+            ctx.strokeStyle = canvasObj.canvasColor //modeObject.modeValue;//"#a2f2d9";
             ctx.stroke();
 
             ctx.lineWidth = 3;
@@ -50,7 +54,7 @@ Item {
                 ctx.beginPath();
                 ctx.moveTo(x1,y1);
                 ctx.lineTo(x2,y2);
-                ctx.strokeStyle = "#a2f2d9";
+                ctx.strokeStyle = canvasObj.canvasColor //Object.modeValue;
                 ctx.stroke();
 
                 if (i < 14) {
@@ -64,11 +68,10 @@ Item {
                     ctx.beginPath();
                     ctx.moveTo(mx1, my1);
                     ctx.lineTo(mx2, my2);
-                    ctx.strokeStyle = "#a2f2d9";
+                    ctx.strokeStyle = canvasObj.canvasColor;
                     ctx.stroke();
                 }
             }
         }
     }
-
 }
