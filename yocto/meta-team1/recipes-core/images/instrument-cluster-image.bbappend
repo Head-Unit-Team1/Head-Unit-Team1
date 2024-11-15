@@ -6,7 +6,6 @@ Piracer_package = "pigpio \
                    "
 
 Splash_package = "vlc \
-		  playvideo \
 		  systemd \
 		  systemd-compat-units \
 		  "
