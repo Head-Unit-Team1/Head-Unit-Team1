@@ -8,12 +8,12 @@ int readRegister(int fd, uint8_t reg) {
         std::cerr << "Failed to select register: " << static_cast<int>(reg) << std::endl;
         return -1;
     }
-//    if (read(fd, buf, 2) != 2) {
-//        qDebug() << "bettery fff";
+    if (read(fd, buf, 2) != 2) {
+        qDebug() << "bettery fff";
 
-//        std::cerr << "Failed to read data from I2C device." << std::endl;
-//        return -1;
-//    }
+        std::cerr << "Failed to read data from I2C device." << std::endl;
+        return -1;
+    }
 
     return (buf[0] << 8) | buf[1];
 }

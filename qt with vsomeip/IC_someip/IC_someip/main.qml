@@ -418,7 +418,7 @@ ApplicationWindow  {
         id : logoImage
         width: 1280
         height: 400
-        source: "images/lam_logo.jpg"
+        source: "images/IC_Screen.png"
         anchors.centerIn: parent
         z: 999
         visible: true

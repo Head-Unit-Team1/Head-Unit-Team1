@@ -77,6 +77,7 @@ IC_someip_autogen/EWIEGA46WW/qrc_qml.cpp: /home/jwoon/Desktop/commonapi_vsomeip/
 IC_someip_autogen/EWIEGA46WW/qrc_qml.cpp: /home/jwoon/Desktop/commonapi_vsomeip/IC_someip/IC_someip/images/Vector\ 1.svg
 IC_someip_autogen/EWIEGA46WW/qrc_qml.cpp: /home/jwoon/Desktop/commonapi_vsomeip/IC_someip/IC_someip/images/Vector\ 2.svg
 IC_someip_autogen/EWIEGA46WW/qrc_qml.cpp: /home/jwoon/Desktop/commonapi_vsomeip/IC_someip/IC_someip/images/iconizer-gas-station-icon.svg
+IC_someip_autogen/EWIEGA46WW/qrc_qml.cpp: /home/jwoon/Desktop/commonapi_vsomeip/IC_someip/IC_someip/images/IC_Screen.png
 IC_someip_autogen/EWIEGA46WW/qrc_qml.cpp: /home/jwoon/Desktop/commonapi_vsomeip/IC_someip/IC_someip/images/lam_logo.jpg
 IC_someip_autogen/EWIEGA46WW/qrc_qml.cpp: /home/jwoon/Desktop/commonapi_vsomeip/IC_someip/IC_someip/images/background_g.png
 IC_someip_autogen/EWIEGA46WW/qrc_qml.cpp: /home/jwoon/Desktop/commonapi_vsomeip/IC_someip/IC_someip/images/left_green.png
