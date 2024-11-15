@@ -8,11 +8,6 @@ Item {
     AppWidget {
         widthData: parent.width
         heightData: parent.height
-        /*
-        anchors.top: parent.top
-        anchors.topMargin: 20
-        anchors.left: parent.left
-        anchors.leftMargin: 20//*/
 
         Text{
             id: time_info
@@ -22,7 +17,7 @@ Item {
             anchors.left: parent.left
             anchors.leftMargin: 20
             font.pixelSize: 40
-            color: "#00b890"
+            color: carInfoController.modeColor //"#00b890"
         }
 
         Connections{
@@ -37,7 +32,7 @@ Item {
             anchors.left: parent.left
             anchors.leftMargin: 20
             font.pixelSize: 25
-            color: "#00b890"
+            color: carInfoController.modeColor //"#00b890"
         }
 
         Connections{
@@ -73,7 +68,6 @@ Item {
                 width: 100
                 height: 100
                 visible: false
-                fillMode: Image.PreserveAspectFit
 
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: region.bottom
@@ -109,13 +103,6 @@ Item {
                     weatherImage.visible = true
                     tempInfo.text = temperature + " °C"
                 }
-/*
-                onWeatherDataReceived: {
-                    var imagePath = "file://" + Qt.resolvedUrl(iconPath)
-                    weatherImage.source = imagePath
-                    weatherImage.visible = true
-                    tempInfo.text = temperature
-                }//*/
             }
 
             Component.onCompleted:  {

@@ -8,9 +8,6 @@ CarInfoController::CarInfoController(QObject *parent)
     myProxy = runtime->buildProxy<ICProxy>("local","commonapi.IC_service");
     std::cout<<"Pailable"<<std::endl;
 
-    while(!myProxy->isAvailable()){
-         std::cout << "proxy is not available"<<std::endl;
-    }
 
     myProxy->getProxyStatusEvent().subscribe([this](CommonAPI::AvailabilityStatus status){
         if(status == CommonAPI::AvailabilityStatus::AVAILABLE){
@@ -65,19 +62,21 @@ QString CarInfoController::modeColor() const {
 void CarInfoController::setModeColor(const QString& color) {
     if (m_modeColor != color) {
         m_modeColor = color;
-        emit modeColorChanged();
         if (m_modeColor == "#A2F2D9"){
             int_mode = 0;
+            emit modeColorChanged();
         }else if(m_modeColor == "red"){
             int_mode = 1;
+            emit modeColorChanged();
         }else if(m_modeColor == "white"){
             int_mode = 2;
+            emit modeColorChanged();
         }
-        myProxy->setModeAsync(int_mode, [](const CommonAPI::CallStatus& callStatus, const int32_t& result){
+        myProxy->setModeAsync(int_mode, [this](const CommonAPI::CallStatus& callStatus, const int32_t& result){
             if(callStatus == CommonAPI::CallStatus::SUCCESS){
-                std::cout<<"gear set ok"<<std::endl;
+                std::cout<<"mode set ok"<<std::endl;
             }else{
-                std::cout<<"gear set failed"<<std::endl;
+                std::cout<<"mode set failed"<<std::endl;
             }
         });
     }

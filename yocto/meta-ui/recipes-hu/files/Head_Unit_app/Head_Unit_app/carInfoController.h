@@ -31,7 +31,7 @@ public:
 
     std::shared_ptr<CommonAPI::Runtime> runtime;
     std::shared_ptr<ICProxy<>> myProxy;
-
+    void connectedValue() const;
 public slots:
     void getBattery();
 
@@ -40,6 +40,7 @@ signals:
     void modeColorChanged();
     void directionChanged();
     void batteryValueChanged();
+
 
 private:
     int m_batteryLevel;

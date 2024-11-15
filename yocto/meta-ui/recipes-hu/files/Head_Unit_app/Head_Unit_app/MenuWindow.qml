@@ -6,12 +6,6 @@ Rectangle {
     visible: showMenu
     color: "#CC000000"//"transparent"
     anchors.fill: parent
-/*
-    Rectangle {
-        width: 1024
-        height: 550
-        //color: "rgba(255, 255, 255, 0.5)"
-    }//*/
 
     Flickable {
         id: menuSlide

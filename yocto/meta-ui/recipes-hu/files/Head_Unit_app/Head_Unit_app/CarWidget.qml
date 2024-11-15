@@ -13,11 +13,14 @@ Item {
         heightData: parent.height
         Image {
             id: carImage
-            source: "./porsche-91.png"
+            width: 270
+            height: 150
+            source: "./img_revuelto.png"
 
             anchors.horizontalCenter: parent.horizontalCenter
+            anchors.horizontalCenterOffset: -15
             anchors.top: parent.top
-            anchors.topMargin: 20
+            anchors.topMargin: 10
         }
 
         Image {

@@ -13,7 +13,7 @@ Weather::Weather(QObject *parent) : QObject(parent), networkManager(new QNetwork
 }
 
 void Weather::fetchWeatherData(const QString &city) {
-    QString apiKey = "{YOUR API KEY}";
+    QString apiKey = "1402a4f510a49e883af6d768f7a729c2";
     QString url = QString("https://api.openweathermap.org/data/2.5/weather?q=%1&appid=%2&units=metric")
             .arg(city, apiKey);
 
@@ -30,7 +30,7 @@ void Weather::fetchWeatherData(const QString &city) {
 }
 
 void Weather::fetch5daysWeather(const QString &city) {
-    QString apiKey = "{YOUR API KEY}";
+    QString apiKey = "1402a4f510a49e883af6d768f7a729c2";
     QString url = QString("https://api.openweathermap.org/data/2.5/forecast?q=%1&appid=%2&units=metric")
             .arg(city, apiKey);
 
@@ -142,115 +142,3 @@ void Weather::onNetworkReply(QNetworkReply *reply) {
     }
     reply->deleteLater();
 }
-/*
-void Weather::onWeatherReply(QNetworkReply *reply) {
-    if (sender() != weatherReply) return;
-
-
-    if (reply->error() == QNetworkReply::NoError){
-        QByteArray response = reply->readAll();
-        QJsonDocument jsonDoc = QJsonDocument::fromJson(response);
-        QJsonObject jsonObj = jsonDoc.object();
-
-        QString cityName = jsonObj["name"].toString();
-        double temperature = jsonObj["main"].toObject()["temp"].toDouble();
-        QString weatherDescription = jsonObj["weather"].toArray()[0].toObject()["description"].toString();
-        QString iconCode = jsonObj["weather"].toArray()[0].toObject()["icon"].toString();
-
-        if (iconCode.isEmpty()) {
-            qDebug() << "Icon code is empty. JSON Response.";
-            //QMessageBox::warning(this, "Error", "Icon code is not available.");
-            return; // 아이콘 코드가 없으면 함수 종료
-        }
-
-        QMap<QString, QString> weatherIconMap = {
-            {"01", "./weather_image/sunny.png"}, //"fas fa-sun"},
-            {"02", "./weather_image/cloud_sun.png"}, //"fas fa-cloud-sun"},
-            {"03", "./weather_image/cloud.png"}, //"fas fa-cloud"},
-            {"04", "./weather_image/cloud_meatball.png"}, //"fas fa-cloud-meatball"},
-            {"09", "./weather_image/cloud_sun_rain.png"}, //"fas fa-cloud-sun-rain"},
-            {"10", "./weather_image/rain_heavy.png"}, //"fas fa-cloud-showers-heavy"},
-            {"11", "./weather_image/strom.png"}, //"fas fa-poo-storm"},
-            {"13", "./weather_image/snow.png"}, //"far fa-snowflake"},
-            {"50", "./weather_image/smog.png"}, //"fas fa-smog"}
-        };
-
-        QString iconPath = weatherIconMap.value(iconCode.left(2), "/home/seame/Head_Unit_app/weather_image/sunny.png");
-
-        emit weatherDataReceived(cityName, temperature, weatherDescription, iconPath);
-    }
-    else {
-        emit errorOccurred(reply->errorString());
-    }
-
-    reply->deleteLater();
-    weatherReply = nullptr;
-}
-
-void Weather::onForecastWeatherReply(QNetworkReply *reply) {
-    if (sender() != forecastReply) return;
-
-    if (reply->error() == QNetworkReply::NoError) {
-            QByteArray response = reply->readAll();
-            QJsonDocument jsonDoc = QJsonDocument::fromJson(response);
-            QJsonObject jsonObj = jsonDoc.object();
-
-            QString cityName = jsonObj["city"].toObject()["name"].toString();
-            QJsonArray forecastList = jsonObj["list"].toArray();
-
-            QList<QMap<QString, QVariant>> forecastData;
-
-            for (const QJsonValue &value : forecastList) {
-                QJsonObject forecastObj = value.toObject();
-
-                // 날짜 및 시간
-                QString dateTime = forecastObj["dt_txt"].toString();
-
-                // 온도
-                double temperature = forecastObj["main"].toObject()["temp"].toDouble();
-
-                // 날씨 설명
-                QString weatherDescription = forecastObj["weather"].toArray()[0].toObject()["description"].toString();
-
-                // 아이콘 코드
-                QString iconCode = forecastObj["weather"].toArray()[0].toObject()["icon"].toString();
-
-                if (iconCode.isEmpty()) {
-                    qDebug() << "Icon code is empty. 5 days JSON Response.";
-                    //QMessageBox::warning(this, "Error", "Icon code is not available.");
-                    return; // 아이콘 코드가 없으면 함수 종료
-                }
-
-                QMap<QString, QString> weatherIconMap = {
-                    {"01", "./weather_image/sunny.png"}, //"fas fa-sun"},
-                    {"02", "./weather_image/cloud_sun.png"}, //"fas fa-cloud-sun"},
-                    {"03", "./weather_image/cloud.png"}, //"fas fa-cloud"},
-                    {"04", "./weather_image/cloud_meatball.png"}, //"fas fa-cloud-meatball"},
-                    {"09", "./weather_image/cloud_sun_rain.png"}, //"fas fa-cloud-sun-rain"},
-                    {"10", "./weather_image/rain_heavy.png"}, //"fas fa-cloud-showers-heavy"},
-                    {"11", "./weather_image/strom.png"}, //"fas fa-poo-storm"},
-                    {"13", "./weather_image/snow.png"}, //"far fa-snowflake"},
-                    {"50", "./weather_image/smog.png"}, //"fas fa-smog"}
-                };
-
-                QString iconPath = weatherIconMap.value(iconCode.left(2), "./weather_image/sunny.png");
-
-                // 데이터를 QMap에 저장
-                QMap<QString, QVariant> forecastItem;
-                forecastItem["dateTime"] = dateTime;
-                forecastItem["temperature"] = temperature;
-                forecastItem["description"] = weatherDescription;
-                forecastItem["iconPath"] = iconPath;
-
-                forecastData.append(forecastItem);
-            }
-
-            // 데이터를 시그널로 전달
-            emit forecastDataReceived(cityName, forecastData);
-        } else {
-            emit errorOccurred(reply->errorString());
-        }
-
-        reply->deleteLater();
-        forecastReply = nullptr;
-}//*/

@@ -1,7 +1,7 @@
 #include "mapController.h"
 
 MapController::MapController(QObject *parent) : QObject(parent) {
-    apiKey = "{YOUR API KEY}";
+    apiKey = "AIzaSyAPI2TCKUdsTg6E9AaDaJ24YqT-3VQIjZA";
 }
 
 QString MapController::getGoogleMapHtml() const {
@@ -21,7 +21,7 @@ QString MapController::getGoogleMapHtml() const {
                     height: 550px;
                 }
             </style>
-            <script src="http://maps.google.com/maps/api/js?key={YOUR API KEY}&region=kr"></script>
+            <script src="http://maps.google.com/maps/api/js?key=AIzaSyAPI2TCKUdsTg6E9AaDaJ24YqT-3VQIjZA&region=kr"></script>
             </head>
 
             <body>
@@ -89,7 +89,7 @@ QString MapController::getGoogleMapHtml_app() const {
                     height: 600px;
                 }
             </style>
-            <script src="http://maps.google.com/maps/api/js?key={YOUR API KEY}&region=kr"></script>
+            <script src="http://maps.google.com/maps/api/js?key=AIzaSyAPI2TCKUdsTg6E9AaDaJ24YqT-3VQIjZA&region=kr"></script>
             </head>
 
             <body>

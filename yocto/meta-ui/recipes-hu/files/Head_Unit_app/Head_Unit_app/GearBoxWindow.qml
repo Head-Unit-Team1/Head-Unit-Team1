@@ -14,7 +14,6 @@ Rectangle {
             anchors.horizontalCenterOffset: -25
         }
 
-        // GearBox 외부 클릭 시 숨김 처리
         MouseArea {
             anchors.fill: parent
             onClicked: {

@@ -14,7 +14,7 @@ QString YoutubeController::getYoutubeHtml() const {
     <title>YouTube 인기 동영상</title>
     <script>
         async function fetchPopularVideos() {
-            const apiKey = '{YOUR API KEY}'; // 여기에 API 키를 넣으세요
+            const apiKey = 'AIzaSyAqmS_QH00cdDKhv5ZtAevxXBSJSUvGcbc'; // 여기에 API 키를 넣으세요
             const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=10&key=${apiKey}&regionCode=KR`);
             const data = await response.json();
             const videos = data.items;
@@ -74,7 +74,7 @@ QString YoutubeController::getYoutubeHtmlForRank(int rank) const {
     </style>
     <script>
         async function fetchVideoForRank(rank) {
-            const apiKey = '{YOUR API KEY}'; // 여기에 API 키를 넣으세요
+            const apiKey = 'AIzaSyAqmS_QH00cdDKhv5ZtAevxXBSJSUvGcbc'; // 여기에 API 키를 넣으세요
             const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=10&key=${apiKey}&regionCode=KR`);
             const data = await response.json();
             const videos = data.items;
