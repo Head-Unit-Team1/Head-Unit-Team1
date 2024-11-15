@@ -214,7 +214,7 @@ int main(int argc, char *argv[])
 
         qDebug() << "Battery : " << battery;
         qDebug() << "Battery percentage : " << batteryPercentage;
-        batteryPtr->setBatteryValue(battery);
+        batteryPtr->setBatteryValue(batteryPercentage);
     });
     timer_test_rpm->start(1000);
 
