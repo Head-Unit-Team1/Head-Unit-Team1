@@ -19,7 +19,6 @@ Item {
             spread: 0.2
             x: 0
             y: 1
-            //transparentBorder: true
         }
 
         Image {

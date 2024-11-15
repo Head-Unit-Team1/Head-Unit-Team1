@@ -1,12 +1,16 @@
 <RCC>
     <qresource prefix="/">
+        <file>./HU_screen.png</file>
+        <file>./HU_screen2.png</file>
         <file>./dark-blue-product-background.jpg</file>
         <file>./icon_home.png</file>
         <file>./icon_menu.png</file>
+        <file>./icon_menu2.png</file>
+        <file>./icon_menu3.png</file>
         <file>./icon_mode.png</file>
         <file>./icon_music.png</file>
         <file>./icon_youtube.png</file>
-        <file>./porsche-91.png</file>
+        <file>./img_revuelto.png</file>
         <file>./Battery.png</file>
         <file>./left_origin.png</file>
         <file>./left_green.png</file>

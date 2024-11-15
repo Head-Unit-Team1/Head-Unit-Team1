@@ -14,12 +14,11 @@ QString YoutubeController::getYoutubeHtml() const {
     <title>YouTube 인기 동영상</title>
     <script>
         async function fetchPopularVideos() {
-            const apiKey = '{YOUR API KEY}'; // 여기에 API 키를 넣으세요
+            const apiKey = '{YOUR API KEY}';
             const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=10&key=${apiKey}&regionCode=KR`);
             const data = await response.json();
             const videos = data.items;
 
-            // 각 비디오에 대해 iframe을 생성하고 본문에 추가합니다.
             const body = document.body;
             videos.forEach(video => {
                 const videoId = video.id;
@@ -33,7 +32,6 @@ QString YoutubeController::getYoutubeHtml() const {
             });
         }
 
-        // 페이지가 로드될 때 함수 호출
         window.onload = fetchPopularVideos;
     </script>
 </head>
@@ -74,15 +72,14 @@ QString YoutubeController::getYoutubeHtmlForRank(int rank) const {
     </style>
     <script>
         async function fetchVideoForRank(rank) {
-            const apiKey = '{YOUR API KEY}'; // 여기에 API 키를 넣으세요
+            const apiKey = '{YOUR API KEY}';
             const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=10&key=${apiKey}&regionCode=KR`);
             const data = await response.json();
             const videos = data.items;
 
-            // 선택한 순위의 비디오만 표시
             const body = document.body;
             if (rank >= 1 && rank <= videos.length) {
-                const video = videos[rank - 1];  // 배열은 0부터 시작하므로 rank - 1
+                const video = videos[rank - 1];
                 const videoId = video.id;
                 const iframe = document.createElement('iframe');
                 iframe.width = 640;
@@ -96,7 +93,6 @@ QString YoutubeController::getYoutubeHtmlForRank(int rank) const {
             }
         }
 
-        // 페이지가 로드될 때 함수 호출
         window.onload = () => fetchVideoForRank(%1);
     </script>
 </head>
