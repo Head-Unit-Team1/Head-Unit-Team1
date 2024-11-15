@@ -4,6 +4,15 @@
 #include <string>
 ICStubImpl::ICStubImpl(Gear* gear, Battery * battery, QObject *parent)
     : QObject(parent), gear_(gear),battery_(battery) {
+
+    //    CommonAPI::Runtime::get()->registerStateChangeListener([this](CommonAPI::AvailabilityState state) {
+//        if (state == CommonAPI::AvailabilityState::AVAILABLE) {
+//            onClientConnected();
+//        } else if (state == CommonAPI::AvailabilityState::NOT_AVAILABLE) {
+//            onClientDisconnected();
+//        }
+//    });
+
 }
 ICStubImpl::~ICStubImpl(){
 
@@ -11,7 +20,10 @@ ICStubImpl::~ICStubImpl(){
 
 void ICStubImpl::setGear(const std::shared_ptr<CommonAPI::ClientId> _client, std::string _gear, setGearReply_t _reply){
     std::cout << "gear :" << _gear << "\n";
-    if(_gear == "P" || _gear == "D" || _gear == "N" || _gear == "R"){
+    if(_gear == "Start"){
+        emit signalStart();
+        _reply(0);
+    }else if(_gear == "P" || _gear == "D" || _gear == "N" || _gear == "R"){
         emit signalGear(_gear);
         _reply(0);
     }else{
@@ -29,7 +41,7 @@ void ICStubImpl::getBattery(const std::shared_ptr<CommonAPI::ClientId> _client, 
 void ICStubImpl::setMode(const std::shared_ptr<CommonAPI::ClientId> _client, int32_t _mode, setModeReply_t _reply){
     std::cout << "mode :" << _mode << "\n";
     emit signalMode(_mode);
-    if(_mode == 0 || _mode == 1 || _mode == 2){
+    if(_mode == 0 || _mode == 1 || _mode == 2 || _mode == 42){
         _reply(0);
     }else{
         _reply(-1);

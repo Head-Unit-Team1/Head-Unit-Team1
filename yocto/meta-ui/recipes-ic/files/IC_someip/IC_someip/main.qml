@@ -14,7 +14,7 @@ ApplicationWindow  {
     height: 400
     //color: "#28282c"
     //color: "#461414"
-    color : modeObject.modeValue
+    color : "#28282c"//modeObject.modeValue
     //color: Qt.rgba(rSlider.value / 255, gSlider.value / 255, bSlider.value / 255, 1)
     title: qsTr("Instrument Cluster")
     //flags: Qt.FramelessWindowHint
@@ -40,14 +40,23 @@ ApplicationWindow  {
 //        onClicked: signObject.sendLrsignRandom(3)
 //    }
 
-    Dial{
+//    Dial{
+//        id: dial
+//        anchors.verticalCenter: parent.verticalCenter
+//        anchors.left: parent.left
+//        anchors.leftMargin: height * 0.2
+//        z: 2
+
+//        property int dialSize: gauge.dial_Size
+//        property string modeColor: modeObject.modeValue
+//    }
+
+    DialSet {
         id: dial
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         anchors.leftMargin: height * 0.2
         z: 2
-
-        property int dialSize: gauge.dial_Size
     }
 
     Text{
@@ -56,8 +65,8 @@ ApplicationWindow  {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
         font.pixelSize: 50
-        anchors.horizontalCenterOffset: 0
-        anchors.topMargin: 60
+        anchors.horizontalCenterOffset: 1
+        anchors.topMargin: 85
         color: "#00b890"
     }
 
@@ -91,11 +100,11 @@ ApplicationWindow  {
         anchors.bottom: dial.bottom
         anchors.bottomMargin: dial.height / 2
         length: needleLength
-        angle: (Receiver.speedKmh * 1.7 + 210)
+        angle: (Receiver.speedKmh * 2.5 + 210)
 
         Connections{
             target: Receiver
-            onSpeedChanged: needle.angle = (Receiver.speedKmh * 1.7 + 210)
+            onSpeedChanged: needle.angle = (Receiver.speedKmh * 2.5 + 210)
         }
     }
 
@@ -109,8 +118,8 @@ ApplicationWindow  {
     ///////////////////////////////////////////
     Image {
         id: leftSignOrigin
-        x: 501
-        y: 157
+        x: 440
+        y: 37
         source:"images/left_origin.png"
 
         //anchors.top: carImage.bottom
@@ -121,8 +130,8 @@ ApplicationWindow  {
 
     Image {
         id: rightSignOrigin
-        x: 744
-        y: 157
+        x: 807
+        y: 37
         source: "images/right_origin.png"
 
         //anchors.verticalCenter: leftSign.verticalCenter
@@ -131,8 +140,8 @@ ApplicationWindow  {
     }
     Image {
         id: leftSign
-        x: 501
-        y: 157
+        x: 440
+        y: 37
         source: "images/left_green.png"
         //visible:  (carInfoController.blinkDirection === "left" || carInfoController.blinkDirection === "emergency") && blinking
         visible: (signObject.directionValue === 2 || signObject.directionValue ===1) && blinking
@@ -143,8 +152,8 @@ ApplicationWindow  {
 
     Image {
         id: rightSign
-        x: 744
-        y: 157
+        x: 807
+        y: 37
         //anchors.verticalCenterOffset: 346
         source: "images/right_green.png"
         //visible:  (carInfoController.blinkDirection === "right" || carInfoController.blinkDirection === "emergency" ) && blinking
@@ -167,14 +176,13 @@ ApplicationWindow  {
     /////
     /*///////////////////////////////////////////////////////// battery_component */
     Rectangle {
-        id: batterygauge
-        x: 848
+        id: batterygaugealignAngleChanged
         y: 0
         width: 400
         height: 400
         anchors.right: parent.right
         anchors.rightMargin: 32
-        color: modeObject.modeValue
+        color: "#28282c"
         //color: Qt.rgba(rSlider.value / 255, gSlider.value / 255, bSlider.value / 255, 1)
         Speedometer {
             id: battery_speedometer
@@ -332,7 +340,7 @@ ApplicationWindow  {
         Image {
             id: iconizerheadphoneicon
             x: 247
-            y: 133
+            y: 158
             width: 25
             height: 25
             source: "images/iconizer-headphone-icon.svg"
@@ -348,7 +356,7 @@ ApplicationWindow  {
         Image {
             id: iconizerdaycloudyicon
             x: 351
-            y: 131
+            y: 156
             width: 30
             height: 30
             source: "images/iconizer-day-cloudy-icon.svg"
@@ -362,7 +370,7 @@ ApplicationWindow  {
         Image {
             id: iconizergasstationicon
             x: 193
-            y: 133
+            y: 158
             width: 25
             height: 25
             source: "images/iconizer-gas-station-icon.svg"
@@ -377,8 +385,8 @@ ApplicationWindow  {
 
         Image {
             id: iconizeraddresslocationicon
-            x: 300
-            y: 134
+            x: 301
+            y: 158
             width: 25
             height: 25
             source: "images/iconizer-address-location-icon.svg"
@@ -406,6 +414,37 @@ ApplicationWindow  {
     //        fillMode: Image.PreserveAspectFit
     //        source: "Vector 70.svg"
     //    }
+    Image{
+        id : logoImage
+        width: 1280
+        height: 400
+        source: "images/IC_Screen.png"
+        anchors.centerIn: parent
+        z: 999
+        visible: true
+        PropertyAnimation {
+            id: fadeOutAnimation
+            target: logoImage
+            property: "opacity"
+            from: 1
+            to: 0
+            duration: 500 // 밀리초 단위 (500ms)
+            onStopped: {
+                bg_dial.visible = false // 애니메이션이 끝나면 완전히 숨김
+            }
+        }
+
+    }
+    Connections {
+           target: gearObject
+           onClientConnected: {
+               fadeOutAnimation.running = true
+           }
+    }
+
+    Component.onCompleted: {
+        console.log(modeObject.modeValue)
+    }
 }
 
 /*##^##

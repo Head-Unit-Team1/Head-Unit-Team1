@@ -23,3 +23,6 @@ void Gear::sendGearRandom(QString ChangedGear){
 
 }
 
+void Gear::clientConnectedSignal(){
+    emit clientConnected();
+}
