@@ -18,7 +18,6 @@ Item {
             anchors.centerIn: parent
 
             url: "data:text/html;charset=utf-8," + encodeURIComponent(mapController.getGoogleMapHtml())
-            //url: Qt.resolvedUrl("data:text/html," + mapController.getGoogleMapHtml_app())
 
             onLoadingChanged: {
                         if (loadRequest.status === WebEngineLoadRequest.LoadFailedStatus) {

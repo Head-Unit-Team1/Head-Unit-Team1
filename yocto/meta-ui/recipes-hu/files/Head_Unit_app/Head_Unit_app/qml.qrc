@@ -19,5 +19,6 @@
         <file>HomeWidget.qml</file>
         <file>WeatherApplication.qml</file>
         <file>MusicApplication.qml</file>
+        <file>StartScreen.qml</file>
     </qresource>
 </RCC>

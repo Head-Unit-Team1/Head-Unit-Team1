@@ -32,13 +32,6 @@ ApplicationWindow {
                 anchors.topMargin: 20
                 anchors.left: map_widget.right
                 anchors.leftMargin: 20
-/*
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        stackView.push("qrc:/VideoApplication.qml")
-                    }
-                }//*/
             }
 
             CarWidget {
@@ -59,7 +52,6 @@ ApplicationWindow {
                     anchors.fill: parent
                     onClicked: {
                         mainWindow.showGearBox = true;
-                        //stackView.push("qrc:/GearBoxWindow.qml")
                     }
                 }
             }
@@ -83,7 +75,6 @@ ApplicationWindow {
                 text: "S     E     A     M     E"
                 font.pixelSize: 30
                 color: carInfoController.modeColor
-                //lineHeight: 1.5
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 anchors.top: info_widget.bottom
@@ -110,13 +101,10 @@ ApplicationWindow {
                     spread: 0.2
                     x: 0
                     y: 1
-                    //transparentBorder: true
                 }
 
                 Image {
                     id: icon_music
-                    //width: parent.width * 0.5
-                    //height: width
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: parent.top
                     anchors.topMargin: 40
@@ -126,15 +114,12 @@ ApplicationWindow {
                         anchors.fill: parent
                         onClicked: {
                             stackView.push("qrc:/MusicApplication.qml")
-                            //mainWindow.showMenu = false
                         }
                     }
                 }
 
                 Image {
                     id: icon_youtube
-                    //width: parent.width * 0.5
-                    //height: width
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: icon_music.bottom
                     anchors.topMargin: 40
@@ -144,15 +129,12 @@ ApplicationWindow {
                         anchors.fill: parent
                         onClicked: {
                             stackView.push("qrc:/VideoApplication.qml")
-                            //mainWindow.showMenu = false
                         }
                     }
                 }
 
                 Image {
                     id: icon_mode
-                    //width: parent.width * 0.5
-                    //height: width
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.top: icon_youtube.bottom
                     anchors.topMargin: 40
@@ -162,7 +144,6 @@ ApplicationWindow {
                         anchors.fill: parent
                         onClicked: {
                             stackView.push("qrc:/DrivingModeApplication.qml")
-                            //mainWindow.showMenu = false
                         }
                     }
                 }
@@ -171,42 +152,53 @@ ApplicationWindow {
                     width: parent.width * 0.5
                     height: width
                     anchors.horizontalCenter: parent.horizontalCenter
-                    //anchors.horizontalCenterOffset: -25
-                    //anchors.verticalCenter: parent.verticalCenter
                     anchors.bottom: parent.bottom
                     anchors.bottomMargin: 20
                     source: "./icon_menu.png"
+                    opacity: carInfoController.modeColor === "#A2F2D9" ? 1 : 0
 
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
                             mainWindow.showMenu = true;
-                            //stackView.push("qrc:/GearBoxWindow.qml")
                         }
                     }
                 }
-/*
-                Text{
-                    id: timeDisplay
-                    text: Clock.currentTime
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.right: parent.right
-                    anchors.rightMargin: 20
-                    font.pixelSize: 40
-                    color: "#00b890"
+
+                Image {
+                    width: parent.width * 0.5
+                    height: width
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: 20
+                    source: "./icon_menu2.png"
+                    opacity: carInfoController.modeColor === "red" ? 1 : 0
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            mainWindow.showMenu = true;
+                        }
+                    }
                 }
 
-                Connections{
-                    target: Clock
-                    onTimeChanged: timeDisplay.text = Clock.currentTime
-                }//*/
-            }
+                Image {
+                    width: parent.width * 0.5
+                    height: width
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: 20
+                    source: "./icon_menu3.png"
+                    opacity: carInfoController.modeColor === "white" ? 1 : 0
 
-/*
-            MenuButton {
-                menuName: "test"
-                anchors.centerIn: parent
-            }//**/
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            mainWindow.showMenu = true;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -216,5 +208,10 @@ ApplicationWindow {
 
     MenuWindow {
         visible: showMenu
+    }
+
+    StartScreen {
+        id: startScreen
+        anchors.centerIn: parent
     }
 }

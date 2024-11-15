@@ -81,20 +81,4 @@ Item {
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 20
     }
-/*
-    Image {
-        source: "./icon_home.png"
-        width: 60
-        height: 60
-        anchors. horizontalCenter: parent.horizontalCenter
-        anchors.bottom: parent.bottom
-        anchors.bottomMargin: 30
-
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                stackView.pop()
-            }
-        }
-    }//*/
 }
