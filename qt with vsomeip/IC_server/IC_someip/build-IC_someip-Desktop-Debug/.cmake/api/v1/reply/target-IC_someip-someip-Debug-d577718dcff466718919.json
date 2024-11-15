@@ -1,0 +1,137 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "libIC_someip-someip.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"link_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 66,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fPIC  "
+				},
+				{
+					"fragment" : "-std=gnu++11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "IC_someip_someip_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/IC_someip/build-IC_someip-Desktop-Debug"
+				},
+				{
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/IC_someip/IC_someip"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/IC_someip/build-IC_someip-Desktop-Debug/IC_someip-someip_autogen/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "IC_someip-someip_autogen::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "IC_someip-someip::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/jwoon/Desktop/commonapi_vsomeip/IC_someip/IC_someip/../../install_folder/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/jwoon/Desktop/commonapi_vsomeip/IC_someip/IC_someip/../../install_folder/lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lCommonAPI-SomeIP",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "IC_someip-someip",
+	"nameOnDisk" : "libIC_someip-someip.so",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jwoon/Desktop/commonapi_vsomeip/IC_someip/build-IC_someip-Desktop-Debug/IC_someip-someip_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

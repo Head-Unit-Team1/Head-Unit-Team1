@@ -1,0 +1,241 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "gamepad_control"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 75,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 93,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -std=c++17 -g  "
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./Adafruit_INA219"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./Adafruit_PCA9685"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./Gamepad"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./PiRacer"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./src-gen-inter"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/../../install_folder/include/CommonAPI-3.2"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/../../install_folder/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/../../install_folder/lib"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./src-gen-inter/core"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./src-gen-inter/someip"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				9
+			]
+		}
+	],
+	"id" : "gamepad_control::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "/usr/local"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-std=c++17 -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,--hash-style=gnu",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/usr/local/lib/libpigpio.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "gamepad_control",
+	"nameOnDisk" : "gamepad_control",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				9
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "examples/gamepad_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Adafruit_INA219/Adafruit_INA219.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Adafruit_PCA9685/Adafruit_PCA9685.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PiRacer/PiRacer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Gamepad/Joystick.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Gamepad/ShanwanGamepad.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "/home/jwoon/Desktop/commonapi_vsomeip/install_folder/lib/libCommonAPI.so",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "/home/jwoon/Desktop/commonapi_vsomeip/install_folder/lib/libCommonAPI-SomeIP.so",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "/home/jwoon/Desktop/commonapi_vsomeip/install_folder/lib/libvsomeip3.so",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "vsomeip.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

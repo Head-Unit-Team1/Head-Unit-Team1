@@ -1,0 +1,193 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "read_battery"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 86,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 93,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -std=c++17 -g  "
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./Adafruit_INA219"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./Adafruit_PCA9685"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./Gamepad"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./PiRacer"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./src-gen-inter"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/../../install_folder/include/CommonAPI-3.2"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/../../install_folder/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/../../install_folder/lib"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./src-gen-inter/core"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/jwoon/Desktop/commonapi_vsomeip/piracer_vsomeip/piracer_vsomeip/./src-gen-inter/someip"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"id" : "read_battery::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "/usr/local"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-std=c++17 -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,--hash-style=gnu",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/usr/local/lib/libpigpio.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "read_battery",
+	"nameOnDisk" : "read_battery",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "examples/read_battery.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Adafruit_INA219/Adafruit_INA219.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Adafruit_PCA9685/Adafruit_PCA9685.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PiRacer/PiRacer.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

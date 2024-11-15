@@ -1,0 +1,86 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "gamePaddddd",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "gamePaddddd::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gamePaddddd-Debug-4cda9bfec892709464ed.json",
+					"name" : "gamePaddddd",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gamePaddddd_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gamePaddddd_autogen-Debug-4c94e9ce282e9b22960c.json",
+					"name" : "gamePaddddd_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gamepaddddd-someip::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gamepaddddd-someip-Debug-359263a04ceaf7ec8d26.json",
+					"name" : "gamepaddddd-someip",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gamepaddddd-someip_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gamepaddddd-someip_autogen-Debug-a1d9ca6b311b1fd148a3.json",
+					"name" : "gamepaddddd-someip_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/build-gamePaddddd-Desktop-Debug",
+		"source" : "/home/jwoon/Desktop/commonapi_vsomeip/gamePadddd/gamePaddddd"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}
