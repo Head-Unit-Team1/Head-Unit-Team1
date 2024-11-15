@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>./HU_screen.png</file>
+        <file>./HU_screen2.png</file>
+        <file>./dark-blue-product-background.jpg</file>
+        <file>./icon_home.png</file>
+        <file>./icon_menu.png</file>
+        <file>./icon_menu2.png</file>
+        <file>./icon_menu3.png</file>
+        <file>./icon_mode.png</file>
+        <file>./icon_music.png</file>
+        <file>./icon_youtube.png</file>
+        <file>./img_revuelto.png</file>
+        <file>./Battery.png</file>
+        <file>./left_origin.png</file>
+        <file>./left_green.png</file>
+        <file>./right_origin.png</file>
+        <file>./right_green.png</file>
+        <file>./img_driving_mode.jpg</file>
+        <file>./img_map.jpg</file>
+        <file>./img_music.jpg</file>
+        <file>./img_weather.jpg</file>
+        <file>./img_video.jpg</file>
+        <file>./normal_mode.jpg</file>
+        <file>./sports_mode.jpg</file>
+        <file>./simple_mode.jpg</file>
+        <file>./Play.png</file>
+        <file>./Pause.png</file>
+        <file>./weather_image/cloud.png</file>
+        <file>./weather_image/cloud_meatball.png</file>
+        <file>./weather_image/cloud_sun.png</file>
+        <file>./weather_image/cloud_sun_rain.png</file>
+        <file>./weather_image/rain_heavy.png</file>
+        <file>./weather_image/smog.png</file>
+        <file>./weather_image/snow.png</file>
+        <file>./weather_image/storm.png</file>
+        <file>./weather_image/sunny.png</file>
+    </qresource>
+</RCC>

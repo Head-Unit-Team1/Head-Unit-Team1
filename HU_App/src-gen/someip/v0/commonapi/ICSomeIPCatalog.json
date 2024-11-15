@@ -1,0 +1,8 @@
+{
+    "commonapi.IC" : {
+        "service_id": 4660,
+        "instances" : {
+            "commonapi.IC_service": 22136
+        }
+    }
+}

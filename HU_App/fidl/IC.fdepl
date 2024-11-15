@@ -1,0 +1,36 @@
+import "platform:/plugin/org.genivi.commonapi.someip/deployment/CommonAPI-4-SOMEIP_deployment_spec.fdepl"
+
+import "IC.fidl"
+
+define org.genivi.commonapi.someip.deployment for interface commonapi.IC{
+    SomeIpServiceID = 4660
+
+    method setGear{
+        SomeIpMethodID = 30000
+    }
+    method getBattery{
+        SomeIpMethodID = 30001
+    }
+    method setMode{
+        SomeIpMethodID = 30002
+    }
+    broadcast batteryStatusChanged{
+    	SomeIpEventID = 40000
+    	SomeIpEventGroups = { 33011 }
+    }
+    broadcast gearStatusChanged{
+    	SomeIpEventID = 40001
+    	SomeIpEventGroups = { 33011 }
+    }
+    broadcast lrSignStatusChanged{
+        SomeIpEventID = 40002
+        SomeIpEventGroups = { 33011 }
+    }
+}
+
+define org.genivi.commonapi.someip.deployment for provider as Service{
+    instance commonapi.IC{
+        InstanceId = "commonapi.IC_service"
+        SomeIpInstanceID = 22136
+    }
+}
