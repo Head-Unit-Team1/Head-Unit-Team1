@@ -42,6 +42,10 @@ bitbake head-unit-image
 Edit sleep command in `weston.service`:  
 Before:
 ```plaintext
+# After splash video
+After=getty@tty1.service
+After=videoplay.service
+
 [Service]
 Type=idle
 EnvironmentFile=/etc/default/weston
@@ -51,6 +55,10 @@ ExecStart=-/usr/bin/weston --continue-without-input --modules=systemd-notify.so 
 
 After:
 ```plaintext
+# After splash video
+# After=getty@tty1.service
+# After=videoplay.service
+
 [Service]
 Type=idle
 EnvironmentFile=/etc/default/weston
