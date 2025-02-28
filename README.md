@@ -85,7 +85,14 @@ bitbake instrument-cluster-image
 </details>
 
 ## Communication
+### SOME/IP
+In order to process today's massive vehicle data, CAN alone is not enough. That's why we're supplementing that part with the Scalable service-Oriented Middleware over IP(SOME/IP). We implemented the communication between the 'IC' and the 'GamePad' application internally, and the communication between the 'IC' and the 'HU' externally. This wireless external communication allowed us to control the vehicle through the Head Unit device, away from the PiRacer.
 
+- Service Discovery
+  Service Discovery is a mediator that enables communication with only the necessary method information even if the server and client don't know each other. We can use data from other apllications through simple rules.
+ 
+- CommonAPI
+  CommonAPI provides the best environment for implementing SOME/IP. We can get automatically generated code by simply writing files that define services and methods. Thanks to the method through abstraction, it was easy to implement proxies and stubs for communication. We also built a network that solved the problem of delayed response by implementing asynchronous communication.
 
 ## Functions
 ### Music Application
